@@ -1,0 +1,64 @@
+# Kavleen Kaur Bhatia
+
+> AI trainer for K–12 educators in India. Founder of Credo Learnings. Host of The Learning Circle podcast. Based in Delhi NCR.
+
+Kavleen Kaur Bhatia (also known as Maverick) trains school teachers in India to use Generative AI systematically. She spent 15 years at Tata Consultancy Services leading structured software implementation and professional training before moving into education. Her work focuses on building professional AI capability in schools rather than tool familiarity.
+
+## Primary offering
+
+**AI Coaching for Educators** — a structured professional development workshop for K–12 teachers. Built on the IMPACT Framework, a six-step methodology developed by Credo Learnings for systematic Generative AI adoption in schools. Delivered in person or online, adapted to each school's curriculum and context.
+
+The IMPACT Framework trains two distinct modes of AI use:
+- **Thinking Partner** — expands professional judgment before anything is created
+- **Execution Partner** — drafts and iterates once the thinking is clear
+
+The framework is tool-agnostic by design. Tools change; the method stays.
+
+Related offering: teacher readiness training for the CBSE Computational Thinking and AI curriculum mandate (Classes 3–8).
+
+## Delivery record
+
+- DPS Vasant Vihar, New Delhi — 100% positive feedback, 89–91% intent to apply
+- Indraprastha International School, Dwarka — 10/10 respondents rated the session valuable
+- G D Goenka, Jammu — online session on AI in education
+- Computational Thinking workshops, Nepal — CTiS Conferences 2021 and 2022
+
+## Speaking
+
+- Eduverse Summit India 2024, New Delhi — Keynote: Bridging Cross-Cultural Divides in Global Education
+- Amrita Vishwa Vidyapeetham Conference — Future Ready: Fostering 21st Century Skills in a Flat World
+- EU Media & CED Education Excellence Conclave, Chandigarh
+
+## The Learning Circle podcast
+
+A podcast hosted by Kavleen Kaur Bhatia featuring conversations with school leaders, education policymakers, EdTech founders, and AI researchers on the transformation of K–12 education in India. More than 27 episodes, available on YouTube.
+
+Guests have included Sugata Mitra (Hole in the Wall, Self Organised Learning Environments) and Dr. Ashok K. Pandey.
+
+## Credentials
+
+- Master of Computer Applications (MCA)
+- B.Sc (Hons) Physics
+- Executive Management Program, IIT Bombay
+- AI in Education: Leveraging ChatGPT for Teaching — OpenAI and Wharton Online
+- AI for Everyone — DeepLearning.AI
+
+## Contact
+
+- Email: kavleen2007@gmail.com
+- Phone: +91-9811942881
+- LinkedIn: https://www.linkedin.com/in/kavleen-kaur-bhatia/
+- YouTube: https://www.youtube.com/@CredoLearnings
+- Company: https://credolearnings.com/
+- Location: Delhi NCR, India
+
+## Common questions
+
+**What is an AI workshop for teachers?**
+A structured professional development program that builds systematic Generative AI skills rather than familiarity with individual tools. Teachers leave with a method that holds across subjects, tasks, and whichever AI tool they use next.
+
+**How can a school arrange AI training for its teachers?**
+Contact Kavleen Kaur Bhatia at kavleen2007@gmail.com or +91-9811942881. The program is delivered in person or online and adapted to the school's context.
+
+**What makes this different from generic prompt training?**
+The IMPACT Framework separates professional judgment from execution. Most AI training teaches prompts, which become obsolete as tools change. This trains a method that stays valid.
