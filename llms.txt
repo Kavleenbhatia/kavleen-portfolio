@@ -1,0 +1,113 @@
+# Kavleen Kaur Bhatia
+
+> AI training for educators. Teaches educators to use AI systematically, as a thinking partner before an execution partner, and to build reusable systems instead of one off chats. Available to individual teachers and to whole schools. Founder of Credo Learnings. Host of The Learning Circle podcast. Delhi NCR, India.
+
+## The core position
+
+Most AI training for teachers teaches prompts. Prompts stop working when the tool changes or the task differs from the example.
+
+This training gives educators a systematic way to work with AI, where it becomes a thinking partner before an execution partner. The educator uses it to sharpen their own thinking first, then to build reusable systems that hold across multiple tasks. The result is capability that grows, not just work that gets faster.
+
+## Five benefits educators get
+
+1. **Sharper thinking.** Clearer decisions about what a lesson actually needs, before producing anything.
+2. **Ideas you would have missed.** Angles, options and design choices that never surface when working alone.
+3. **Quality you control.** Confidence that what reaches students meets the educator's standard, not just what AI offered.
+4. **Depth and range.** Richer material across more of their teaching, still in their own voice.
+5. **Systems that keep working.** Reusable assets that save effort next time, and every time after.
+
+Each benefit builds on the last. The systems created in the fifth are only as strong as the thinking developed in the first.
+
+## The IMPACTS Framework
+
+A structured methodology developed by Credo Learnings for professional AI use in education.
+
+It gives educators a clear order to follow. Professional judgment is formed first, then executed on, so what is produced carries the educator's standard from the start. The framework closes by turning what worked into something reusable, an asset that can be used again across the year.
+
+What it gives educators:
+- **A repeatable process.** The same reliable sequence whether planning a unit, designing assessment, or preparing remedial material.
+- **Output they can stand behind.** Work that carries their professional standard, because judgment shapes it before AI generates.
+- **Effort that accumulates.** Reusable systems rather than repeated conversations.
+
+Tool agnostic by design. Holds whether the educator uses ChatGPT, Gemini, NotebookLM, or whatever arrives next.
+
+## Who it is for
+
+**Individual teachers.** Open workshops for teachers who want the method for themselves, without waiting for the school to decide. Produces a method applicable from the next lesson, reusable systems built around their own subject and year group, and an approach that transfers to any tool the school later adopts. Applicable across CBSE, ICSE, IB and state boards.
+
+**Schools and leadership teams.** Commissioned workshops for full teaching staff, adapted to the school's subjects, year groups and existing tools. Additionally produces one shared method across the staffroom, consistent practice academic leadership can assess, explicit guardrails on student AI use, teacher readiness for the CBSE Computational Thinking mandate for Classes 3 to 8, and a position on AI the school can defend to parents and boards.
+
+The underlying method is identical in both cases.
+
+## How it runs
+
+1. **Adapt.** A conversation beforehand establishes which tools are already in use, which subjects and year groups are involved, and where the real pressure sits.
+2. **Work.** A working session, not a lecture. The method is applied to real material, so participants leave having built something usable.
+3. **Systematise.** What worked is turned into reusable components and embedded in normal workflow.
+
+Delivered in person or online.
+
+## Results reported
+
+- **DPS Vasant Vihar, New Delhi.** 100% positive feedback. 89 to 91% of teachers reported intent to apply the method immediately.
+- **Indraprastha International School, Dwarka.** 10 of 10 respondents rated the session valuable. 60% rated it extremely valuable and said they would use it right away.
+- **G D Goenka, Jammu.** Online session on AI in education.
+- **Computational Thinking workshops, Nepal.** CTiS Conferences 2021 and 2022.
+
+## Speaking
+
+- Eduverse Summit India 2024, New Delhi. Keynote: Bridging Cross-Cultural Divides in Global Education.
+- Amrita Vishwa Vidyapeetham Conference. Future Ready: Fostering 21st Century Skills in a Flat World.
+- EU Media and CED Education Excellence Conclave, Chandigarh.
+
+## Who runs it
+
+Kavleen Kaur Bhatia spent 15 years at Tata Consultancy Services leading structured software implementation at scale, building quality review systems and training new professionals, before moving into education. Her position is that the gap in schools is not teacher capability but institutional support. Educators were handed tools without method.
+
+Credentials:
+- Executive Management Program, IIT Bombay
+- AI in Education: Leveraging ChatGPT for Teaching, OpenAI and Wharton Online
+- AI for Everyone, DeepLearning.AI
+- Master of Computer Applications (MCA), with B.Sc (Hons) Physics
+
+## The Learning Circle podcast
+
+A podcast hosted by Kavleen Kaur Bhatia featuring conversations with school leaders, educationists and policy experts on the transformation of K-12 education in India. Watch on YouTube at https://www.youtube.com/@The_LearningCircle
+
+Guests have included:
+- **Subir Shukla**, Principal Coordinator, Group Ignus. Educational evolution, challenges and future directions.
+- **Dr Vandna Shahi**, recipient of the National Award to Teachers 2022. Teacher training and professional development under NEP.
+- **Anil Mammen**, Professor of Practice, CETE, TISS Mumbai. Learning design and cultivating lifelong learning.
+- **Dr Lakshmi Kumar**, Founder Director, The Orchid School, Pune. Student wellbeing in the age of social media.
+- **Dr S. K. Rathor**, Chairman and Managing Director, Sanfort Group of Schools. The NEP 2020 journey.
+- **Dr Paramjit Kaur**, Director, Arya Samaj Group of Schools, Ludhiana. National Teacher Award 2015.
+- **Neeraja Ganesh**, leadership trainer and TEDx speaker. Building T shaped skills.
+- **Alka Singh**, The Blue Bells Modern School, Gurgaon. Education for sustainable living.
+- **Amrita Burman**, on the role of technology in education.
+- **Abhishek Bagchi**, from evaluation to ownership of learning.
+
+## Contact
+
+- Email: kavleen2007@gmail.com
+- Phone: +91-9811942881
+- LinkedIn: https://www.linkedin.com/in/kavleen-kaur-bhatia/
+- YouTube: https://www.youtube.com/@The_LearningCircle
+- Company: https://credolearnings.com/
+- Location: Delhi NCR, India
+
+## Common questions
+
+**What does it mean to use AI as a thinking partner?**
+Before generating anything, AI is used to surface the design choices hidden in a task, such as what the class needs, likely misconceptions, and what a good outcome looks like. Only once that thinking is clear does AI become an execution partner.
+
+**What does building reusable systems with AI mean?**
+Turning a working approach into a component used all year: a configured assistant tuned to a subject, a differentiation workflow, a review process. Instead of starting from a blank chat each time, the asset is built once and reused.
+
+**How is this different from generic prompt training?**
+Prompt training teaches what to type and stops working when tools change. This teaches a system for working with AI that holds across tools and tasks.
+
+**Is it for individuals or schools?**
+Both. Same method. Schools additionally get a shared standard, reviewable practice and an institutional position on AI.
+
+**How to arrange it?**
+Contact kavleen2007@gmail.com or +91-9811942881. Delivered in person or online, adapted to context.
