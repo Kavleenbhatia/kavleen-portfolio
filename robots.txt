@@ -1,6 +1,4 @@
 # robots.txt — Kavleen Kaur Bhatia
-# UPDATE the sitemap URL below once your domain is live.
-
 # Search engines
 User-agent: Googlebot
 Allow: /
