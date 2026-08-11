@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<!--
+====================================================================
+  THE LEARNING CIRCLE — EPISODE PAGE TEMPLATE
+  Episode: Dr. Ashok K. Pandey — "India's Schools Have a Mentoring
+           Problem, Not a Training Problem"
+....................................................................
+  LIVE URL: https://www.kavleenkaur.com/the-learning-circle-ashok-pandey
+  All links, canonical tags and schema are set to real URLs. The page
+  works as-is. Two optional upgrades remain:
+
+  1.  social-card.jpg  -> NOT YET CREATED. Referenced by the OG tags at
+      /images/ashok-pandey-social-card.jpg
+      Until you add it, LinkedIn/WhatsApp previews fall back to no image.
+      Make it 1200x630. Quickest version: the "Un-Automatable Legacy"
+      quote card already in images/, resized.
+
+  2.  Guest photo currently uses the YouTube thumbnail as a stand-in.
+      Swap the <img> in the guest section for a real headshot of
+      Dr. Pandey when you have one you're licensed to host.
+
+  ALSO NOTE
+  - Apple Podcasts button points at the series page (works today).
+    Swap in the direct episode link when Apple exposes it.
+  - Spotify button removed - no episode URL was available.
+
+  NOTES
+  - Single self-contained file. Only external requests: Google Fonts,
+    the YouTube thumbnail, and the YouTube iframe (loaded ONLY after
+    the visitor clicks play — keeps LCP fast and avoids cookies on load).
+  - Transcript is real, pulled from the episode audio and lightly
+    edited for readability. It sits in the DOM inside <details>, so
+    crawlers and AI answer engines can read it while the page stays short.
+  - JSON-LD graph: PodcastEpisode + PodcastSeries + VideoObject (with
+    Clip chapters + SeekToAction) + Person x2 + FAQPage + BreadcrumbList.
+====================================================================
+-->
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>India's Schools Have a Mentoring Problem, Not a Training Problem — Dr. Ashok K. Pandey | The Learning Circle</title>
+<meta name="description" content="Dr. Ashok K. Pandey on why India's school system suffers from a &quot;Vitamin LD&quot; deficiency, the difference between training and mentoring a teacher, the accidental principal problem, and a five-step roadmap for teachers who want to lead. Full transcript, chapters and takeaways.">
+<link rel="canonical" href="https://www.kavleenkaur.com/the-learning-circle-ashok-pandey">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Kavleen Kaur">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Learning Circle">
+<meta property="og:title" content="India's Schools Have a Mentoring Problem, Not a Training Problem — Dr. Ashok K. Pandey">
+<meta property="og:description" content="Vitamin LD, the accidental principal, and the ROI question every school board gets backwards. Dr. Ashok K. Pandey on The Learning Circle.">
+<meta property="og:url" content="https://www.kavleenkaur.com/the-learning-circle-ashok-pandey">
+<meta property="og:image" content="https://www.kavleenkaur.com/images/ashok-pandey-social-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-07-16T18:15:38+05:30">
+<meta property="article:author" content="Kavleen Kaur">
+<meta property="article:section" content="School Leadership">
+<meta property="article:tag" content="teacher mentoring">
+<meta property="article:tag" content="school leadership India">
+<meta property="article:tag" content="NEP 2020">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="India's Schools Have a Mentoring Problem, Not a Training Problem">
+<meta name="twitter:description" content="Dr. Ashok K. Pandey on Vitamin LD, the accidental principal, and why mentoring beats training.">
+<meta name="twitter:image" content="https://www.kavleenkaur.com/images/ashok-pandey-social-card.jpg">
+<meta name="twitter:label1" content="Guest"><meta name="twitter:data1" content="Dr. Ashok K. Pandey">
+<meta name="twitter:label2" content="Length"><meta name="twitter:data2" content="46 minutes">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://i.ytimg.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#1A1512; --ink-2:#524941; --ink-3:#8A7F73;
+  --paper:#FFFCF6; --paper-2:#F7F0E4; --paper-3:#EFE6D6;
+  --accent:#B65E12; --accent-soft:#FBEEDC; --accent-deep:#6E3607;
+  --rule:#E3D8C4; --white:#fff;
+  --serif:'Fraunces','Iowan Old Style',Georgia,'Times New Roman',serif;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --wrap:1120px; --col:min(680px,100%);
+  --shadow:0 1px 2px rgba(26,21,18,.04),0 8px 24px -12px rgba(26,21,18,.16);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent-deep);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--accent)}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-.015em;margin:0 0 .5em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:12px 18px;z-index:99}
+.skip:focus{left:8px;top:8px}
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:22px}
+.prose{max-width:var(--col);margin-inline:auto}
+.eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+
+/* ---------- header ---------- */
+.site{position:sticky;top:0;z-index:40;background:rgba(255,252,246,.9);
+  backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--rule)}
+.site .wrap{display:flex;align-items:center;gap:24px;height:62px}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.06rem;text-decoration:none;color:var(--ink);
+  display:flex;align-items:center;gap:10px;letter-spacing:-.02em;white-space:nowrap}
+.brand .dot{width:22px;height:22px;border-radius:50%;flex:none;
+  background:radial-gradient(circle at 32% 30%,#F6C452,var(--accent) 62%,var(--accent-deep))}
+.site nav{margin-left:auto;display:flex;gap:22px;font-size:.9rem;font-weight:500}
+.site nav a{color:var(--ink-2);text-decoration:none}
+.site nav a:hover{color:var(--accent)}
+@media(max-width:720px){.site nav{display:none}}
+
+/* ---------- breadcrumbs ---------- */
+.crumbs{font-size:.82rem;color:var(--ink-3);padding:22px 0 0}
+.crumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0}
+.crumbs li::after{content:"/";margin-left:8px;color:var(--rule)}
+.crumbs li:last-child::after{content:""}
+.crumbs a{color:var(--ink-3);text-decoration:none}
+.crumbs a:hover{color:var(--accent)}
+
+/* ---------- hero ---------- */
+.hero{padding:26px 0 8px}
+.hero h1{font-size:clamp(2rem,4.6vw,3.15rem);max-width:16ch;margin-bottom:.4em}
+@media(max-width:640px){.hero h1{max-width:none}}
+.dek{font-size:1.16rem;color:var(--ink-2);max-width:62ch;margin:0 0 26px}
+.factbar{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;font-size:.86rem;
+  color:var(--ink-2);padding:16px 0;border-block:1px solid var(--rule);margin-bottom:28px}
+.factbar b{font-weight:600;color:var(--ink)}
+.factbar .sep{color:var(--rule)}
+
+/* ---------- player ---------- */
+.player{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;
+  background:#120E0B;box-shadow:var(--shadow);border:1px solid var(--rule)}
+.player img{width:100%;height:100%;object-fit:cover;opacity:.86}
+.player iframe{width:100%;height:100%;border:0;display:block}
+.playbtn{position:absolute;inset:0;display:grid;place-items:center;border:0;background:transparent;cursor:pointer;width:100%}
+.playbtn span{display:grid;place-items:center;width:78px;height:78px;border-radius:50%;
+  background:var(--accent);box-shadow:0 10px 34px rgba(0,0,0,.42);transition:transform .18s ease,background .18s}
+.playbtn:hover span{transform:scale(1.07);background:var(--accent-deep)}
+.playbtn svg{width:28px;height:28px;fill:#fff;margin-left:5px}
+.playbtn .lbl{position:absolute;bottom:16px;left:18px;color:#fff;font-size:.82rem;
+  background:rgba(0,0,0,.55);padding:5px 11px;border-radius:99px;width:auto;height:auto;display:block}
+.caption{font-size:.82rem;color:var(--ink-3);margin:10px 2px 0}
+
+/* ---------- listen row ---------- */
+.listen{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 8px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 17px;border-radius:99px;
+  border:1px solid var(--rule);background:var(--white);color:var(--ink);text-decoration:none;
+  font-size:.88rem;font-weight:600;transition:.16s}
+.btn:hover{border-color:var(--accent);color:var(--accent-deep);transform:translateY(-1px)}
+.btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn.primary:hover{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff}
+
+/* ---------- sections ---------- */
+section{padding:44px 0}
+section > .prose > h2, .secttl{font-size:clamp(1.5rem,2.6vw,1.95rem);margin-bottom:.55em}
+.lede{font-size:1.05rem;color:var(--ink-2)}
+hr.rule{border:0;border-top:1px solid var(--rule);margin:0}
+
+/* summary card */
+.tldr{background:var(--accent-soft);border:1px solid #EBD9BE;border-radius:14px;padding:28px 30px}
+.tldr h2{font-size:1.28rem;margin-bottom:.5em}
+.tldr p{margin:0 0 14px}
+.tldr p:last-child{margin-bottom:0}
+.tldr dl{margin:0}
+.tldr dt{font-weight:700;font-size:.95rem;margin-top:16px}
+.tldr dd{margin:2px 0 0;color:var(--ink-2)}
+
+/* takeaways */
+.takeaways{list-style:none;counter-reset:t;padding:0;margin:0;display:grid;gap:18px}
+.takeaways li{counter-increment:t;position:relative;padding-left:52px}
+.takeaways li::before{content:counter(t,decimal-leading-zero);position:absolute;left:0;top:2px;
+  font-family:var(--serif);font-size:1.02rem;font-weight:700;color:var(--accent);
+  border:1px solid var(--rule);border-radius:8px;width:36px;height:32px;display:grid;place-items:center;background:var(--white)}
+.takeaways h3{font-size:1.05rem;font-family:var(--sans);font-weight:700;margin:0 0 3px;letter-spacing:0}
+.takeaways p{margin:0;color:var(--ink-2);font-size:.98rem}
+
+/* chapters */
+.chapters{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.chapters li{border-bottom:1px solid var(--rule)}
+.chapters a{display:flex;gap:18px;align-items:baseline;padding:13px 6px;text-decoration:none;color:var(--ink);transition:.14s}
+.chapters a:hover{background:var(--paper-2);color:var(--accent-deep);padding-left:12px}
+.chapters time{font-variant-numeric:tabular-nums;font-size:.86rem;font-weight:600;color:var(--accent);flex:none;min-width:52px}
+
+/* quotes */
+.quotes{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.pq{background:var(--white);border:1px solid var(--rule);border-left:3px solid var(--accent);
+  border-radius:10px;padding:24px 26px;margin:0;box-shadow:var(--shadow)}
+.pq blockquote{margin:0;font-family:var(--serif);font-size:1.14rem;line-height:1.42;color:var(--ink)}
+.pq figcaption{margin-top:14px;font-size:.8rem;color:var(--ink-3);letter-spacing:.02em}
+
+/* infographics */
+figure.infographic{margin:28px 0;border-radius:14px;overflow:hidden;border:1px solid var(--rule);
+  box-shadow:var(--shadow);background:var(--white)}
+figure.infographic img{width:100%;display:block}
+figure.infographic figcaption{padding:12px 20px;font-size:.8rem;color:var(--ink-3);
+  background:var(--paper-2);border-top:1px solid var(--rule)}
+figure.infographic.wide{margin:36px 0}
+.tline + figure.infographic, h3 + figure.infographic{margin-top:14px}
+figure.infographic.hero-visual{margin:0 0 8px;border-radius:16px}
+
+/* legacy divider */
+.legacy-divider{margin:56px 0;text-align:center}
+.legacy-divider img{border-radius:16px;box-shadow:var(--shadow);border:1px solid var(--rule)}
+
+/* guest */
+.guest{background:var(--paper-2);border-radius:16px;padding:34px;border:1px solid var(--rule)}
+.guest-head{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-bottom:20px}
+.avatar{width:96px;height:96px;border-radius:50%;flex:none;object-fit:cover;border:3px solid var(--white);
+  box-shadow:var(--shadow);background:var(--paper-3)}
+.guest-head h2{margin:0 0 4px;font-size:1.55rem}
+.guest-head .role{color:var(--ink-2);font-size:.95rem;margin:0}
+.creds{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:9px}
+.creds li{position:relative;padding-left:22px;font-size:.96rem;color:var(--ink-2)}
+.creds li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.linkrow{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+
+/* media kit */
+.kit{border:1px dashed var(--accent);border-radius:14px;padding:26px 28px;background:var(--white)}
+.kit h3{font-size:1.12rem;margin-bottom:.3em}
+.kit p{color:var(--ink-2);font-size:.96rem}
+.copybox{position:relative;margin-top:14px}
+.copybox textarea{width:100%;min-height:96px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:.78rem;line-height:1.55;padding:14px 14px;border:1px solid var(--rule);border-radius:9px;
+  background:var(--paper-2);color:var(--ink-2);resize:vertical}
+.copybtn{margin-top:8px;font-size:.8rem;padding:7px 14px;border-radius:99px;border:1px solid var(--rule);
+  background:var(--white);cursor:pointer;font-weight:600;color:var(--ink)}
+.copybtn:hover{border-color:var(--accent);color:var(--accent-deep)}
+
+/* resources */
+.res{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.res h3{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-family:var(--sans);font-weight:700}
+.res ul{list-style:none;padding:0;margin:0;display:grid;gap:9px;font-size:.95rem}
+.res li{color:var(--ink-2)}
+
+/* faq */
+.faq{border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule)}
+.faq summary{cursor:pointer;padding:17px 34px 17px 2px;font-weight:600;font-size:1.02rem;
+  list-style:none;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:15px;font-size:1.4rem;color:var(--accent);font-weight:400}
+.faq details[open] summary::after{content:"\2013"}
+.faq details > div{padding:0 34px 20px 2px;color:var(--ink-2);font-size:.99rem}
+.faq details > div > p:first-child{margin-top:0}
+
+/* transcript */
+.transcript{background:var(--white);border:1px solid var(--rule);border-radius:14px}
+.transcript > summary{cursor:pointer;padding:22px 26px;font-family:var(--serif);font-size:1.25rem;
+  font-weight:600;list-style:none;position:relative}
+.transcript > summary::-webkit-details-marker{display:none}
+.transcript > summary::after{content:"Show \25BE";position:absolute;right:26px;top:27px;font-family:var(--sans);
+  font-size:.8rem;font-weight:600;color:var(--accent);letter-spacing:.04em}
+.transcript[open] > summary::after{content:"Hide \25B4"}
+.transcript > summary small{display:block;font-family:var(--sans);font-size:.83rem;font-weight:400;
+  color:var(--ink-3);margin-top:4px;max-width:52ch}
+.tbody{padding:6px 26px 30px;border-top:1px solid var(--rule)}
+.tbody h3{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);
+  font-family:var(--sans);font-weight:700;margin:32px 0 12px;padding-top:14px;border-top:1px solid var(--paper-3)}
+.tbody h3:first-child{border-top:0;padding-top:0;margin-top:20px}
+.tline{display:grid;grid-template-columns:58px 1fr;gap:14px;margin:0 0 15px;align-items:baseline}
+.tline .ts{font-variant-numeric:tabular-nums;font-size:.78rem;color:var(--ink-3);text-decoration:none;padding-top:.28em}
+.tline .ts:hover{color:var(--accent)}
+.tline p{margin:0;font-size:.98rem;color:var(--ink-2)}
+.tline .spk{font-weight:700;color:var(--ink)}
+@media(max-width:560px){.tline{grid-template-columns:1fr;gap:2px}.tline .ts{padding-top:0}}
+
+/* related */
+.cards{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--white);border:1px solid var(--rule);border-radius:12px;padding:22px;
+  text-decoration:none;color:var(--ink);display:block;transition:.16s;box-shadow:var(--shadow)}
+.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.card .k{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.card h3{font-size:1.06rem;margin:8px 0 6px}
+.card p{margin:0;font-size:.9rem;color:var(--ink-2)}
+
+/* cta */
+.cta{background:var(--ink);color:#fff;border-radius:16px;padding:40px 38px;text-align:center}
+.cta h2{color:#fff;font-size:1.7rem}
+.cta p{color:#CFC5B9;max-width:46ch;margin:0 auto 24px}
+.cta form{display:flex;gap:10px;max-width:430px;margin:0 auto;flex-wrap:wrap}
+.cta input{flex:1 1 210px;padding:13px 16px;border-radius:99px;border:1px solid #3A322B;
+  background:#241E19;color:#fff;font-size:.95rem;font-family:var(--sans)}
+.cta input::placeholder{color:#8A7F73}
+.cta button{padding:13px 26px;border-radius:99px;border:0;background:var(--accent);color:#fff;
+  font-weight:700;font-size:.92rem;cursor:pointer;font-family:var(--sans)}
+.cta button:hover{background:#D97A22}
+
+/* cite */
+.cite{font-size:.88rem;color:var(--ink-2);background:var(--paper-2);border-radius:12px;
+  padding:22px 24px;border:1px solid var(--rule)}
+.cite code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82rem;
+  background:var(--white);padding:2px 6px;border-radius:4px;border:1px solid var(--rule)}
+
+footer.site-foot{border-top:1px solid var(--rule);margin-top:40px;padding:36px 0 60px;
+  font-size:.86rem;color:var(--ink-3)}
+footer.site-foot a{color:var(--ink-2)}
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,14px);background:var(--ink);color:#fff;
+  padding:11px 20px;border-radius:99px;font-size:.85rem;opacity:0;pointer-events:none;transition:.22s;z-index:60}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+@media print{.site,.cta,.player,.listen,.kit,.toast{display:none}.transcript[open] .tbody{display:block}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="https://www.kavleenkaur.com/"><span class="dot" aria-hidden="true"></span>The Learning Circle</a>
+    <nav aria-label="Primary">
+      <a href="https://www.kavleenkaur.com/#podcast">Episodes</a>
+      <a href="#guest">Guest</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#chapters">Chapters</a>
+      <a href="#transcript">Transcript</a>
+      <a href="https://www.kavleenkaur.com/#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="https://www.kavleenkaur.com/">Home</a></li>
+      <li><a href="https://www.kavleenkaur.com/#podcast">The Learning Circle</a></li>
+      <li aria-current="page">Dr. Ashok K. Pandey</li>
+    </ol>
+  </nav>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<article>
+<div class="wrap hero">
+  <p class="eyebrow">The Learning Circle &middot; School Leadership</p>
+  <h1>India&rsquo;s Schools Have a Mentoring Problem, Not a Training Problem</h1>
+  <p class="dek">Dr.&nbsp;Ashok K.&nbsp;Pandey has spent 37 years running schools and shaping teacher policy through CBSE and NCTE. His diagnosis is uncomfortable: India keeps training teachers and keeps producing <em>accidental principals</em>. What&rsquo;s missing isn&rsquo;t another workshop &mdash; it&rsquo;s a mentor.</p>
+
+  <div class="factbar">
+    <span><b>Guest</b> &nbsp;Dr. Ashok K. Pandey</span><span class="sep" aria-hidden="true">|</span>
+    <span><b>Host</b> &nbsp;Kavleen Kaur</span><span class="sep" aria-hidden="true">|</span>
+    <span><b>Published</b> &nbsp;<time datetime="2026-07-16">16 July 2026</time></span><span class="sep" aria-hidden="true">|</span>
+    <span><b>Length</b> &nbsp;46 min</span><span class="sep" aria-hidden="true">|</span>
+    <span><b>Transcript</b> &nbsp;<a href="#transcript">Full &amp; free</a></span>
+  </div>
+
+  <div class="player" id="player">
+    <button class="playbtn" type="button" id="playbtn"
+      aria-label="Play the episode: India's Schools Have a Mentoring Problem, Not a Training Problem">
+      <img src="https://i.ytimg.com/vi/BXdwsC-6yXg/maxresdefault.jpg"
+           alt="Dr. Ashok K. Pandey speaking on The Learning Circle, beside the words: Trained to manage. Never mentored to lead."
+           width="1280" height="720" fetchpriority="high">
+      <span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+      <span class="lbl">Watch on YouTube &middot; 46:24</span>
+    </button>
+  </div>
+  <noscript>
+    <p class="caption"><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg">Watch this episode on YouTube</a></p>
+  </noscript>
+  <p class="caption">The video loads only when you press play &mdash; no third-party cookies are set before that.</p>
+
+  <div class="listen">
+    <a class="btn primary" href="https://www.youtube.com/watch?v=BXdwsC-6yXg">Watch on YouTube</a>
+    <a class="btn" href="https://podcasts.apple.com/in/podcast/the-learning-circle/id1737353999">Apple Podcasts</a>
+    <a class="btn" href="#transcript">Read the transcript</a>
+    <button class="btn" type="button" data-copy="https://www.kavleenkaur.com/the-learning-circle-ashok-pandey">Copy link</button>
+  </div>
+</div>
+
+<hr class="rule">
+
+<!-- ============ TL;DR ============ -->
+<section aria-labelledby="short">
+  <div class="wrap prose">
+    <div class="tldr">
+      <h2 id="short">The short version</h2>
+      <p>India does not lack teacher training. It runs pre-service programmes, in-service programmes and a new four-year integrated degree. What it lacks is the thing every other profession takes for granted: a senior person who holds your hand through the first years. Dr.&nbsp;Pandey calls the gap a deficiency of <strong>&ldquo;Vitamin LD&rdquo; &mdash; leadership development</strong>.</p>
+      <figure class="infographic">
+        <img src="/images/ashok-pandey-vitamin-ld.jpg" width="1600" height="866" loading="lazy"
+          alt="Three cracked pillars labelled Administration, Syllabus Completion and Timetabling stand on fracturing foundations marked Accidental Leadership and Compliance Culture, with a warning beam reading: Missing Vitamin LD (Intentional Culture Design).">
+        <figcaption>The structure holds &mdash; barely. Administration, syllabus and timetabling stay upright while the foundation beneath them, intentional leadership development, is the part nobody budgeted for.</figcaption>
+      </figure>
+      <dl>
+        <dt>What is the difference between training a teacher and mentoring one?</dt>
+        <dd>Training tells a teacher <em>how to integrate AI</em>. Mentoring shows her how to use AI to build critical thinking in children &mdash; then hands her a workshop to run, a paper to present, a responsibility to own. Training transfers information; mentoring transfers trust.</dd>
+
+        <dt>What is the &ldquo;accidental principal&rdquo; problem?</dt>
+        <dd>In most Indian schools you become a principal by virtue of years served, not by preparation. The result is a leader equipped for administration but never mentored to design learning or shape culture.</dd>
+
+        <dt>What should a school do about &ldquo;we train teachers and they leave&rdquo;?</dt>
+        <dd>Invert the maths. Cost out an untrained teacher who stays ten years against a trained teacher who leaves after two. A teacher who leaves well-formed becomes your ambassador &mdash; and that is marketing budget you no longer spend.</dd>
+      </dl>
+      <figure class="infographic">
+        <img src="/images/ashok-pandey-roi-reframe.jpg" width="1600" height="875" loading="lazy"
+          alt="Two boxes compared: the cost of investing in a teacher who leaves after two years is shown as less than the cost of not investing in an inefficient teacher who stays for ten years.">
+        <figcaption>The comparison most boards never run. The teacher who leaves takes your standards with her and becomes an ambassador; the one who stays untrained costs you every year she remains.</figcaption>
+      </figure>
+      <dl>
+        <dt>Is AI a threat to teachers?</dt>
+        <dd>Dr.&nbsp;Pandey argues AI is not a disruptor but an <em>exposer</em>: it reveals how narrow our definition of learning has been. He asks teachers to treat AI as a colleague and as the <strong>fourth teacher</strong>, after the classroom teacher, the parent and the peer group.</dd>
+      </dl>
+      <figure class="infographic">
+        <img src="/images/ashok-pandey-four-teachers-sketch.jpg" width="1600" height="1152" loading="lazy"
+          alt="Line illustration of a child at the centre, surrounded by a teacher holding a book, a classmate, a parent holding a house, and a friendly robot representing AI.">
+        <figcaption>Three teachers were always in the room. The fourth just arrived.</figcaption>
+      </figure>
+    </div>
+    <p style="margin-top:20px;font-size:.95rem;color:var(--ink-2)">Kavleen&rsquo;s own workshops for teaching staff are built around the same gap Dr.&nbsp;Pandey names here &mdash; not another tool demo, but structured practice in using AI as a thinking partner before it becomes an execution shortcut. Schools that have run the session, including DPS Vasant Vihar and Indraprastha International School, Dwarka, report teachers leaving able to use the method immediately, not just aware it exists. More on the framework: <a href="https://www.kavleenkaur.com/impacts">IMPACTS</a>.</p>
+  </div>
+</section>
+
+<!-- ============ TAKEAWAYS ============ -->
+<section aria-labelledby="tk">
+  <div class="wrap prose">
+    <h2 id="tk" class="secttl">Nine things worth taking away</h2>
+    <ol class="takeaways">
+      <li><h3>AI isn&rsquo;t the disruption. It&rsquo;s the diagnostic.</h3><p>If a task can be outsourced to a machine, it was never a good measure of learning. The question Dr.&nbsp;Pandey puts to his fraternity: are we measuring judgment, wisdom, creativity and values &mdash; or recall?</p>
+        <figure class="infographic">
+          <img src="/images/ashok-pandey-ai-mirror.jpg" width="1600" height="873" loading="lazy"
+            alt="Blocks labelled Data Production and Rote Recall pass through a mirror and shatter on the other side, under the heading: Artificial Intelligence is Not a Disruptor. It is a Mirror.">
+          <figcaption>What breaks in the mirror is not teaching. It is a century-old definition of what counted as learning.</figcaption>
+        </figure>
+      </li>
+      <li><h3>Redesign pedagogy first, assessment second.</h3><p>Most reform starts with the exam. He argues you cannot fix assessment until you have decided what the classroom dialogue is actually for.</p>
+        <figure class="infographic">
+          <img src="/images/ashok-pandey-redesigning-pedagogy.jpg" width="1600" height="870" loading="lazy"
+            alt="The Industrial Definition of learning — rote memorisation, data production and recall, compliance-driven, teacher as sole repository — set against the Age of Intelligence Definition: applied judgment, wisdom and creativity, emotional stability, student as active meaning-maker.">
+          <figcaption>Two definitions of the same word. New assessments bolted onto the left-hand column change nothing.</figcaption>
+        </figure>
+      </li>
+      <li><h3>Student agency is latent heat.</h3><p>A physics student&rsquo;s metaphor: agency is already inside the child, hidden and unexpressed. The facilitator&rsquo;s job is to release it, not to install it.</p>
+        <figure class="infographic">
+          <img src="/images/ashok-pandey-student-agency-card.jpg" width="1600" height="864" loading="lazy"
+            alt="A card reading: Student Agency — the latent heat hidden within students that facilitators must draw out.">
+        </figure>
+        <figure class="infographic">
+          <img src="/images/ashok-pandey-latent-heat.jpg" width="1600" height="867" loading="lazy"
+            alt="A three-stage diagram: State 1, Dormancy, showing a dark block behind a clean-slate assumption; the Catalyst, teacher facilitation; and State 2, Activation, releasing knowledge, curiosity and agency.">
+          <figcaption>Latent heat changes a substance&rsquo;s state without changing its temperature. The energy was always there; it needed the right conditions to show.</figcaption>
+        </figure>
+      </li>
+      <li><h3>Every classroom is now a flipped classroom.</h3><p>Children arrive having already met the information. The teacher&rsquo;s scarce value has moved from delivering knowledge to curating it &mdash; and to teaching children to <em>hold</em> judgment rather than rush it.</p>
+        <figure class="infographic">
+          <img src="/images/ashok-pandey-wisdom-filter.jpg" width="1600" height="874" loading="lazy"
+            alt="A funnel labelled The Teacher as the Wisdom Filter: raw data, misinformation and heightened emotions pour in; the teacher's facilitation, holding judgment and emotional stability, distils it into meaning-making and wisdom.">
+          <figcaption>&ldquo;If you can&rsquo;t apply your judgment, at least can you <em>hold</em> your judgment?&rdquo; Delay is the skill being taught here.</figcaption>
+        </figure>
+      </li>
+      <li><h3>AI is the fourth teacher &mdash; and your colleague.</h3><p>&ldquo;When you are having a staff meeting with four teachers, keep in mind that your fifth teacher is also sitting there.&rdquo;</p>
+        <figure class="infographic">
+          <img src="/images/ashok-pandey-four-teachers.jpg" width="1600" height="866" loading="lazy"
+            alt="Concentric orbits around a student shown as latent heat: the classroom teacher as curator of meaning, then parents and peers, with AI orbiting as the always-on colleague.">
+          <figcaption>The same four figures as the sketch above, drawn as a system &mdash; and the reason he wants AI counted in the staff meeting, not argued about outside it.</figcaption>
+        </figure>
+      </li>
+      <li><h3>India&rsquo;s deficiency is Vitamin LD.</h3><p>The diagnosis evolved: first Vitamin T (teachers), then Vitamin TL (teacher leadership), now Vitamin LD &mdash; leadership development. The cracked-foundation diagram at the top of this page is the whole argument in one image.</p></li>
+      <li><h3>Onboarding is not a luxury. It is the sprouting period.</h3><p>Two to three months paid simply to observe: corridors, classrooms, playground, library. &ldquo;It is like putting a seed in for three months &mdash; then it will sprout.&rdquo;</p></li>
+      <li><h3>Compliance can become an inner drive &mdash; if the culture is built for it.</h3><p>Which is why he calls principals not administrators but <em>drivers of learning and culture</em>. The practical test is whether your development programme ever hands someone real responsibility.</p>
+        <figure class="infographic">
+          <img src="/images/ashok-pandey-pd-vs-mentoring.jpg" width="1600" height="866" loading="lazy"
+            alt="Traditional PD — compliance-driven and institutional, focused on information and mandated completion metrics, exemplified by a mandatory software workshop — compared with Intentional Mentoring: human-driven and relational, focused on higher purpose, exemplified by sponsoring a young teacher to present a paper or lead a project.">
+          <figcaption>The difference is not the content of the session. It is what happens the week after it.</figcaption>
+        </figure>
+      </li>
+      <li><h3>Teaching sits in the safe zone of the automation charts.</h3><p>He cites the World Economic Forum&rsquo;s <em>Future of Jobs</em> work: teaching, counselling, advising and mentoring carry low replacement risk. His warning: don&rsquo;t take that for granted &mdash; earn it by preserving the human part of the job.</p>
+        <figure class="infographic wide">
+          <img src="/images/ashok-pandey-un-automatable-legacy.jpg" width="1600" height="865" loading="lazy"
+            alt="Quote card headed The Un-Automatable Legacy: History will not judge your school by how much technology you implemented, but by whether you preserved the humanity of your children. Teaching and mentoring face only a 14% chance of automation, because algorithms cannot offer a shoulder to lean on.">
+        </figure>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<hr class="rule">
+
+<hr class="rule">
+
+<!-- ============ ROADMAP ============ -->
+<section id="roadmap" aria-labelledby="rm">
+  <div class="wrap prose">
+    <h2 id="rm" class="secttl">If you are a teacher who wants to lead</h2>
+    <p class="lede">The most practical stretch of the episode. Asked what a teacher should actually <em>do</em> to move toward leadership in three to five years, Dr.&nbsp;Pandey gave five moves &mdash; none of which require permission from anyone.</p>
+    <figure class="infographic">
+      <img src="/images/ashok-pandey-rockstar-roadmap.jpg" width="1600" height="868" loading="lazy"
+        alt="The Rockstar Teacher Roadmap, a five-point radar chart: 1 Excel at ONE Thing — be the absolute best at handwriting, sports, communication or empathy; 2 Emulate the Best — learn from the masters in your staff room; 3 Take Initiative — raise your hand for the conference nobody else wants to attend; 4 Network Relentlessly — build collectives across institutions; 5 Find a Mentor — seek guidance inside and outside your school.">
+      <figcaption>&ldquo;Do not wait for accidental promotion.&rdquo; The five moves, and the case for starting them in your first years rather than your tenth.</figcaption>
+    </figure>
+    <p>On the first point he is blunt about why it matters: children will not love a mediocre teacher, but they will follow one who is exceptional at a single visible thing. His example is a colleague whose only differentiator was the best handwriting on campus &mdash; students queued for his notes. <a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1687s">Hear the full roadmap from 28:07</a>.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ CHAPTERS ============ -->
+<section id="chapters" aria-labelledby="ch">
+  <div class="wrap prose">
+    <h2 id="ch" class="secttl">Chapters</h2>
+    <p class="lede">Every timestamp opens the episode at that moment.</p>
+    <ol class="chapters">
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=0s"><time datetime="PT0S">00:00</time><span>&ldquo;AI is only exposing our fault lines&rdquo;</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=24s"><time datetime="PT24S">00:24</time><span>Introduction</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=53s"><time datetime="PT53S">00:53</time><span>If AI can do it, is it really learning?</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=222s"><time datetime="PT3M42S">03:42</time><span>Flipped classrooms and student agency as latent heat</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=383s"><time datetime="PT6M23S">06:23</time><span>Misinformation and the teacher&rsquo;s evolving role</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=475s"><time datetime="PT7M55S">07:55</time><span>AI as the fourth teacher</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=591s"><time datetime="PT9M51S">09:51</time><span>School leaders are shaping future citizens</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=765s"><time datetime="PT12M45S">12:45</time><span>Pre-service training, ITEP, and the career perception problem</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1001s"><time datetime="PT16M41S">16:41</time><span>India&rsquo;s Vitamin LD deficiency &mdash; from training to mentoring</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1133s"><time datetime="PT18M53S">18:53</time><span>Teaching is a mission, not a profession</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1350s"><time datetime="PT22M30S">22:30</time><span>Why school leaders resist change</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1371s"><time datetime="PT22M51S">22:51</time><span>The ROI reframe: the real cost of not investing in teachers</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1530s"><time datetime="PT25M30S">25:30</time><span>Professional development vs mentoring &mdash; the practical difference</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1638s"><time datetime="PT27M18S">27:18</time><span>The accidental principal problem</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1687s"><time datetime="PT28M7S">28:07</time><span>Five-step roadmap for aspiring school leaders</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2044s"><time datetime="PT34M4S">34:04</time><span>The Chanakya principle &mdash; spotting hidden potential</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2089s"><time datetime="PT34M49S">34:49</time><span>U40, the National Mission for Mentoring &amp; self-development resources</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2272s"><time datetime="PT37M52S">37:52</time><span>Rapid fire round</span></a></li>
+      <li><a href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2666s"><time datetime="PT44M26S">44:26</time><span>Final message: preserving humanity in leadership</span></a></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ QUOTES ============ -->
+<section aria-labelledby="qq">
+  <div class="wrap">
+    <div class="prose"><h2 id="qq" class="secttl">In his words</h2></div>
+    <div class="quotes">
+      <figure class="pq"><blockquote>&ldquo;AI is not a disruptor in the sense we are taking it. It is only exposing our fault lines &mdash; our narrow and shallow definitions of learning.&rdquo;</blockquote><figcaption>Dr. Ashok K. Pandey &middot; 00:00</figcaption></figure>
+      <figure class="pq"><blockquote>&ldquo;You become a principal by virtue of the number of years you have served. At best you become an accidental principal, without having been mentored to be a principal.&rdquo;</blockquote><figcaption>Dr. Ashok K. Pandey &middot; 27:32</figcaption></figure>
+      <figure class="pq"><blockquote>&ldquo;Professional development will always be compliance-driven and information-driven. Mentoring will always be human-driven.&rdquo;</blockquote><figcaption>Dr. Ashok K. Pandey &middot; 25:44</figcaption></figure>
+      <figure class="pq"><blockquote>&ldquo;The future will judge you by whether your leadership was able to preserve humanity &mdash; not by how much technology you implemented.&rdquo;</blockquote><figcaption>Dr. Ashok K. Pandey &middot; 44:26</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ GUEST ============ -->
+<section id="guest" aria-labelledby="gg">
+  <div class="wrap prose">
+    <div class="guest">
+      <div class="guest-head">
+        <img class="avatar" src="https://i.ytimg.com/vi/BXdwsC-6yXg/hqdefault.jpg" alt="Portrait of Dr. Ashok K. Pandey" width="96" height="96" loading="lazy">
+        <div>
+          <h2 id="gg">Dr. Ashok K. Pandey</h2>
+          <p class="role">Director, Ahlcon Group of Schools, New Delhi &middot; Mentor, U40 initiative at GEMS Education</p>
+        </div>
+      </div>
+      <p>A postgraduate in physics and education from Allahabad and Annamalai universities, Dr.&nbsp;Pandey has spent over three decades in K&ndash;12 education &mdash; at Mayo College Ajmer, Delhi Public School Jammu, the Indian Embassy School in Saudi Arabia, and for over two decades at the Ahlcon schools in Delhi. He writes and speaks widely on teacher development, school leadership and education policy.</p>
+      <ul class="creds">
+        <li>Director, Ahlcon Group of Schools, New Delhi (2019&ndash;2022); Principal, Ahlcon International School (2003&ndash;2019)</li>
+        <li>Former Chairperson, National Progressive Schools&rsquo; Conference (NPSC), a body of 170 schools across nine states</li>
+        <li>Member, Governing Body, National Council for Teacher Education (NCTE), New Delhi</li>
+        <li>Member, NEP Advisory Board, Cambridge, South Asia and India</li>
+        <li>Member, Governing Body, GEMS Education India &middot; Global Peace Fellow, Global Peace Foundation, USA</li>
+        <li>National Teacher Award, 2012 &middot; <em>Education World</em> Extraordinary Leadership Award, 2021 &middot; Forbes India Top 100 People Managers, 2020</li>
+        <li>Author, <em>Igniting a Billion Lamps</em> &mdash; and the subject of an IIM Ahmedabad case study on the professional development programme he built at Ahlcon International School (2006&ndash;2016)</li>
+      </ul>
+      <p style="margin-top:14px;font-size:.82rem;color:var(--ink-3)">Credentials verified against Dr. Pandey&rsquo;s own site, <a href="https://www.ashokpandey.net/bio">ashokpandey.net/bio</a>, as of August 2026 &mdash; re-check before publishing, as titles change.</p>
+      <div class="linkrow">
+        <a class="btn" href="https://www.ashokpandey.net/">ashokpandey.net</a>
+        <a class="btn" href="https://in.linkedin.com/in/ashokkp">LinkedIn</a>
+        <a class="btn" href="https://globalcitizenshipfoundation.org/profile/ashok-pandey">Expert profile</a>
+      </div>
+    </div>
+
+    <div class="guest-head" style="margin-top:28px;padding-top:24px;border-top:1px solid var(--rule)">
+      <img class="avatar" style="width:64px;height:64px" src="https://www.kavleenkaur.com/kavleen-kaur-bhatia.jpg" alt="Portrait of Kavleen Kaur" width="64" height="64" loading="lazy">
+      <div>
+        <p style="margin:0;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700">Hosted by</p>
+        <h3 style="margin:2px 0 2px;font-size:1.15rem">Kavleen Kaur</h3>
+        <p class="role" style="margin:0">Founder, Credo Learnings &middot; <a href="https://www.linkedin.com/in/kavleen-kaur-7a29198/">LinkedIn</a> &middot; <a href="https://www.kavleenkaur.com/#contact">Suggest a guest</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEDIA KIT / SHARE ============ -->
+<section aria-labelledby="kit">
+  <div class="wrap prose">
+    <div class="kit">
+      <h3 id="kit">For Dr. Pandey &mdash; and anyone who wants to feature this conversation</h3>
+      <p>Everything you need to put this episode on your own site, press page or portfolio. No permission required; a link back is all we ask.</p>
+
+      <p style="margin-top:20px;font-weight:600;font-size:.9rem">Embed the player and a link back</p>
+      <div class="copybox">
+        <label class="sr-only" for="embed1" style="position:absolute;left:-9999px">Embed code</label>
+        <textarea id="embed1" readonly rows="5">&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BXdwsC-6yXg" title="India's Schools Have a Mentoring Problem, Not a Training Problem — Dr. Ashok K. Pandey" frameborder="0" allowfullscreen loading="lazy"&gt;&lt;/iframe&gt;
+&lt;p&gt;Dr. Ashok K. Pandey on &lt;a href="https://www.kavleenkaur.com/the-learning-circle-ashok-pandey"&gt;The Learning Circle&lt;/a&gt; — full transcript, chapters and show notes.&lt;/p&gt;</textarea>
+        <button class="copybtn" type="button" data-copy-from="embed1">Copy embed code</button>
+      </div>
+
+      <p style="margin-top:22px;font-weight:600;font-size:.9rem">A one-line description you can reuse</p>
+      <div class="copybox">
+        <label for="blurb1" style="position:absolute;left:-9999px">Description</label>
+        <textarea id="blurb1" readonly rows="3">Dr. Ashok K. Pandey on The Learning Circle: why India's schools have a mentoring problem rather than a training problem, the "accidental principal", the ROI case for investing in teachers, and a five-step roadmap for teachers who want to lead.</textarea>
+        <button class="copybtn" type="button" data-copy-from="blurb1">Copy description</button>
+      </div>
+
+      <div class="linkrow">
+        <button class="btn" type="button" data-copy="https://www.kavleenkaur.com/the-learning-circle-ashok-pandey">Copy page link</button>
+        <a class="btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.kavleenkaur.com/the-learning-circle-ashok-pandey">Share on LinkedIn</a>
+        <a class="btn" href="https://i.ytimg.com/vi/BXdwsC-6yXg/maxresdefault.jpg">Download episode artwork</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ RESOURCES ============ -->
+<section aria-labelledby="rr">
+  <div class="wrap prose">
+    <h2 id="rr" class="secttl">Mentioned in this episode</h2>
+    <div class="res">
+      <div>
+        <h3>Policy &amp; programmes</h3>
+        <ul>
+          <li><a href="https://www.education.gov.in/nep/about-nep">National Education Policy 2020</a></li>
+          <li><a href="https://ncte.gov.in/">ITEP &mdash; the four-year Integrated Teacher Education Programme</a></li>
+          <li><a href="https://ncte.gov.in/">National Mission for Mentoring, NCTE</a> &mdash; teachers can enrol as mentees</li>
+          <li>The U40 initiative, GEMS Education &mdash; mentoring school leaders under 40</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Where teachers can learn free</h3>
+        <ul>
+          <li><a href="https://swayam.gov.in/">SWAYAM</a></li>
+          <li><a href="https://diksha.gov.in/">DIKSHA</a></li>
+          <li>NISHTHA &mdash; national in-service teacher training</li>
+          <li>Open courses from IIT Bombay and IIT Madras</li>
+          <li>Coursera, edX and Udemy</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ideas, people and books</h3>
+        <ul>
+          <li><em>Igniting a Billion Lamps</em> &mdash; Ashok K. Pandey</li>
+          <li>Aristotle on education as human flourishing &mdash; cognitive and character</li>
+          <li>Chanakya and Chandragupta Maurya &mdash; spotting potential in an unknown child</li>
+          <li>Hanuman and Jambavan &mdash; the mentor who reminds you of your own power</li>
+          <li>Dr. Shayama Chona and Col. Prem Saran Satsangi &mdash; the mentors he names</li>
+          <li><a href="https://www.weforum.org/publications/">World Economic Forum, <em>Future of Jobs</em></a> &mdash; on automation risk by occupation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section aria-labelledby="ff">
+  <div class="wrap prose">
+    <h2 id="ff" class="secttl">Questions this episode answers</h2>
+    <div class="faq">
+      <details>
+        <summary>What does &ldquo;India has a mentoring problem, not a training problem&rdquo; mean?</summary>
+        <div><p>India runs a great deal of teacher training &mdash; pre-service, in-service, and now the four-year ITEP degree. What it does not run at scale is mentoring: a senior practitioner who holds a new teacher&rsquo;s hand with compassion, empathy and non-judgmental intent through the first years, and who keeps doing it as that teacher moves toward leadership. Training transfers content. Mentoring transfers judgment.</p></div>
+      </details>
+      <details>
+        <summary>What is &ldquo;Vitamin LD&rdquo;?</summary>
+        <div><p>Dr.&nbsp;Pandey&rsquo;s shorthand for the missing nutrient in Indian schooling. He first wrote that India suffered a deficiency of Vitamin&nbsp;T &mdash; teachers. He revised it to Vitamin&nbsp;TL &mdash; teacher leadership. He now calls it <strong>Vitamin&nbsp;LD: leadership development</strong>.</p></div>
+      </details>
+      <details>
+        <summary>What is the practical difference between professional development and mentoring?</summary>
+        <div><p>His example: teaching a staff <em>how to integrate AI</em> is professional development. Showing a teacher how to use AI to build critical thinking in children &mdash; demonstrating it, then giving her a workshop to run, a paper to present at a conference, a chance to author something, sponsorship for a bigger responsibility &mdash; is mentoring. &ldquo;Start trusting her with responsibilities. That is mentoring.&rdquo;</p></div>
+      </details>
+      <details>
+        <summary>What is the &ldquo;accidental principal&rdquo; problem?</summary>
+        <div><p>Where there is no structured leadership development, people become principals by seniority. They are, at best, accidental principals: prepared to run an administration, never mentored to lead a culture, design learning, or build a place where human flourishing happens.</p></div>
+      </details>
+      <details>
+        <summary>How should a school answer &ldquo;what if we invest in teachers and they leave?&rdquo;</summary>
+        <div><p>Three ways, he says. First, do the other sum: what does it cost to <em>not</em> invest and keep that teacher for ten years? Second, a teacher who leaves well-formed becomes your ambassador wherever she goes &mdash; that is marketing you no longer pay for. Third, the children she teaches next are still this country&rsquo;s children. &ldquo;It is not a lose game. It is a win-win situation.&rdquo;</p></div>
+      </details>
+      <details>
+        <summary>What five things should a teacher do to move into school leadership?</summary>
+        <div>
+          <p>From the roadmap at 28:07 &mdash;</p>
+          <ol>
+            <li><strong>Be an excellent teacher, not an ordinary one.</strong> Be visibly excellent in at least one thing; children love a teacher who is exceptional at something.</li>
+            <li><strong>Learn from those worth emulating.</strong> In a staffroom of fifty, find the ones you want to become and ask them how they do it.</li>
+            <li><strong>Raise your hand.</strong> Volunteer for the conference nobody wants, the responsibility everyone stepped back from.</li>
+            <li><strong>Read widely and network across schools.</strong> Ten maths teachers from ten schools meeting monthly, even online, is a professional development programme nobody has to fund.</li>
+            <li><strong>Find a mentor inside your school and one outside it.</strong> Only then will you know what mentoring is capable of.</li>
+          </ol>
+        </div>
+      </details>
+      <details>
+        <summary>What does &ldquo;AI as the fourth teacher&rdquo; mean?</summary>
+        <div>
+          <p>A child already has three teachers: the one in the classroom, the parent at home, and the peer group. AI becomes the fourth &mdash; and because it is the classroom teacher&rsquo;s colleague, it belongs in the staff meeting too. &ldquo;Your fifth teacher is also sitting there, not visible in the physical sense but visible in every other sense.&rdquo;</p>
+        </div>
+      </details>
+      <details>
+        <summary>What is ITEP, and why does it matter here?</summary>
+        <div><p>The Integrated Teacher Education Programme, introduced after NEP&nbsp;2020: a four-year course a student can choose straight after Class&nbsp;12, the way one chooses engineering or law. Dr.&nbsp;Pandey welcomes it &mdash; but points out where the parallel breaks. An engineer gets two or three years of internship. A new teacher walks into a classroom on day one, having not seen one since her own schooling.</p></div>
+      </details>
+      <details>
+        <summary>Where can an individual teacher find mentoring without waiting for their school?</summary>
+        <div><p>He points to the National Mission for Mentoring on the NCTE portal, where teachers can enrol as mentees and attend expert-led sessions several times a week; to SWAYAM, DIKSHA, NISHTHA and open courses from IITs Bombay and Madras; and &mdash; only half in jest &mdash; to AI itself: &ldquo;You can share your career aspirations and create a plan together.&rdquo;</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ TRANSCRIPT ============ -->
+<section id="transcript" aria-labelledby="tt">
+  <div class="wrap prose">
+    <h2 id="tt" class="secttl">Full transcript</h2>
+    <details class="transcript">
+      <summary>Read the full conversation
+        <small>46 minutes, lightly edited for readability. Timestamps link to the video.</small>
+      </summary>
+      <div class="tbody">
+<h3>Cold open</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=0s">00:00</a><p><span class="spk">Ashok K. Pandey:</span> AI is not a disruptor in the sense that we are taking it. It is only exposing our fault lines &mdash; our narrow and shallow definitions of learning. What we have been measuring is now under scrutiny.</p></div>
+
+<h3>Introduction</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=24s">00:24</a><p><span class="spk">Kavleen Kaur:</span> India is building more schools than ever. But building great school leaders is a much harder challenge &mdash; one that could shape the future of education in our country. Ashok Pandey has spent decades leading schools and mentoring young leaders through the U40 initiative at GEMS Education. He&rsquo;s now focused on the question that will define the next decade of Indian education: who will lead our schools tomorrow? Welcome to The Learning Circle.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=50s">00:50</a><p><span class="spk">Ashok K. Pandey:</span> Thank you, Kavleen.</p></div>
+
+<h3>If AI can do it, is it really learning?</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=53s">00:53</a><p><span class="spk">Kavleen Kaur:</span> You have said that if a task can be outsourced to AI, it is not really a measure of learning. On the surface, that looks like a statement about AI. But isn&rsquo;t it actually a statement about what we have all been misunderstanding about learning for years?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=72s">01:12</a><p><span class="spk">Ashok K. Pandey:</span> Absolutely. You are spot on. AI is not a disruptor in the sense we are taking it. It is only exposing our fault lines &mdash; our narrow and shallow definitions of learning. What we have been measuring is now under scrutiny. So my larger question to my fraternity is this: are we measuring judgment? Are we measuring wisdom? Are we measuring creativity? Are we measuring the values and the skills the world needs in order to flourish, and that human beings themselves need in order to flourish? Will that become part of our definition of learning, or will it remain what it is today &mdash; what can be measured in terms of what you produce, what you recall, what you write? That is the age-old definition of learning. So when I say that if everything can be outsourced and everything can be produced through AI, then where is the learning in this whole game?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=132s">02:12</a><p><span class="spk">Kavleen Kaur:</span> You have mentioned a few skills that we should be measuring. Instead of just recall-based questions &mdash; if I run a school, what do you suggest we do differently?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=145s">02:25</a><p><span class="spk">Ashok K. Pandey:</span> We should redesign our assessments altogether to measure what actually drives learning. But redesign the pedagogy first. Redesign the learning first. What is it that we want to teach in the classroom &mdash; and &ldquo;teaching&rdquo; is perhaps not the right word now. What is it we want to have a dialogue about in our classrooms? It is basically a dialogic process we are talking about. Is it going to continue to be teacher-led classrooms, or does it have to be student-led classrooms, with children making meaning out of what we are doing? Or is it just compliance with a syllabus and covering of a syllabus? Is there any element of real-life connect? And of course, since AI is here, how is AI going to augment our efforts in the classroom? Only after that does the question arise of what the redesigned assessment processes are, which will measure these new things. So I would put the redesigning of the pedagogy first, and the redesigning of the assessment second.</p></div>
+
+<h3>Flipped classrooms and student agency as latent heat</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=208s">03:28</a><p><span class="spk">Kavleen Kaur:</span> You said it has to be student-led, because earlier it was teacher-led &mdash; mainly a one-way exchange of information. With AI, that information exchange may happen outside the class.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=224s">03:44</a><p><span class="spk">Ashok K. Pandey:</span> A very nice thing you have pointed out. Some years ago something came into the pedagogical jargon &mdash; the flipped classroom. A very simple definition: you announce in advance that this is what we are going to discuss tomorrow or the day after, children have the learning material, they engage with it, they come back to the classroom, and instead of the teacher leading it, the students lead it. The teacher becomes part of the classroom. One child leads the discussion, somebody interjects, somebody gives a new input &mdash; the whole scenario has been flipped. That was the idea, and it was touted as one of the innovative pedagogies.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=273s">04:33</a><p><span class="spk">Ashok K. Pandey:</span> But look at the times that have changed, and at the speed at which the change has come. Every day we are having a flipped class. The children are all the time engaging with new knowledge &mdash; if not knowledge, then at least information, data. Teachers are no longer the sole repositories of knowledge. So the information is there. But how do you curate it? How do you become a curator of that information so that you shift from information to knowledge to wisdom &mdash; meaning-making, as we call it?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=305s">05:05</a><p><span class="spk">Ashok K. Pandey:</span> When we talk of a student-led class, what we are essentially saying is: do away with the assumption that children do not know anything. They know, and they know a lot. Give them the opportunity to come out with what they know and what they want to say. And that takes us to another thing we have to explore in our classrooms &mdash; student agency. As a student of physics I call agency the latent heat. It is hidden. And we, as facilitators, have to bring that heat, that potential, that capability out. That is what a student-led classroom is, and that will change the whole scenario in the classroom.</p></div>
+
+<h3>Misinformation and the teacher&rsquo;s evolving role</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=360s">06:00</a><p><span class="spk">Kavleen Kaur:</span> Two points from what you said. One is agency as latent heat. But also &mdash; students have a lot of this agency, this heat, this information, and along with it a lot of misinformation today. So isn&rsquo;t it also essential that while we develop their agency, the teacher&rsquo;s role is to prevent or reduce that misinformation?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=385s">06:25</a><p><span class="spk">Ashok K. Pandey:</span> What you have said gives at least one clear reason for teachers to be in the classroom. There is already talk that AI will replace teachers. You have just given one instance; I will give you a few more during our conversation, of why teachers cannot be replaced. This role was always there, but it is more exposed today and more intense today, because the information is coming and the children are not mature enough to apply scrutiny to it &mdash; to its authenticity, to its potential to affect your behaviour, your psyche, your emotions. That is where the larger role of teachers comes in.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=434s">07:14</a><p><span class="spk">Kavleen Kaur:</span> Even the speed at which children consume this information isn&rsquo;t really appropriate. They jump through whole chapters and think they have understood, but the learning may not be deep enough. So instead of just letting students cover the breadth of learning, the teacher takes them into the depths of it.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=458s">07:38</a><p><span class="spk">Ashok K. Pandey:</span> Yes &mdash; and teachers have to acknowledge that in a classroom context we are in an attention economy. Attention is in crisis and the children are not able to cope with it. That is where the ability of the teacher comes in: to tell them how to apply their judgment, and if you can&rsquo;t apply your judgment, at least can you <em>hold</em> your judgment? Can you delay the whole process of arriving at a judgment? Even that will be helpful. The moment we jump to judgments, we play into the hands of heightened emotions. If we delay those judgments, we also allow the emotions to come down. And then our judgments will be much better, because by that time more information will have reached us, and that information may regulate the process of judgment.</p></div>
+
+<h3>AI as the fourth teacher</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=530s">08:50</a><p><span class="spk">Ashok K. Pandey:</span> I have been telling teachers for at least two years: treat AI as your colleague. You should not be afraid of a colleague. AI is the fourth teacher for the students. Why? Because they already have their teacher in the classroom. They have parents as teachers at home. And they have the peer group. These three distinct entities work as teachers in their lives, and AI becomes their fourth teacher &mdash; because it is the colleague of your teacher. When you are having a staff meeting with four teachers, please keep in mind that your fifth teacher is also sitting there, not visible in the physical sense of the term, but visible in every other sense of the term.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=570s">09:30</a><p><span class="spk">Ashok K. Pandey:</span> And we still retain the right and the wisdom to harness the best of AI, and we should develop our own best potential. Therefore the ideal situation we are going to deal with as teachers is the best of AI and the best of the teacher.</p></div>
+
+<h3>School leaders are shaping future citizens</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=591s">09:51</a><p><span class="spk">Kavleen Kaur:</span> You have also said that this transformation from information to knowledge to wisdom needs the guidance of very effective, strong school leaders. School leaders are not just managing a school; they are shaping future citizens, and they are building the next generation of school leaders. So have we now moved into the area of teacher leadership development?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=628s">10:28</a><p><span class="spk">Ashok K. Pandey:</span> That is something very important. First of all, India has been a land of teachers, and teachers have historically been called <em>guru</em>, <em>acharya</em>, <em>upadhyaya</em> &mdash; by various names, which means that the manifestation of an individual into a teacher is not one thing but a variety of things a teacher is supposed to do. Unfortunately, today we talk of a teacher&rsquo;s role only in the terms we have discussed in the last ten or fifteen minutes: you have to teach, you have to prepare them for admissions, for cracking examinations and competitions. That is the overwhelming role we have assumed for ourselves.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=674s">11:14</a><p><span class="spk">Ashok K. Pandey:</span> But as teachers we do not have to talk only about livelihood. We have to talk about life. We have to talk about the flourishing of the human being. Aristotle put it beautifully &mdash; when his students asked him what the purpose of education is, he said the purpose of education is human flourishing. And when they asked him to elaborate, he said human flourishing is a combination of two things: the cognitive flourishing of the human being and the character flourishing of the human being.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=709s">11:49</a><p><span class="spk">Ashok K. Pandey:</span> But in our modern wisdom, for the last hundred years or so &mdash; or a little less, since independence &mdash; we have focused only on the cognitive side. And even there we narrowed it down to rote memorisation, to production, to recall, a little bit of understanding, even less application, and certainly not analysis, synthesis, creativity, innovation or problem-solving in a multi-perspective scenario. Those things have not happened. And character building has gone entirely out of the picture.</p></div>
+
+<h3>Pre-service training, ITEP, and the career perception problem</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=765s">12:45</a><p><span class="spk">Ashok K. Pandey:</span> I have given you that background so that I can clearly set the agenda of teacher development for the future. What are the instruments of teacher development in this country? Pre-service, in-service, and the incidental and accidental development of teachers. I will not talk much about pre-service, because it has not covered itself in a lot of glory &mdash; though I certainly acknowledge the good efforts that have been made. In-service training is happening a great deal, and I appreciate it, because that is the only way we can allow teachers to flourish. They do not come with a very good background of pre-service training.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=786s">13:06</a><p><span class="spk">Ashok K. Pandey:</span> And for that I don&rsquo;t blame only the institutions or the system. I also blame the social perception of the role of the teacher, and of the status of the teacher in society today. We are the country that gave the most exalted position to teachers in our society &mdash; and we have reduced ourselves to a society where being a teacher is not the first, second, third or fourth career choice of our children. See the barrier we have created. Overcoming it is so difficult. So the only hope is this: for whatever reason you joined the profession, can we neutralise that negativity? Can we neutralise that deficient motivation and start on a clean slate, where we can make you a good, a better and the best teacher?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=846s">14:06</a><p><span class="spk">Ashok K. Pandey:</span> I don&rsquo;t want your viewers to get disappointed here. Post NEP&nbsp;2020 the Government of India introduced a new system of pre-service training called ITEP &mdash; the Integrated Teacher Education Programme. It came precisely in light of the facts I have narrated. Just as you choose to become an engineer, a doctor, a lawyer or a fashion designer at the end of Class&nbsp;12, you now have the opportunity to choose to be a teacher at Class&nbsp;12. It is a four-year course, and after it you come to the teaching profession straight away.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=914s">15:14</a><p><span class="spk">Ashok K. Pandey:</span> But the similarity stops there, and the differences emerge. After becoming an engineer you have two or three years of internship, training and exposure. The same thing is not available in the teaching profession. You come with your result, and on the first day, if you are appointed, you have to go into a classroom &mdash; a classroom you have not seen since your own schooling. That is where teacher development comes in. We have to tell them what teaching is about, what learning is about. And one thing they have to learn is that in this profession learning never stops. Teaching is a misnomer. It is only learning, learning and learning. The difference you can make is to learn together, grow together, shine together, reap the benefits of co-learning, and always be a friend to your students.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=970s">16:10</a><p><span class="spk">Ashok K. Pandey:</span> One of the most profound sayings in our wisdom civilisation says exactly this: that the teacher and the student are co-learners. They learn together, they grow together, they shine together, they reap the benefits of learning and knowledge together, and there is no animosity between the two. This is the principle we have to hone in young, aspiring teachers.</p></div>
+
+<h3>India&rsquo;s Vitamin LD deficiency &mdash; from training to mentoring</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1001s">16:41</a><p><span class="spk">Kavleen Kaur:</span> That is very empowering. From what you shared, a couple of things have to happen for this to succeed. One, the teaching profession has to become more sought-after, more respected. And two, teachers don&rsquo;t get an opportunity to do an internship, so they miss the kind of mentoring other professions have. You have said India doesn&rsquo;t have a teacher training problem &mdash; it has a mentoring problem. What value can mentoring add here, and how do we build systems where that becomes possible?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1046s">17:26</a><p><span class="spk">Ashok K. Pandey:</span> Let me put it this way. Some time ago I wrote an article saying that India is suffering from a deficiency of Vitamin&nbsp;T &mdash; T for teachers. Later I modified it and said India is suffering from a deficiency of Vitamin&nbsp;TL &mdash; teacher leadership. And today I say we are suffering from a deficiency of Vitamin&nbsp;LD &mdash; leadership development. That is exactly where you are coming from.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1084s">18:04</a><p><span class="spk">Ashok K. Pandey:</span> Traditionally the basic presumption was that children come to school knowing nothing, and therefore anybody who knows something is capable of telling them everything. That assumption does not stand the test of scrutiny today. We even celebrated it &mdash; we said children are a clean slate and you have the liberty to write anything on it. That had its relevance and meaning in one era. But I don&rsquo;t think children are a clean slate now. Children are a slate full of information and experience. And we have to sift the good from the bad; we have to curate it.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1133s">18:53</a><p><span class="spk">Ashok K. Pandey:</span> Therefore leadership development is very important. And for that, the seniors in the profession, the policy makers &mdash; and not only seniors in teaching, but dedicated people in every other walk of life &mdash; we have to expose our young teachers to them. We have to stretch their experience. We have to make them reflective teachers. They have to ask themselves two or three questions every day. What is the purpose of my being in a school? Am I coming up to the expectations of the learners? What changes am I going to make to meet those expectations? Am I justifying my role here? Those are the reflections we have to start with. And we have to become fully effective teachers &mdash; our productivity has to be at the optimum level.</p></div>
+
+<h3>Teaching is a mission, not a profession</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1191s">19:51</a><p><span class="spk">Ashok K. Pandey:</span> Teaching is more than a profession. It is a mission. And this mission is that you are designing the future of young children. When you are designing the future of young children, you are also designing the future of communities, of societies, of nations, of humanity. Therefore your responsibility is much greater than that of anyone in any other profession. You can produce the best product in a manufacturing company &mdash; but here you are dealing with human beings. I think you need more capability, more agency, more potential and more sensitivity in the teaching profession than anywhere else.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1240s">20:40</a><p><span class="spk">Ashok K. Pandey:</span> And this lesson will not come from any pre-service training. It will come only when they come to the classroom. When a teacher is appointed, do at least two to three months of onboarding. Let the teacher understand the whole thing. Feel the environment. Feel the children. Go through the corridors, move into any classroom, see what is happening. Go to the playground, go to the library. For three months you are paid just to learn. It is like putting a seed in for three months &mdash; then it will sprout, and it will come out. And the teacher says: I am going to do it like this. I will not do it the way I have seen it for three months. Not because those things are being done wrongly &mdash; but I will do it differently, because I am more innovative now. I can experiment more. I will try new experiments. I will not go by tradition.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1297s">21:37</a><p><span class="spk">Ashok K. Pandey:</span> But for that, the seniors have to hold hands &mdash; with compassion, with empathy, with a futuristic and non-judgmental intention. In fact this <em>intentionality</em> in leader development is what is missing. In most places it is compliance-driven professional development. Compliance is not what is important. What is important is: are we developing consciousness about something? Are we developing curiosity? Are we developing systems where compliance becomes an inner drive? Let it be compliance in the beginning, but it has to transform into an inner drive. That will come from creating a great culture of learning on the campus. And that is why I call principals, headmasters, anybody heading an institution, the drivers of learning and culture.</p></div>
+
+<h3>Why school leaders resist change &mdash; and the ROI reframe</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1350s">22:30</a><p><span class="spk">Kavleen Kaur:</span> Then why is there so much resistance to change? Why can&rsquo;t we allow teachers three months to settle down, to learn, to be mentored? If I am a school leader, how would you convince me? Because unless things change at the ground level, the outcome will not change.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1374s">22:54</a><p><span class="spk">Ashok K. Pandey:</span> Let me tell you a couple of things to make this conversation lighter. Some years ago, at a conference, a shocker was thrown at me. A very respected leader got up and said: what is your answer to the question that you invest so much in teachers, and then they leave?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1404s">23:24</a><p><span class="spk">Ashok K. Pandey:</span> Look where we are coming from. If we are measuring investment in somebody in terms of return on investment, then some mindset change is required. So I have been requesting people: tell me, you spend X on a teacher who is with you &mdash; that is the cost of the investment &mdash; and let us say that teacher leaves after two years. Simple mathematics. Now, you don&rsquo;t invest that X, and the teacher remains with you for ten years. What is the cost of <em>that</em>?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1440s">24:00</a><p><span class="spk">Ashok K. Pandey:</span> That is one thing. The second: even if that teacher leaves, with all those values and skills and wisdom and knowledge, wherever she goes she will be your ambassador. She will always attribute whatever she is to you and your school. So you will be saving your marketing budget &mdash; calculate that saving too. And the third thing: if she is imparting that good practice to some other group of children, they are also children of this country, of this world. So it is not a lose game. We are not losing. It is a win-win situation.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1482s">24:42</a><p><span class="spk">Ashok K. Pandey:</span> I am not saying everybody is grappling only with this dilemma. There are many other issues. Our whole system is such &mdash; the pressure of time, the timetabling, syllabus completion and many other things. We are not teaching, actually; there is a lot of administration in it. Those are also reasons, so we have to be a little more compassionate here. There are many things AI can help us automate. We can reduce the workload, reduce the mundane things teachers do, and free up time in a teacher&rsquo;s routine &mdash; for self-growth, for studying, for learning, for being with the children, which is the primary job of a teacher.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1536s">25:36</a><p><span class="spk">Ashok K. Pandey:</span> Having said that, I want to reiterate: comparing what I saw twenty years ago with what I see today, there is a sea change in the attitude of managements and principals &mdash; yes, professional development is very important. Do it in the name of mentoring. Because professional development will still be very compliant, very information-driven or skill-driven, whereas mentoring will always be human-driven. Their capability as human beings, their capability to apply wisdom, to work in teams, to take decisions, to appreciate the higher purpose of education, to develop relationships &mdash; those are the things we have to develop.</p></div>
+
+<h3>Professional development vs mentoring &mdash; the practical difference</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1580s">26:20</a><p><span class="spk">Kavleen Kaur:</span> Help us see, in practical terms, what the difference is between training a teacher and mentoring a teacher &mdash; both if I am a teacher, and if I am in school leadership.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1595s">26:35</a><p><span class="spk">Ashok K. Pandey:</span> Thank you for highlighting this. Take an example. <em>How to use AI</em> could be part of professional development. How to integrate AI &mdash; that is professional development. But <em>how to use AI to develop critical thinking in children</em> is a little different. Somebody has to apply it, show it, demonstrate it, and only then will a new teacher appreciate it.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1626s">27:06</a><p><span class="spk">Ashok K. Pandey:</span> And then, you have given the professional development to the teacher &mdash; fine. Now give her the opportunity to conduct a workshop. Give her the opportunity to present a paper at a conference. Give her the opportunity to be an author. Sponsor her for greater responsibilities. Start trusting her with responsibilities. <em>That</em> is mentoring.</p></div>
+
+<h3>The accidental principal problem</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1652s">27:32</a><p><span class="spk">Ashok K. Pandey:</span> As of today there is no mentoring, no structured development of leadership. You become a principal by virtue of the number of years you have served. At best you become an accidental principal, without having been mentored to be a principal. You become a principal to show your acumen for administration &mdash; but not for leading a culture, not for designing learning, and not for designing spaces where human flourishing takes place. That is what has to change.</p></div>
+
+<h3>Five-step roadmap for aspiring school leaders</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1687s">28:07</a><p><span class="spk">Kavleen Kaur:</span> If I am a teacher who aspires to move into a leadership role three or five years from now, and I have good leadership above me &mdash; what is the path? What are the activities, the initiatives I should take?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1702s">28:22</a><p><span class="spk">Ashok K. Pandey:</span> Five or six things are important. Number one: be an excellent teacher. Don&rsquo;t be an ordinary teacher. Be a rockstar teacher. And to be a rockstar teacher you have to go beyond your textbook. You have to go beyond the routine of going into the classroom and coming out of the classroom. You have to invest your time and energy in your own growth. You have to be an excellent teacher, because children today do not expect you to be mediocre or ordinary. They will not love you.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1743s">29:03</a><p><span class="spk">Ashok K. Pandey:</span> In my experience, children love a teacher who is excellent in at least one thing. I had a colleague who was extremely popular &mdash; children would die for him. Do you know what he excelled at? The best handwriting on the whole campus. He would make notes the children loved; it looked as if it were printed. That was the differentiator. I&rsquo;m giving a common example. Equally, a teacher who sings very nicely, or excels at a sport, or is very good at communication, or is always available to the children &mdash; a teacher who can take a child aside and ask, tell me, what is wrong with you today, you are not looking as happy as you did yesterday. These are the differentiators. We have to develop these qualities.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1808s">30:08</a><p><span class="spk">Ashok K. Pandey:</span> The second thing: a young teacher joins an organisation where there are fifty other teachers, of at least five or ten varieties, if not fifty. Learn from those who are worth emulating. Learn from them. Emulate them. Walk up to them and ask: how do you manage it, how do you do it, what do you advise me? Then you become a person who does not shy away from taking responsibility, who does not shy away from coming to the front when many others have moved back. If you do this in your initial years, apart from the other benefits, it also becomes your habit and your culture.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1864s">31:04</a><p><span class="spk">Ashok K. Pandey:</span> I will give you one example. I was at Mayo College. Five or six of us joined in my cohort, but the rest of the people had been there for ten, fifteen, twenty, thirty years. It was a 132-year-old college when I joined. One day the principal announced in the staff room that there was a conference coming up on continuous and comprehensive evaluation, and asked who would like to go. I thought, I am the junior-most, where do I figure, all these veterans are sitting next to me, somebody else will get the opportunity. And believe me, for two minutes nobody raised a hand. Suddenly I realised &mdash; and I raised both my hands, to draw the principal&rsquo;s attention. He had been getting embarrassed for those two minutes, and he immediately lapped it up: &ldquo;Oh yes, Ashok, I knew you would do it.&rdquo; And I went for a four-day conference. What that did for me, only I know. What the others lost, I also know.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1927s">32:07</a><p><span class="spk">Ashok K. Pandey:</span> So you have to take the initiative. You have to come forward. You have to come out of your comfort zone. If you want to be proud of yourself, if you want to make a difference in somebody else&rsquo;s life, you have to work hard at it. That is the second thing.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1938s">32:18</a><p><span class="spk">Ashok K. Pandey:</span> Read a lot. Let information come from all sides. Network &mdash; that is very important. I tell maths teachers: do you know the best maths teacher in any other school? Why can&rsquo;t you make a collective of ten maths teachers from ten schools and meet once a month, at least online, and learn from each other? And find a mentor within the school, and also outside the school. Only then will you know what mentoring is capable of. Those are the four or five things a young teacher should do.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=1977s">32:57</a><p><span class="spk">Ashok K. Pandey:</span> And don&rsquo;t get bogged down by bad experiences. I was talking to the CEO of an education company who has come up the hard way &mdash; teacher, principal, director, now CEO. I asked about her experience and she said: I wanted to quit ten times in my first six months. But her mentor said, do everything but never quit. You have got this position not because you have been ordinary; you have got it because you are extraordinary. And now your test is to be extra patient. She said she overcame it, and today she has done seven years in that position.</p></div>
+
+<h3>The Chanakya principle &mdash; spotting hidden potential</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2024s">33:44</a><p><span class="spk">Kavleen Kaur:</span> You have shared such practical tips, and we have talked about the benefits that accrue. I hope teachers are motivated by the passion with which you talk about building the next generation of citizens and leaders.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2044s">34:04</a><p><span class="spk">Ashok K. Pandey:</span> Since you talked about motivation, two things. Teachers must know their potential. All teachers are like Hanuman &mdash; they have huge potential, but they don&rsquo;t know it. So I am prepared to be a Jambavan for them and remind them of the immense potential they have, and that they can change the life of generations. And I want to share with them the example of Chanakya, who saw an ordinary child in a nondescript place and picked him up, saw the potential in him, taught him communication, statecraft, negotiation, administration &mdash; and he became the founder of a dynasty that lasted 140 years. The Maurya dynasty.</p></div>
+
+<h3>U40, the National Mission for Mentoring &amp; self-development resources</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2089s">34:49</a><p><span class="spk">Ashok K. Pandey:</span> That is the potential &mdash; and that is the idea behind U40, which GEMS Education has come out with. We cannot answer the problem of mentoring on our own. We can only create models with intention. This is a small model but a great intention, and if it can be replicated, we can make a huge difference. That is exactly what the Government of India also wants to do. Mentoring has been identified in the National Education Policy, and that is where the national mentoring mission comes in. Teachers should read about it, talk about it, and reap the benefits of it.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2156s">35:56</a><p><span class="spk">Kavleen Kaur:</span> Since you&rsquo;ve talked about U40, are there resources teachers can pick up themselves &mdash; taking ownership of their own growth towards leadership roles?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2165s">36:05</a><p><span class="spk">Ashok K. Pandey:</span> First of all this opportunity should be management-driven and leadership-driven. All managements and leaders must intentionally embed mentoring and developmental opportunities for all teachers. But at the same time there is something called a self-driven opportunity, and that is what you are hinting at. Nowadays online courses are available &mdash; Coursera, Udemy, edX and several others. But the Indian system has also developed: the SWAYAM platform, the NISHTHA platform, the DIKSHA platform. Some of the IITs, like Bombay and Madras, have developed new courses. There is no dearth of opportunity where you can just sit with your computer and learn something new.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2212s">36:52</a><p><span class="spk">Ashok K. Pandey:</span> Teachers can go to the national mentoring mission portal on the National Council for Teacher Education site and enrol themselves as a mentee. If not every day, then at least twice or thrice a week, a mentoring programme by some expert takes place. Anything that interests you, anything aligned with your domain &mdash; you can attend that programme. There is no dearth of opportunities. You can even search and create a plan with the help of AI for your own development and mentoring.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2245s">37:25</a><p><span class="spk">Kavleen Kaur:</span> So AI could be your mentor as well.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2250s">37:30</a><p><span class="spk">Ashok K. Pandey:</span> AI could be your mentor also. AI could be your colleague. You can share some of your dilemmas and tensions. You can use it beautifully. You can share your career aspirations and create a plan together to achieve them.</p></div>
+
+<h3>Rapid fire round</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2272s">37:52</a><p><span class="spk">Kavleen Kaur:</span> A non-education interest that quietly made you better at your job in education?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2290s">38:10</a><p><span class="spk">Ashok K. Pandey:</span> I was not a great sportsman before I joined. I did play volleyball &mdash; in fact I played at college level &mdash; but it was not integral to me. When I became a teacher, one of my students taught me how to play squash. After that I became a squash coach. I played for veterans, and that changed my whole attitude about teaching and learning. When I said in one of the segments that children have great potential and you can learn from them &mdash; I became a squash player because of one of my students. There is co-learning at play.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2332s">38:52</a><p><span class="spk">Kavleen Kaur:</span> A moment that may have pulled you away from being an educator &mdash; and what kept you in the profession?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2343s">39:03</a><p><span class="spk">Ashok K. Pandey:</span> I came to this profession because my university professor encouraged me. Even then I thought I would give it two or three years, have some fun, get a salary, enjoy life, and then go back to whatever I wanted to do. But in those two or three years I realised there was no other career I could fit into. Being honest to your question &mdash; at many points I thought I should change profession. And then I remembered my students, my colleagues, the fun I had. I could go to the library and read a hundred books. I could play for two, three, four hours. Every year I went on tour with the children. And I thought that if I went into any other profession, I would miss all of this.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2392s">39:52</a><p><span class="spk">Kavleen Kaur:</span> A belief about school leadership that has evolved for you over the years?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2398s">39:58</a><p><span class="spk">Ashok K. Pandey:</span> All you do is because of your teachers. All you do is because of your students and parents. But you are a fortunate person as a leader, because you get the credit for everything. Therefore my message to my fellow colleagues is: be grateful for the opportunity you have been given. And pay that gratitude every day, in terms of investing in the development of the teachers. They will take that investment back to the children, the parents will be happy and satisfied, and then they come back to you and become an ally of the school.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2446s">40:46</a><p><span class="spk">Kavleen Kaur:</span> One capability India needs to invest in for developing educational leaders?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2455s">40:55</a><p><span class="spk">Ashok K. Pandey:</span> Love for India. That is the shortest answer, but let me explain a little. We are already aiming at 2047, to become a developed nation. When we wanted independence, everybody participated &mdash; young children, adolescents, women, the differently abled. Now, a hundred years on, we don&rsquo;t have to fight for independence. We have to fight so that nobody is poor, nobody is hungry, our standard of living rises, we remain a united country in harmony and peace and love with each other &mdash; and of course our indices of growth compare with the best in the world. That is what a developed nation is about.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2503s">41:43</a><p><span class="spk">Ashok K. Pandey:</span> What are the instruments of that? It is more important for school leaders and teachers. We have to tell our children that we have a civilisational history; we have to go back to our roots. There is a lot we have to learn and a lot we have to be grateful about. Second, we are a diverse country &mdash; we have to embrace diversity, respect diversity, celebrate diversity. Third, we have been a victim of colonisation for many years, and we have to reclaim and decolonise ourselves in many ways. And fourth, we have to work for character. If we can do these four things in the name of our nation, we will create an example for the world too. I don&rsquo;t want India to be isolated. India has always been a friend of the world &mdash; in fact a teacher to the world &mdash; but we have to reclaim it.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2560s">42:40</a><p><span class="spk">Kavleen Kaur:</span> Your mentors and teachers shaped you. Anyone you would like to mention?</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2576s">42:56</a><p><span class="spk">Ashok K. Pandey:</span> Many. My first thought goes to my middle-school headmaster. It would take another two hours to describe him, but I will tell you one thing: I have not forgotten the image of him mounting an elephant to go to the railway station, to catch a train to Delhi, to receive the President&rsquo;s Award from Dr.&nbsp;S.&nbsp;Radhakrishnan. He was the first. Then my first principal, under whose wings I became a good human being and a good teacher, Colonel Prem Saran Satsangi, who is no more. And there are many others. I would not like to forget my mentor Dr.&nbsp;Shayama Chona &mdash; the legendary doyenne of public school education &mdash; who helped me grow at various stages of my life.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2640s">44:00</a><p><span class="spk">Ashok K. Pandey:</span> One day she said to me &mdash; I am not disclosing the place, because it might affect some people &mdash; &ldquo;What are you doing here? I think you are stagnating. You have to do this.&rdquo; That is the role of a principal, the role of a mentor: with some sense of moral authority and some sense of love and affection, you can say what is right for the person. I have been very fortunate in that sense.</p></div>
+
+<h3>Final message: preserving humanity in leadership</h3>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2666s">44:26</a><p><span class="spk">Ashok K. Pandey:</span> Since we began with AI, I will make my final request to school leaders &mdash; because I know they are the influencers for the teachers and the students. You will not be known by how much technology you have implemented, or how good your school is at AI. The future will judge you by whether your leadership was able to preserve humanity.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2690s">44:50</a><p><span class="spk">Ashok K. Pandey:</span> Because when children come back &mdash; and I tell you from my experience &mdash; they never say &ldquo;this teacher taught me this and I became good.&rdquo; All of them only talk about emotional connections. This teacher valued me. This teacher made me feel happy. This teacher, when I was lonely, when I thought I had lost everything, came and offered her shoulder and I leaned on it. That is what they remember, and that is the role of the teacher. If we do not reclaim and hold on to that role, we will be in the danger zone.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2727s">45:27</a><p><span class="spk">Ashok K. Pandey:</span> So far, the World Economic Forum&rsquo;s <em>Future of Jobs</em> statistics say that among the jobs which will disappear, teaching, counselling, advising and mentoring sit very safe &mdash; there is only about a thirteen to fourteen per cent chance of replacement, whereas there are other jobs with an eighty to ninety per cent chance. Let us be happy about that &mdash; but let us not take it for granted either. That is the role of leadership.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2760s">46:00</a><p><span class="spk">Kavleen Kaur:</span> That is a very important message. Sincere thanks for sharing your experience, your knowledge and your guidance.</p></div>
+<div class="tline"><a class="ts" href="https://www.youtube.com/watch?v=BXdwsC-6yXg&amp;t=2768s">46:08</a><p><span class="spk">Ashok K. Pandey:</span> Thank you very much for having me on your show. I have enjoyed every moment of our conversation.</p></div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ RELATED ============ -->
+<section aria-labelledby="re">
+  <div class="wrap">
+    <div class="prose"><h2 id="re" class="secttl">More from The Learning Circle</h2></div>
+    <div class="cards">
+      <a class="card" href="https://www.youtube.com/@The_LearningCircle"><span class="k">Episode</span><h3>Dr Vandna Shahi</h3><p>National Award to Teachers 2022. Teacher training and professional development under NEP.</p></a>
+      <a class="card" href="https://www.youtube.com/@The_LearningCircle"><span class="k">Episode</span><h3>Subir Shukla</h3><p>Principal Coordinator, Group Ignus. Educational evolution, challenges and future directions.</p></a>
+      <a class="card" href="https://www.youtube.com/@The_LearningCircle"><span class="k">Episode</span><h3>Anil Mammen</h3><p>Professor of Practice, CETE, TISS Mumbai. Learning design and lifelong learning.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section>
+  <div class="wrap prose">
+    <p style="font-size:.92rem;color:var(--ink-3);text-align:center;margin:0 0 22px">Considering a session like this for your own staff? Credo Learnings runs whole-staff and individual-teacher workshops on AI as a thinking partner &mdash; built on the IMPACTS framework. <a href="https://www.kavleenkaur.com/#contact">Get in touch</a> to talk it through.</p>
+  </div>
+  <div class="wrap prose">
+    <div class="cta">
+      <h2>More conversations like this one.</h2>
+      <p>The Learning Circle hosts school leaders, educationists and policy experts on where Indian education is actually heading.</p>
+      <p style="margin-bottom:20px"><a href="https://www.youtube.com/@The_LearningCircle" style="color:#F6C452">Watch the full series on YouTube</a></p>
+      <a class="btn primary" href="https://www.kavleenkaur.com/#contact">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CITE ============ -->
+<section>
+  <div class="wrap prose">
+    <div class="cite">
+      <strong>Cite this episode</strong><br>
+      Kaur, K. (Host). (2026, July 16). <em>India&rsquo;s schools have a mentoring problem, not a training problem</em> [Audio&nbsp;/&nbsp;video podcast episode]. In <em>The Learning Circle</em>. Credo Learnings. <code>https://www.kavleenkaur.com/the-learning-circle-ashok-pandey</code>
+      <p style="margin:14px 0 0;font-size:.84rem;color:var(--ink-3)">Transcript lightly edited for readability; meaning unchanged. Quotations may be reproduced with attribution and a link to this page.</p>
+    </div>
+  </div>
+</section>
+
+</article>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap prose">
+    <p><strong>The Learning Circle</strong> &mdash; a podcast on India&rsquo;s K&ndash;12 transformation, hosted by Kavleen Kaur, Founder of Credo Learnings.</p>
+    <p><a href="https://www.kavleenkaur.com/#podcast">All episodes</a> &middot; <a href="https://www.kavleenkaur.com/#about">About</a> &middot; <a href="https://www.kavleenkaur.com/#contact">Be a guest</a> &middot; <a href="https://www.youtube.com/@The_LearningCircle">YouTube</a> &middot; <a href="https://podcasts.apple.com/in/podcast/the-learning-circle/id1737353999">Apple Podcasts</a></p>
+    <p>&copy; 2026 Credo Learnings. Published 16 July 2026.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+
+<script>
+/* click-to-load YouTube: keeps the page fast and cookie-free until asked */
+document.getElementById('playbtn')?.addEventListener('click', function(){
+  var f = document.createElement('iframe');
+  f.src = 'https://www.youtube-nocookie.com/embed/BXdwsC-6yXg?autoplay=1&rel=0';
+  f.title = "India's Schools Have a Mentoring Problem, Not a Training Problem — Dr. Ashok K. Pandey";
+  f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+  f.allowFullscreen = true;
+  var p = document.getElementById('player');
+  p.innerHTML = ''; p.appendChild(f);
+});
+
+/* copy helpers */
+function toast(msg){
+  var t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('on');
+  clearTimeout(window.__tt); window.__tt = setTimeout(function(){ t.classList.remove('on'); }, 1800);
+}
+document.addEventListener('click', function(e){
+  var a = e.target.closest('[data-copy]');
+  var b = e.target.closest('[data-copy-from]');
+  var text = a ? a.getAttribute('data-copy')
+          : b ? (document.getElementById(b.getAttribute('data-copy-from'))||{}).value
+          : null;
+  if (text == null) return;
+  navigator.clipboard.writeText(text).then(function(){ toast('Copied to clipboard'); },
+                                          function(){ toast('Press Ctrl/Cmd + C'); });
+});
+
+/* open the transcript automatically when someone lands on #transcript */
+if (location.hash === '#transcript') document.querySelector('.transcript')?.setAttribute('open','');
+document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
+  a.addEventListener('click', function(){ document.querySelector('.transcript')?.setAttribute('open',''); });
+});
+</script>
+
+<!-- ============ STRUCTURED DATA ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#episode",
+      "url": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey",
+      "name": "India's Schools Have a Mentoring Problem, Not a Training Problem",
+      "datePublished": "2026-07-16",
+      "inLanguage": "en-IN",
+      "timeRequired": "PT46M24S",
+      "description": "Dr. Ashok K. Pandey on why India's school system suffers from a 'Vitamin LD' deficiency, the difference between training and mentoring a teacher, the accidental principal problem, and a five-step roadmap for teachers who want to lead.",
+      "keywords": "teacher mentoring, school leadership India, accidental principal, Vitamin LD, NEP 2020, ITEP, National Mission for Mentoring, AI in education, K-12 India",
+      "image": "https://www.kavleenkaur.com/images/ashok-pandey-social-card.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BXdwsC-6yXg/maxresdefault.jpg",
+      "partOfSeries": { "@id": "https://www.kavleenkaur.com/#podcast-series" },
+      "associatedMedia": { "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#video" },
+      "author": { "@id": "https://www.kavleenkaur.com/#kavleen" },
+      "actor": { "@id": "https://www.ashokpandey.net/#person" },
+      "publisher": { "@id": "https://www.kavleenkaur.com/#org" },
+      "about": [
+        { "@type": "Thing", "name": "Teacher mentoring" },
+        { "@type": "Thing", "name": "School leadership development" },
+        { "@type": "Thing", "name": "National Education Policy 2020" },
+        { "@type": "Thing", "name": "Artificial intelligence in education" }
+      ],
+      "mainEntityOfPage": { "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#webpage" }
+    },
+    {
+      "@type": "PodcastSeries",
+      "@id": "https://www.kavleenkaur.com/#podcast-series",
+      "name": "The Learning Circle",
+      "url": "https://www.kavleenkaur.com/#podcast",
+      "description": "A podcast exploring India's K-12 education transformation - the people, ideas and reforms shaping what's next.",
+      "inLanguage": "en-IN",
+      "author": { "@id": "https://www.kavleenkaur.com/#kavleen" },
+      "publisher": { "@id": "https://www.kavleenkaur.com/#org" },
+      "sameAs": [
+        "https://www.youtube.com/@The_LearningCircle",
+        "https://podcasts.apple.com/in/podcast/the-learning-circle/id1737353999"
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#video",
+      "name": "India's Schools Have a Mentoring Problem, Not a Training Problem | Dr. Ashok Pandey",
+      "description": "Dr. Ashok K. Pandey on AI as an exposer rather than a disruptor, India's Vitamin LD deficiency, the accidental principal, the ROI of investing in teachers, and a five-step roadmap for aspiring school leaders.",
+      "thumbnailUrl": ["https://i.ytimg.com/vi/BXdwsC-6yXg/maxresdefault.jpg"],
+      "uploadDate": "2026-07-16T18:15:38+05:30",
+      "duration": "PT46M24S",
+      "embedUrl": "https://www.youtube.com/embed/BXdwsC-6yXg",
+      "contentUrl": "https://www.youtube.com/watch?v=BXdwsC-6yXg",
+      "inLanguage": "en-IN",
+      "publisher": { "@id": "https://www.kavleenkaur.com/#org" },
+      "potentialAction": {
+        "@type": "SeekToAction",
+        "target": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t={seek_to_second_number}s",
+        "startOffset-input": "required name=seek_to_second_number"
+      },
+      "hasPart": [
+        { "@type": "Clip", "name": "AI is only exposing our fault lines", "startOffset": 0, "endOffset": 24, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=0s" },
+        { "@type": "Clip", "name": "Introduction", "startOffset": 24, "endOffset": 53, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=24s" },
+        { "@type": "Clip", "name": "If AI can do it, is it really learning?", "startOffset": 53, "endOffset": 222, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=53s" },
+        { "@type": "Clip", "name": "Flipped classrooms and student agency as latent heat", "startOffset": 222, "endOffset": 383, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=222s" },
+        { "@type": "Clip", "name": "Misinformation and the teacher's evolving role", "startOffset": 383, "endOffset": 475, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=383s" },
+        { "@type": "Clip", "name": "AI as the fourth teacher", "startOffset": 475, "endOffset": 591, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=475s" },
+        { "@type": "Clip", "name": "School leaders are shaping future citizens", "startOffset": 591, "endOffset": 765, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=591s" },
+        { "@type": "Clip", "name": "Pre-service training, ITEP, and the career perception problem", "startOffset": 765, "endOffset": 1001, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=765s" },
+        { "@type": "Clip", "name": "India's Vitamin LD deficiency - from training to mentoring", "startOffset": 1001, "endOffset": 1133, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1001s" },
+        { "@type": "Clip", "name": "Teaching is a mission, not a profession", "startOffset": 1133, "endOffset": 1350, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1133s" },
+        { "@type": "Clip", "name": "Why school leaders resist change", "startOffset": 1350, "endOffset": 1371, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1350s" },
+        { "@type": "Clip", "name": "The ROI reframe: the real cost of not investing in teachers", "startOffset": 1371, "endOffset": 1530, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1371s" },
+        { "@type": "Clip", "name": "Professional development vs mentoring - the practical difference", "startOffset": 1530, "endOffset": 1638, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1530s" },
+        { "@type": "Clip", "name": "The accidental principal problem", "startOffset": 1638, "endOffset": 1687, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1638s" },
+        { "@type": "Clip", "name": "Five-step roadmap for aspiring school leaders", "startOffset": 1687, "endOffset": 2044, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1687s" },
+        { "@type": "Clip", "name": "The Chanakya principle - spotting hidden potential", "startOffset": 2044, "endOffset": 2089, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2044s" },
+        { "@type": "Clip", "name": "U40, the National Mission for Mentoring and self-development resources", "startOffset": 2089, "endOffset": 2272, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2089s" },
+        { "@type": "Clip", "name": "Rapid fire round", "startOffset": 2272, "endOffset": 2666, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2272s" },
+        { "@type": "Clip", "name": "Final message: preserving humanity in leadership", "startOffset": 2666, "endOffset": 2784, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2666s" }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.ashokpandey.net/#person",
+      "name": "Ashok K. Pandey",
+      "honorificPrefix": "Dr.",
+      "url": "https://www.ashokpandey.net/",
+      "jobTitle": "Director, Ahlcon Group of Schools",
+      "description": "K-12 education leader with over three decades of experience; Member, Governing Body of the National Council for Teacher Education (NCTE); former Chairperson of the National Progressive Schools' Conference; Member, Governing Body of GEMS Education India; mentor for the U40 initiative at GEMS Education; author of Igniting a Billion Lamps.",
+      "worksFor": { "@type": "Organization", "name": "Ahlcon Group of Schools" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "University of Allahabad" },
+        { "@type": "CollegeOrUniversity", "name": "Annamalai University" }
+      ],
+      "knowsAbout": ["School leadership", "Teacher mentoring", "Education policy in India", "NEP 2020", "Professional development for teachers"],
+      "award": ["National Teacher Award 2012", "Education World Extraordinary Leadership Award 2021", "Forbes India Top 100 People Managers 2020"],
+      "sameAs": ["https://in.linkedin.com/in/ashokkp", "https://globalcitizenshipfoundation.org/profile/ashok-pandey"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.kavleenkaur.com/#kavleen",
+      "name": "Kavleen Kaur",
+      "jobTitle": "Founder, Credo Learnings; Host, The Learning Circle",
+      "url": "https://www.kavleenkaur.com/#about",
+      "sameAs": ["https://www.linkedin.com/in/kavleen-kaur-7a29198/"]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.kavleenkaur.com/#org",
+      "name": "Credo Learnings",
+      "url": "https://www.kavleenkaur.com/",
+      "description": "An education initiative building future-ready skills in students and educators, and publisher of The Learning Circle podcast."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#webpage",
+      "url": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey",
+      "name": "India's Schools Have a Mentoring Problem, Not a Training Problem - Dr. Ashok K. Pandey",
+      "isPartOf": { "@id": "https://www.kavleenkaur.com/#website" },
+      "datePublished": "2026-07-16",
+      "dateModified": "2026-08-11",
+      "inLanguage": "en-IN",
+      "breadcrumb": { "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#breadcrumb" },
+      "primaryImageOfPage": { "@type": "ImageObject", "url": "https://www.kavleenkaur.com/images/ashok-pandey-social-card.jpg" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kavleenkaur.com/#website",
+      "url": "https://www.kavleenkaur.com/",
+      "name": "The Learning Circle",
+      "publisher": { "@id": "https://www.kavleenkaur.com/#org" },
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.kavleenkaur.com/" },
+        { "@type": "ListItem", "position": 2, "name": "The Learning Circle", "item": "https://www.kavleenkaur.com/#podcast" },
+        { "@type": "ListItem", "position": 3, "name": "Dr. Ashok K. Pandey - India's Schools Have a Mentoring Problem, Not a Training Problem" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does 'India has a mentoring problem, not a training problem' mean?",
+          "acceptedAnswer": { "@type": "Answer", "text": "India runs a great deal of teacher training - pre-service, in-service, and now the four-year ITEP degree. What it does not run at scale is mentoring: a senior practitioner who holds a new teacher's hand with compassion, empathy and non-judgmental intent through the first years, and who keeps doing it as that teacher moves toward leadership. Training transfers content; mentoring transfers judgment." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Vitamin LD in education?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Vitamin LD is Dr. Ashok K. Pandey's shorthand for leadership development, the nutrient he argues Indian schooling is deficient in. He first described a deficiency of Vitamin T for teachers, revised it to Vitamin TL for teacher leadership, and now calls it Vitamin LD - leadership development." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between professional development and mentoring a teacher?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Teaching a staff how to integrate AI is professional development. Showing a teacher how to use AI to build critical thinking in children, demonstrating it, and then giving her a workshop to run, a paper to present, a chance to author something and sponsorship for greater responsibility is mentoring. Professional development is compliance-driven and information-driven; mentoring is human-driven and works by trusting a teacher with responsibility." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the accidental principal problem?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Where there is no structured leadership development, people become principals by virtue of years served rather than preparation. They become accidental principals: equipped for administration but never mentored to lead a culture, design learning, or build a school where human flourishing takes place." }
+        },
+        {
+          "@type": "Question",
+          "name": "How should a school answer the objection 'we invest in teachers and then they leave'?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Dr. Pandey suggests three responses. First, calculate the opposite sum: the cost of not investing and keeping an untrained teacher for ten years. Second, a well-formed teacher who leaves becomes an ambassador for your school wherever she goes, saving marketing spend. Third, the children she goes on to teach are still this country's children. He calls it a win-win rather than a loss." }
+        },
+        {
+          "@type": "Question",
+          "name": "What should a teacher do to become a school leader?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Five things: be an excellent teacher rather than an ordinary one, and be visibly exceptional at something; learn from and emulate the colleagues worth emulating; raise your hand for responsibilities others step back from; read widely and build networks with strong teachers in other schools, meeting monthly even online; and find a mentor both inside and outside your school." }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it mean to call AI the fourth teacher?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A child already has three teachers: the classroom teacher, the parent at home and the peer group. Dr. Pandey calls AI the fourth teacher, and because it is the classroom teacher's colleague he asks staff to treat it as a participant in the staff meeting rather than a threat to the profession." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is ITEP and why does it matter for teacher development in India?",
+          "acceptedAnswer": { "@type": "Answer", "text": "ITEP is the Integrated Teacher Education Programme introduced after NEP 2020: a four-year course a student can choose straight after Class 12, in the way one chooses engineering, medicine or law. Dr. Pandey welcomes it but notes that unlike an engineer, who gets years of internship, a new teacher walks into a classroom on day one having not seen one since her own schooling - which is why onboarding and mentoring matter." }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can Indian teachers find free mentoring and professional development?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Dr. Pandey points to the National Mission for Mentoring on the NCTE portal, where teachers can enrol as mentees and attend expert-led sessions several times a week, and to SWAYAM, DIKSHA, NISHTHA and open courses from IIT Bombay and IIT Madras, alongside Coursera, edX and Udemy." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
