@@ -33,7 +33,7 @@ Tool agnostic by design. Holds whether the educator uses ChatGPT, Gemini, Notebo
 
 ## Who it is for
 
-**Individual teachers.** Open workshops for teachers who want the method for themselves, without waiting for the school to decide. Produces a method applicable from the next lesson, reusable systems built around their own subject and year group, and an approach that transfers to any tool the school later adopts. Applicable across CBSE, ICSE, IB and state boards.
+**Individual teachers.** Individual bookings are not currently open; interested teachers can join the newsletter to stay in touch. The method, when delivered, is applicable from the next lesson, builds reusable systems around the teacher's own subject and year group, and transfers to any tool the school later adopts. Applicable across CBSE, ICSE, IB and state boards.
 
 **Schools and leadership teams.** Commissioned workshops for full teaching staff, adapted to the school's subjects, year groups and existing tools. Additionally produces one shared method across the staffroom, consistent practice academic leadership can assess, explicit guardrails on student AI use, teacher readiness for the CBSE Computational Thinking mandate for Classes 3 to 8, and a position on AI the school can defend to parents and boards.
 
