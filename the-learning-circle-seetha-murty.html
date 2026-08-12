@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <!--
 ====================================================================
-  THE LEARNING CIRCLE — EPISODE PAGE TEMPLATE
-  Episode: Dr. Seetha Murty — "How One Leader Leads 7,000 Students
+  THE LEARNING CIRCLE â EPISODE PAGE TEMPLATE
+  Episode: Dr. Seetha Murty â "How One Leader Leads 7,000 Students
            Across 5 Campuses" (Episode 25)
 ....................................................................
   LIVE URL: https://www.kavleenkaur.com/the-learning-circle-seetha-murty
   Built from the episode's own YouTube description (chapters, guest
-  bio, key takeaways, FAQ — all written by the channel) plus two
+  bio, key takeaways, FAQ â all written by the channel) plus two
   short, directly-attributed quotes (the pinned channel comment and
   a caption line at 9:40). No full transcript is reproduced here by
   design. Two optional upgrades remain:
@@ -23,7 +23,7 @@
   NOTES
   - Single self-contained file. Only external requests: Google Fonts,
     the YouTube thumbnail, and the YouTube iframe (loaded ONLY after
-    the visitor clicks play — keeps LCP fast and avoids cookies on load).
+    the visitor clicks play â keeps LCP fast and avoids cookies on load).
   - No transcript section: content here is drawn from the episode's own
     description/chapters/FAQ (already public, written by the channel),
     not a verbatim caption dump. Verify quotes against the recording
@@ -37,7 +37,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>How One Leader Leads 7,000 Students Across 5 Campuses — Dr. Seetha Murty | The Learning Circle</title>
+<title>How One Leader Leads 7,000 Students Across 5 Campuses â Dr. Seetha Murty | The Learning Circle</title>
 <meta name="description" content="Dr. Seetha Murty, Director at Silver Oaks International Schools, on the Homegrown Leadership Model, why she doesn't believe in SOPs, and what parents actually notice when a school is working. Chapters, takeaways and FAQ.">
 <link rel="canonical" href="https://www.kavleenkaur.com/the-learning-circle-seetha-murty">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -46,7 +46,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Learning Circle">
-<meta property="og:title" content="How One Leader Leads 7,000 Students Across 5 Campuses — Dr. Seetha Murty">
+<meta property="og:title" content="How One Leader Leads 7,000 Students Across 5 Campuses â Dr. Seetha Murty">
 <meta property="og:description" content="Homegrown Leadership, why SOPs fall short, and what parents notice when a school is working. Dr. Seetha Murty on The Learning Circle.">
 <meta property="og:url" content="https://www.kavleenkaur.com/the-learning-circle-seetha-murty">
 <meta property="og:image" content="https://www.kavleenkaur.com/images/seetha-murty-social-card.jpg">
@@ -265,6 +265,16 @@ footer.site-foot{border-top:1px solid var(--rule);margin-top:40px;padding:36px 0
 footer.site-foot a{color:var(--ink-2)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 @media print{.site,.cta,.player,.listen,.kit{display:none}}
+
+.ig-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.ig-item{border:1px solid var(--rule);border-radius:12px;overflow:hidden;padding:0;cursor:zoom-in;background:var(--white);box-shadow:var(--shadow);display:block;text-align:left}
+.ig-item img{display:block;width:100%;height:auto;transition:transform .2s ease}
+.ig-item:hover img{transform:scale(1.03)}
+.ig-cap{display:block;padding:10px 14px;font-size:.82rem;color:var(--ink-2);border-top:1px solid var(--rule)}
+.ig-lightbox{position:fixed;inset:0;background:rgba(20,16,12,.92);display:none;align-items:center;justify-content:center;z-index:200;padding:32px}
+.ig-lightbox.open{display:flex}
+.ig-lightbox img{max-width:100%;max-height:100%;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.ig-close{position:absolute;top:20px;right:26px;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer;line-height:1;padding:6px 12px}
 </style>
 </head>
 <body>
@@ -408,6 +418,41 @@ footer.site-foot a{color:var(--ink-2)}
   </div>
 </section>
 
+<hr class="rule">
+
+<!-- ============ INFOGRAPHICS ============ -->
+<section id="infographics" aria-labelledby="ig">
+  <div class="wrap prose">
+    <h2 id="ig" class="secttl">The playbook, visualized</h2>
+    <p class="lede">15 infographics distilling this conversation into one framework &mdash; the paradox of scale, the anti-SOP philosophy, homegrown leadership, and the two values-in-action cases Dr. Murty walks through. Tap any panel to view it full-size.</p>
+  </div>
+  <div class="wrap">
+    <div class="ig-grid">
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-01-cover.jpg" alt="Cover: The Invisible Thread &mdash; Scaling Leadership Across 7,000 Students Without Hierarchy" loading="lazy"><span class="ig-cap">1. The Invisible Thread</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-02-core-paradox.jpg" alt="The Core Paradox of Scale: When Presence Stops Being Enough" loading="lazy"><span class="ig-cap">2. The Core Paradox of Scale</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-03-myth-of-power.jpg" alt="Dismantling the Myth of Power" loading="lazy"><span class="ig-cap">3. Dismantling the Myth of Power</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-04-anti-sop.jpg" alt="The Anti-SOP Philosophy: Context Over Compliance" loading="lazy"><span class="ig-cap">4. The Anti-SOP Philosophy</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-05-homegrown-leadership.jpg" alt="The Engine of Scale: Homegrown Leadership" loading="lazy"><span class="ig-cap">5. The Engine of Scale</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-06-delivery-to-partnership.jpg" alt="Leading for Understanding: Moving from Delivery to Partnership" loading="lazy"><span class="ig-cap">6. Delivery to Partnership</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-07-north-star.jpg" alt="The North Star: Character First, Competence Next" loading="lazy"><span class="ig-cap">7. The North Star</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-08-stationery-policy.jpg" alt="Values-in-Action Case I: The Stationery Policy" loading="lazy"><span class="ig-cap">8. Values-in-Action: Stationery Policy</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-09-coins-for-country.jpg" alt="Values-in-Action Case II: Coins for the Country" loading="lazy"><span class="ig-cap">9. Values-in-Action: Coins for the Country</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-10-character-vs-soft-skills.jpg" alt="Diagnostic: Character Generation vs. Soft Skills" loading="lazy"><span class="ig-cap">10. Character Generation vs. Soft Skills</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-11-ripple-effect.jpg" alt="The Ripple Effect: Culture as the Ultimate Growth Engine" loading="lazy"><span class="ig-cap">11. The Ripple Effect</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-12-navigating-future.jpg" alt="Navigating the Future: Guidance for the Ecosystem" loading="lazy"><span class="ig-cap">12. Navigating the Future</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-13-leaders-compass.jpg" alt="The Leader's Compass: A Framework for Self-Reflection" loading="lazy"><span class="ig-cap">13. The Leader's Compass</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-14-synthesis.jpg" alt="Synthesis: The Ecosystem of Reflection" loading="lazy"><span class="ig-cap">14. Synthesis: The Ecosystem of Reflection</span></button>
+      <button class="ig-item" type="button"><img src="/images/seetha-murty-infographic-15-invisible-thread-realized.jpg" alt="The Invisible Thread Realized, closing quote from Dr. Seetha Murty" loading="lazy"><span class="ig-cap">15. The Invisible Thread, Realized</span></button>
+    </div>
+    <p class="caption" style="margin-top:14px">Visual companion built from this conversation, for anyone who would rather skim the framework than the full episode.</p>
+  </div>
+</section>
+
+<div class="ig-lightbox" id="igLightbox">
+  <button class="ig-close" id="igClose" type="button" aria-label="Close">&times;</button>
+  <img id="igLightboxImg" src="" alt="">
+</div>
+
 <!-- ============ GUEST ============ -->
 <section id="guest" aria-labelledby="gg">
   <div class="wrap prose">
@@ -444,8 +489,8 @@ footer.site-foot a{color:var(--ink-2)}
       <p style="margin-top:20px;font-weight:600;font-size:.9rem">Embed the player and a link back</p>
       <div class="copybox">
         <label class="sr-only" for="embed1" style="position:absolute;left:-9999px">Embed code</label>
-        <textarea id="embed1" readonly rows="5">&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gpj8zYWu1iY" title="How One Leader Leads 7,000 Students Across 5 Campuses — Dr. Seetha Murty" frameborder="0" allowfullscreen loading="lazy"&gt;&lt;/iframe&gt;
-&lt;p&gt;Dr. Seetha Murty on &lt;a href="https://www.kavleenkaur.com/the-learning-circle-seetha-murty"&gt;The Learning Circle&lt;/a&gt; — chapters, takeaways and FAQ.&lt;/p&gt;</textarea>
+        <textarea id="embed1" readonly rows="5">&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gpj8zYWu1iY" title="How One Leader Leads 7,000 Students Across 5 Campuses â Dr. Seetha Murty" frameborder="0" allowfullscreen loading="lazy"&gt;&lt;/iframe&gt;
+&lt;p&gt;Dr. Seetha Murty on &lt;a href="https://www.kavleenkaur.com/the-learning-circle-seetha-murty"&gt;The Learning Circle&lt;/a&gt; â chapters, takeaways and FAQ.&lt;/p&gt;</textarea>
         <button class="copybtn" type="button" data-copy-from="embed1">Copy embed code</button>
       </div>
 
@@ -591,7 +636,7 @@ document.getElementById('playbtn')?.addEventListener('click', function(){
   var player = document.getElementById('player');
   var iframe = document.createElement('iframe');
   iframe.src = 'https://www.youtube-nocookie.com/embed/Gpj8zYWu1iY?autoplay=1';
-  iframe.title = 'How One Leader Leads 7,000 Students Across 5 Campuses — Dr. Seetha Murty';
+  iframe.title = 'How One Leader Leads 7,000 Students Across 5 Campuses â Dr. Seetha Murty';
   iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
   iframe.setAttribute('allowfullscreen', '');
   player.innerHTML = '';
@@ -610,5 +655,26 @@ document.querySelectorAll('[data-copy-from]').forEach(function(btn){
 });
 </script>
 
+
+<script>
+document.querySelectorAll(".ig-item").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    var img = btn.querySelector("img");
+    var lbImg = document.getElementById("igLightboxImg");
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    document.getElementById("igLightbox").classList.add("open");
+  });
+});
+document.getElementById("igClose")?.addEventListener("click", function(){
+  document.getElementById("igLightbox").classList.remove("open");
+});
+document.getElementById("igLightbox")?.addEventListener("click", function(e){
+  if (e.target.id === "igLightbox") e.currentTarget.classList.remove("open");
+});
+document.addEventListener("keydown", function(e){
+  if (e.key === "Escape") document.getElementById("igLightbox")?.classList.remove("open");
+});
+</script>
 </body>
 </html>
