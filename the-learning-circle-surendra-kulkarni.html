@@ -28,10 +28,10 @@
       datePublished in the JSON-LD if you have the exact date.
 
   NOTES
-  - Single self-contained file, same design system as the other
+ - Single self-contained file, same design system as the other
     Learning Circle episode pages.
-  - Two embedded players (Part 1 / Part 2), combined chapters list.
-  - JSON-LD graph: two PodcastEpisode nodes + Person + FAQPage +
+ - Two embedded players (Part 1 / Part 2), combined chapters list.
+ - JSON-LD graph: two PodcastEpisode nodes + Person + FAQPage +
     BreadcrumbList.
 ====================================================================
 -->
@@ -533,8 +533,7 @@ footer.site-foot a{color:var(--ink-2)}
   </div>
 </footer>
 
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -550,10 +549,16 @@ footer.site-foot a{color:var(--ink-2)}
         "contentUrl": "https://www.youtube.com/watch?v=IY8av-p_Uoo",
         "embedUrl": "https://www.youtube-nocookie.com/embed/IY8av-p_Uoo",
         "thumbnailUrl": "https://i.ytimg.com/vi/IY8av-p_Uoo/maxresdefault.jpg",
-        "uploadDate": "2025-09-18"
+        "uploadDate": "2025-09-18T09:00:00+05:30",
+        "name": "How to Raise Resilient Kids with Leadership Skills (Part 1)",
+        "description": "Lt. Gen. Surendra Kulkarni on why leadership skills — responsibility, sacrifice, and controlled adversity — are the true foundation of mental resilience in kids."
       },
-      "partOfSeries": {"@id": "https://www.kavleenkaur.com/#learning-circle-podcast"},
-      "author": {"@id": "https://www.kavleenkaur.com/#person"}
+      "partOfSeries": {
+        "@id": "https://www.kavleenkaur.com/#learning-circle-podcast"
+      },
+      "author": {
+        "@id": "https://www.kavleenkaur.com/#person"
+      }
     },
     {
       "@type": "PodcastEpisode",
@@ -566,11 +571,20 @@ footer.site-foot a{color:var(--ink-2)}
         "@type": "VideoObject",
         "contentUrl": "https://www.youtube.com/watch?v=T0vF8QIZ5kg",
         "embedUrl": "https://www.youtube-nocookie.com/embed/T0vF8QIZ5kg",
-        "thumbnailUrl": "https://i.ytimg.com/vi/T0vF8QIZ5kg/maxresdefault.jpg"
+        "thumbnailUrl": "https://i.ytimg.com/vi/T0vF8QIZ5kg/maxresdefault.jpg",
+        "name": "Parenting Challenges Solved — General's Military Strategies for Modern Problems (Part 2)",
+        "description": "Lt. Gen. Surendra Kulkarni on why smart kids quit after one failure, why the traditional parental response backfires, and what works instead.",
+        "uploadDate": "2025-09-18T09:00:00+05:30"
       },
-      "partOfSeries": {"@id": "https://www.kavleenkaur.com/#learning-circle-podcast"},
-      "author": {"@id": "https://www.kavleenkaur.com/#person"},
-      "isPartOf": {"@id": "https://www.kavleenkaur.com/the-learning-circle-surendra-kulkarni#part1"}
+      "partOfSeries": {
+        "@id": "https://www.kavleenkaur.com/#learning-circle-podcast"
+      },
+      "author": {
+        "@id": "https://www.kavleenkaur.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://www.kavleenkaur.com/the-learning-circle-surendra-kulkarni#part1"
+      }
     },
     {
       "@type": "Person",
@@ -583,24 +597,65 @@ footer.site-foot a{color:var(--ink-2)}
       "@type": "FAQPage",
       "@id": "https://www.kavleenkaur.com/the-learning-circle-surendra-kulkarni#faq",
       "mainEntity": [
-        {"@type": "Question", "name": "What is \"controlled adversity\"?", "acceptedAnswer": {"@type": "Answer", "text": "Deliberately letting children face small, safe failures so they build the experience of recovering from setbacks, rather than being shielded from every difficulty."}},
-        {"@type": "Question", "name": "Is resilience the same as grit?", "acceptedAnswer": {"@type": "Answer", "text": "Grit is treated as necessary but not sufficient. Leadership skills — responsibility, sacrifice, agency — are presented as building resilience earlier and more reliably."}},
-        {"@type": "Question", "name": "What should a parent do when a child quits after one failure?", "acceptedAnswer": {"@type": "Answer", "text": "The instinctive response of stepping in to soften the blow usually backfires; the episode covers what to do instead."}},
-        {"@type": "Question", "name": "How do parents give children real agency?", "acceptedAnswer": {"@type": "Answer", "text": "Through voice and choice in decisions that actually matter, paired with letting children own the outcome, not just the appearance of choice."}}
+        {
+          "@type": "Question",
+          "name": "What is \"controlled adversity\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deliberately letting children face small, safe failures so they build the experience of recovering from setbacks, rather than being shielded from every difficulty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is resilience the same as grit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Grit is treated as necessary but not sufficient. Leadership skills — responsibility, sacrifice, agency — are presented as building resilience earlier and more reliably."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should a parent do when a child quits after one failure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The instinctive response of stepping in to soften the blow usually backfires; the episode covers what to do instead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do parents give children real agency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Through voice and choice in decisions that actually matter, paired with letting children own the outcome, not just the appearance of choice."
+          }
+        }
       ]
     },
     {
       "@type": "BreadcrumbList",
       "@id": "https://www.kavleenkaur.com/the-learning-circle-surendra-kulkarni#breadcrumb",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.kavleenkaur.com/"},
-        {"@type": "ListItem", "position": 2, "name": "The Learning Circle", "item": "https://www.kavleenkaur.com/#podcast"},
-        {"@type": "ListItem", "position": 3, "name": "Lt. Gen. Surendra Kulkarni"}
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.kavleenkaur.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Learning Circle",
+          "item": "https://www.kavleenkaur.com/#podcast"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Lt. Gen. Surendra Kulkarni"
+        }
       ]
     }
   ]
-}
-</script>
+}</script>
 
 <script>
 document.getElementById('playbtn1')?.addEventListener('click', function(){
