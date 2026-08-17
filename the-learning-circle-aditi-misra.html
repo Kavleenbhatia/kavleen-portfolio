@@ -793,8 +793,7 @@ document.addEventListener('click', function(e){
 </script>
 
 <!-- ============ STRUCTURED DATA ============ -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -869,7 +868,7 @@ document.addEventListener('click', function(e){
         "https://i.ytimg.com/vi/7DQVHBXTkyY/maxresdefault.jpg",
         "https://www.kavleenkaur.com/images/aditi-misra-social-card.jpg"
       ],
-      "uploadDate": "2025-09-04",
+      "uploadDate": "2025-09-04T09:00:00+05:30",
       "duration": "PT48M37S",
       "embedUrl": "https://www.youtube-nocookie.com/embed/7DQVHBXTkyY",
       "contentUrl": "https://www.youtube.com/watch?v=7DQVHBXTkyY",
@@ -961,8 +960,15 @@ document.addEventListener('click', function(e){
       ],
       "potentialAction": {
         "@type": "SeekToAction",
-        "target": "https://www.youtube.com/watch?v=7DQVHBXTkyY&t={seek_to_second_number}s",
-        "startOffset-input": "required name=seek_to_second_number"
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.youtube.com/watch?v=7DQVHBXTkyY&t={seek_to_second_number}s"
+        },
+        "startOffset-input": {
+          "@type": "PropertyValueSpecification",
+          "valueName": "seek_to_second_number",
+          "valueRequired": true
+        }
       }
     },
     {
@@ -1256,7 +1262,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1269,7 +1281,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1282,7 +1300,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1295,7 +1319,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1308,7 +1338,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1321,7 +1357,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1334,7 +1376,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1347,7 +1395,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1360,7 +1414,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1373,7 +1433,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1386,7 +1452,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1399,7 +1471,13 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     },
     {
       "@type": "ImageObject",
@@ -1412,10 +1490,15 @@ document.addEventListener('click', function(e){
       "creditText": "The Partnership Playbook - The Learning Circle",
       "isPartOf": {
         "@id": "https://www.kavleenkaur.com/the-learning-circle-aditi-misra#webpage"
-      }
+      },
+      "creator": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+      "copyrightNotice": "© Kavleen Kaur"
     }
   ]
-}
-</script>
+}</script>
 </body>
 </html>
