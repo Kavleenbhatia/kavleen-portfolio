@@ -925,8 +925,7 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
 </script>
 
 <!-- ============ STRUCTURED DATA ============ -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -941,18 +940,42 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
       "keywords": "teacher mentoring, school leadership India, accidental principal, Vitamin LD, NEP 2020, ITEP, National Mission for Mentoring, AI in education, K-12 India",
       "image": "https://www.kavleenkaur.com/images/ashok-pandey-social-card.jpg",
       "thumbnailUrl": "https://i.ytimg.com/vi/BXdwsC-6yXg/maxresdefault.jpg",
-      "partOfSeries": { "@id": "https://www.kavleenkaur.com/#podcast-series" },
-      "associatedMedia": { "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#video" },
-      "author": { "@id": "https://www.kavleenkaur.com/#kavleen" },
-      "actor": { "@id": "https://www.ashokpandey.net/#person" },
-      "publisher": { "@id": "https://www.kavleenkaur.com/#org" },
+      "partOfSeries": {
+        "@id": "https://www.kavleenkaur.com/#podcast-series"
+      },
+      "associatedMedia": {
+        "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#video"
+      },
+      "author": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "actor": {
+        "@id": "https://www.ashokpandey.net/#person"
+      },
+      "publisher": {
+        "@id": "https://www.kavleenkaur.com/#org"
+      },
       "about": [
-        { "@type": "Thing", "name": "Teacher mentoring" },
-        { "@type": "Thing", "name": "School leadership development" },
-        { "@type": "Thing", "name": "National Education Policy 2020" },
-        { "@type": "Thing", "name": "Artificial intelligence in education" }
+        {
+          "@type": "Thing",
+          "name": "Teacher mentoring"
+        },
+        {
+          "@type": "Thing",
+          "name": "School leadership development"
+        },
+        {
+          "@type": "Thing",
+          "name": "National Education Policy 2020"
+        },
+        {
+          "@type": "Thing",
+          "name": "Artificial intelligence in education"
+        }
       ],
-      "mainEntityOfPage": { "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#webpage" }
+      "mainEntityOfPage": {
+        "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#webpage"
+      }
     },
     {
       "@type": "PodcastSeries",
@@ -961,8 +984,12 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
       "url": "https://www.kavleenkaur.com/#podcast",
       "description": "A podcast exploring India's K-12 education transformation - the people, ideas and reforms shaping what's next.",
       "inLanguage": "en-IN",
-      "author": { "@id": "https://www.kavleenkaur.com/#kavleen" },
-      "publisher": { "@id": "https://www.kavleenkaur.com/#org" },
+      "author": {
+        "@id": "https://www.kavleenkaur.com/#kavleen"
+      },
+      "publisher": {
+        "@id": "https://www.kavleenkaur.com/#org"
+      },
       "sameAs": [
         "https://www.youtube.com/@The_LearningCircle",
         "https://podcasts.apple.com/in/podcast/the-learning-circle/id1737353999"
@@ -973,38 +1000,163 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
       "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#video",
       "name": "India's Schools Have a Mentoring Problem, Not a Training Problem | Dr. Ashok Pandey",
       "description": "Dr. Ashok K. Pandey on AI as an exposer rather than a disruptor, India's Vitamin LD deficiency, the accidental principal, the ROI of investing in teachers, and a five-step roadmap for aspiring school leaders.",
-      "thumbnailUrl": ["https://i.ytimg.com/vi/BXdwsC-6yXg/maxresdefault.jpg"],
+      "thumbnailUrl": [
+        "https://i.ytimg.com/vi/BXdwsC-6yXg/maxresdefault.jpg"
+      ],
       "uploadDate": "2026-07-16T18:15:38+05:30",
       "duration": "PT46M24S",
       "embedUrl": "https://www.youtube.com/embed/BXdwsC-6yXg",
       "contentUrl": "https://www.youtube.com/watch?v=BXdwsC-6yXg",
       "inLanguage": "en-IN",
-      "publisher": { "@id": "https://www.kavleenkaur.com/#org" },
+      "publisher": {
+        "@id": "https://www.kavleenkaur.com/#org"
+      },
       "potentialAction": {
         "@type": "SeekToAction",
-        "target": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t={seek_to_second_number}s",
-        "startOffset-input": "required name=seek_to_second_number"
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t={seek_to_second_number}s"
+        },
+        "startOffset-input": {
+          "@type": "PropertyValueSpecification",
+          "valueName": "seek_to_second_number",
+          "valueRequired": true
+        }
       },
       "hasPart": [
-        { "@type": "Clip", "name": "AI is only exposing our fault lines", "startOffset": 0, "endOffset": 24, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=0s" },
-        { "@type": "Clip", "name": "Introduction", "startOffset": 24, "endOffset": 53, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=24s" },
-        { "@type": "Clip", "name": "If AI can do it, is it really learning?", "startOffset": 53, "endOffset": 222, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=53s" },
-        { "@type": "Clip", "name": "Flipped classrooms and student agency as latent heat", "startOffset": 222, "endOffset": 383, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=222s" },
-        { "@type": "Clip", "name": "Misinformation and the teacher's evolving role", "startOffset": 383, "endOffset": 475, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=383s" },
-        { "@type": "Clip", "name": "AI as the fourth teacher", "startOffset": 475, "endOffset": 591, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=475s" },
-        { "@type": "Clip", "name": "School leaders are shaping future citizens", "startOffset": 591, "endOffset": 765, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=591s" },
-        { "@type": "Clip", "name": "Pre-service training, ITEP, and the career perception problem", "startOffset": 765, "endOffset": 1001, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=765s" },
-        { "@type": "Clip", "name": "India's Vitamin LD deficiency - from training to mentoring", "startOffset": 1001, "endOffset": 1133, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1001s" },
-        { "@type": "Clip", "name": "Teaching is a mission, not a profession", "startOffset": 1133, "endOffset": 1350, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1133s" },
-        { "@type": "Clip", "name": "Why school leaders resist change", "startOffset": 1350, "endOffset": 1371, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1350s" },
-        { "@type": "Clip", "name": "The ROI reframe: the real cost of not investing in teachers", "startOffset": 1371, "endOffset": 1530, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1371s" },
-        { "@type": "Clip", "name": "Professional development vs mentoring - the practical difference", "startOffset": 1530, "endOffset": 1638, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1530s" },
-        { "@type": "Clip", "name": "The accidental principal problem", "startOffset": 1638, "endOffset": 1687, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1638s" },
-        { "@type": "Clip", "name": "Five-step roadmap for aspiring school leaders", "startOffset": 1687, "endOffset": 2044, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1687s" },
-        { "@type": "Clip", "name": "The Chanakya principle - spotting hidden potential", "startOffset": 2044, "endOffset": 2089, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2044s" },
-        { "@type": "Clip", "name": "U40, the National Mission for Mentoring and self-development resources", "startOffset": 2089, "endOffset": 2272, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2089s" },
-        { "@type": "Clip", "name": "Rapid fire round", "startOffset": 2272, "endOffset": 2666, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2272s" },
-        { "@type": "Clip", "name": "Final message: preserving humanity in leadership", "startOffset": 2666, "endOffset": 2784, "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2666s" }
+        {
+          "@type": "Clip",
+          "name": "AI is only exposing our fault lines",
+          "startOffset": 0,
+          "endOffset": 24,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=0s"
+        },
+        {
+          "@type": "Clip",
+          "name": "Introduction",
+          "startOffset": 24,
+          "endOffset": 53,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=24s"
+        },
+        {
+          "@type": "Clip",
+          "name": "If AI can do it, is it really learning?",
+          "startOffset": 53,
+          "endOffset": 222,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=53s"
+        },
+        {
+          "@type": "Clip",
+          "name": "Flipped classrooms and student agency as latent heat",
+          "startOffset": 222,
+          "endOffset": 383,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=222s"
+        },
+        {
+          "@type": "Clip",
+          "name": "Misinformation and the teacher's evolving role",
+          "startOffset": 383,
+          "endOffset": 475,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=383s"
+        },
+        {
+          "@type": "Clip",
+          "name": "AI as the fourth teacher",
+          "startOffset": 475,
+          "endOffset": 591,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=475s"
+        },
+        {
+          "@type": "Clip",
+          "name": "School leaders are shaping future citizens",
+          "startOffset": 591,
+          "endOffset": 765,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=591s"
+        },
+        {
+          "@type": "Clip",
+          "name": "Pre-service training, ITEP, and the career perception problem",
+          "startOffset": 765,
+          "endOffset": 1001,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=765s"
+        },
+        {
+          "@type": "Clip",
+          "name": "India's Vitamin LD deficiency - from training to mentoring",
+          "startOffset": 1001,
+          "endOffset": 1133,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1001s"
+        },
+        {
+          "@type": "Clip",
+          "name": "Teaching is a mission, not a profession",
+          "startOffset": 1133,
+          "endOffset": 1350,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1133s"
+        },
+        {
+          "@type": "Clip",
+          "name": "Why school leaders resist change",
+          "startOffset": 1350,
+          "endOffset": 1371,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1350s"
+        },
+        {
+          "@type": "Clip",
+          "name": "The ROI reframe: the real cost of not investing in teachers",
+          "startOffset": 1371,
+          "endOffset": 1530,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1371s"
+        },
+        {
+          "@type": "Clip",
+          "name": "Professional development vs mentoring - the practical difference",
+          "startOffset": 1530,
+          "endOffset": 1638,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1530s"
+        },
+        {
+          "@type": "Clip",
+          "name": "The accidental principal problem",
+          "startOffset": 1638,
+          "endOffset": 1687,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1638s"
+        },
+        {
+          "@type": "Clip",
+          "name": "Five-step roadmap for aspiring school leaders",
+          "startOffset": 1687,
+          "endOffset": 2044,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=1687s"
+        },
+        {
+          "@type": "Clip",
+          "name": "The Chanakya principle - spotting hidden potential",
+          "startOffset": 2044,
+          "endOffset": 2089,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2044s"
+        },
+        {
+          "@type": "Clip",
+          "name": "U40, the National Mission for Mentoring and self-development resources",
+          "startOffset": 2089,
+          "endOffset": 2272,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2089s"
+        },
+        {
+          "@type": "Clip",
+          "name": "Rapid fire round",
+          "startOffset": 2272,
+          "endOffset": 2666,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2272s"
+        },
+        {
+          "@type": "Clip",
+          "name": "Final message: preserving humanity in leadership",
+          "startOffset": 2666,
+          "endOffset": 2784,
+          "url": "https://www.youtube.com/watch?v=BXdwsC-6yXg&t=2666s"
+        }
       ]
     },
     {
@@ -1015,14 +1167,36 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
       "url": "https://www.ashokpandey.net/",
       "jobTitle": "Director, Ahlcon Group of Schools",
       "description": "K-12 education leader with over three decades of experience; Member, Governing Body of the National Council for Teacher Education (NCTE); former Chairperson of the National Progressive Schools' Conference; Member, Governing Body of GEMS Education India; mentor for the U40 initiative at GEMS Education; author of Igniting a Billion Lamps.",
-      "worksFor": { "@type": "Organization", "name": "Ahlcon Group of Schools" },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ahlcon Group of Schools"
+      },
       "alumniOf": [
-        { "@type": "CollegeOrUniversity", "name": "University of Allahabad" },
-        { "@type": "CollegeOrUniversity", "name": "Annamalai University" }
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Allahabad"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Annamalai University"
+        }
       ],
-      "knowsAbout": ["School leadership", "Teacher mentoring", "Education policy in India", "NEP 2020", "Professional development for teachers"],
-      "award": ["National Teacher Award 2012", "Education World Extraordinary Leadership Award 2021", "Forbes India Top 100 People Managers 2020"],
-      "sameAs": ["https://in.linkedin.com/in/ashokkp", "https://globalcitizenshipfoundation.org/profile/ashok-pandey"]
+      "knowsAbout": [
+        "School leadership",
+        "Teacher mentoring",
+        "Education policy in India",
+        "NEP 2020",
+        "Professional development for teachers"
+      ],
+      "award": [
+        "National Teacher Award 2012",
+        "Education World Extraordinary Leadership Award 2021",
+        "Forbes India Top 100 People Managers 2020"
+      ],
+      "sameAs": [
+        "https://in.linkedin.com/in/ashokkp",
+        "https://globalcitizenshipfoundation.org/profile/ashok-pandey"
+      ]
     },
     {
       "@type": "Person",
@@ -1030,7 +1204,9 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
       "name": "Kavleen Kaur",
       "jobTitle": "Founder, Credo Learnings; Host, The Learning Circle",
       "url": "https://www.kavleenkaur.com/#about",
-      "sameAs": ["https://www.linkedin.com/in/kavleen-kaur-7a29198/"]
+      "sameAs": [
+        "https://www.linkedin.com/in/kavleen-kaur-7a29198/"
+      ]
     },
     {
       "@type": "Organization",
@@ -1044,28 +1220,57 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
       "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#webpage",
       "url": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey",
       "name": "India's Schools Have a Mentoring Problem, Not a Training Problem - Dr. Ashok K. Pandey",
-      "isPartOf": { "@id": "https://www.kavleenkaur.com/#website" },
+      "isPartOf": {
+        "@id": "https://www.kavleenkaur.com/#website"
+      },
       "datePublished": "2026-07-16",
       "dateModified": "2026-08-11",
       "inLanguage": "en-IN",
-      "breadcrumb": { "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#breadcrumb" },
-      "primaryImageOfPage": { "@type": "ImageObject", "url": "https://www.kavleenkaur.com/images/ashok-pandey-social-card.jpg" }
+      "breadcrumb": {
+        "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.kavleenkaur.com/images/ashok-pandey-social-card.jpg",
+        "creator": {
+          "@id": "https://www.kavleenkaur.com/#kavleen"
+        },
+        "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "acquireLicensePage": "https://www.kavleenkaur.com/#contact",
+        "copyrightNotice": "© Kavleen Kaur"
+      }
     },
     {
       "@type": "WebSite",
       "@id": "https://www.kavleenkaur.com/#website",
       "url": "https://www.kavleenkaur.com/",
       "name": "The Learning Circle",
-      "publisher": { "@id": "https://www.kavleenkaur.com/#org" },
+      "publisher": {
+        "@id": "https://www.kavleenkaur.com/#org"
+      },
       "inLanguage": "en-IN"
     },
     {
       "@type": "BreadcrumbList",
       "@id": "https://www.kavleenkaur.com/the-learning-circle-ashok-pandey#breadcrumb",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.kavleenkaur.com/" },
-        { "@type": "ListItem", "position": 2, "name": "The Learning Circle", "item": "https://www.kavleenkaur.com/#podcast" },
-        { "@type": "ListItem", "position": 3, "name": "Dr. Ashok K. Pandey - India's Schools Have a Mentoring Problem, Not a Training Problem" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.kavleenkaur.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Learning Circle",
+          "item": "https://www.kavleenkaur.com/#podcast"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dr. Ashok K. Pandey - India's Schools Have a Mentoring Problem, Not a Training Problem"
+        }
       ]
     },
     {
@@ -1075,52 +1280,78 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
         {
           "@type": "Question",
           "name": "What does 'India has a mentoring problem, not a training problem' mean?",
-          "acceptedAnswer": { "@type": "Answer", "text": "India runs a great deal of teacher training - pre-service, in-service, and now the four-year ITEP degree. What it does not run at scale is mentoring: a senior practitioner who holds a new teacher's hand with compassion, empathy and non-judgmental intent through the first years, and who keeps doing it as that teacher moves toward leadership. Training transfers content; mentoring transfers judgment." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "India runs a great deal of teacher training - pre-service, in-service, and now the four-year ITEP degree. What it does not run at scale is mentoring: a senior practitioner who holds a new teacher's hand with compassion, empathy and non-judgmental intent through the first years, and who keeps doing it as that teacher moves toward leadership. Training transfers content; mentoring transfers judgment."
+          }
         },
         {
           "@type": "Question",
           "name": "What is Vitamin LD in education?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Vitamin LD is Dr. Ashok K. Pandey's shorthand for leadership development, the nutrient he argues Indian schooling is deficient in. He first described a deficiency of Vitamin T for teachers, revised it to Vitamin TL for teacher leadership, and now calls it Vitamin LD - leadership development." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vitamin LD is Dr. Ashok K. Pandey's shorthand for leadership development, the nutrient he argues Indian schooling is deficient in. He first described a deficiency of Vitamin T for teachers, revised it to Vitamin TL for teacher leadership, and now calls it Vitamin LD - leadership development."
+          }
         },
         {
           "@type": "Question",
           "name": "What is the difference between professional development and mentoring a teacher?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Teaching a staff how to integrate AI is professional development. Showing a teacher how to use AI to build critical thinking in children, demonstrating it, and then giving her a workshop to run, a paper to present, a chance to author something and sponsorship for greater responsibility is mentoring. Professional development is compliance-driven and information-driven; mentoring is human-driven and works by trusting a teacher with responsibility." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Teaching a staff how to integrate AI is professional development. Showing a teacher how to use AI to build critical thinking in children, demonstrating it, and then giving her a workshop to run, a paper to present, a chance to author something and sponsorship for greater responsibility is mentoring. Professional development is compliance-driven and information-driven; mentoring is human-driven and works by trusting a teacher with responsibility."
+          }
         },
         {
           "@type": "Question",
           "name": "What is the accidental principal problem?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Where there is no structured leadership development, people become principals by virtue of years served rather than preparation. They become accidental principals: equipped for administration but never mentored to lead a culture, design learning, or build a school where human flourishing takes place." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Where there is no structured leadership development, people become principals by virtue of years served rather than preparation. They become accidental principals: equipped for administration but never mentored to lead a culture, design learning, or build a school where human flourishing takes place."
+          }
         },
         {
           "@type": "Question",
           "name": "How should a school answer the objection 'we invest in teachers and then they leave'?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Dr. Pandey suggests three responses. First, calculate the opposite sum: the cost of not investing and keeping an untrained teacher for ten years. Second, a well-formed teacher who leaves becomes an ambassador for your school wherever she goes, saving marketing spend. Third, the children she goes on to teach are still this country's children. He calls it a win-win rather than a loss." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. Pandey suggests three responses. First, calculate the opposite sum: the cost of not investing and keeping an untrained teacher for ten years. Second, a well-formed teacher who leaves becomes an ambassador for your school wherever she goes, saving marketing spend. Third, the children she goes on to teach are still this country's children. He calls it a win-win rather than a loss."
+          }
         },
         {
           "@type": "Question",
           "name": "What should a teacher do to become a school leader?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Five things: be an excellent teacher rather than an ordinary one, and be visibly exceptional at something; learn from and emulate the colleagues worth emulating; raise your hand for responsibilities others step back from; read widely and build networks with strong teachers in other schools, meeting monthly even online; and find a mentor both inside and outside your school." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Five things: be an excellent teacher rather than an ordinary one, and be visibly exceptional at something; learn from and emulate the colleagues worth emulating; raise your hand for responsibilities others step back from; read widely and build networks with strong teachers in other schools, meeting monthly even online; and find a mentor both inside and outside your school."
+          }
         },
         {
           "@type": "Question",
           "name": "What does it mean to call AI the fourth teacher?",
-          "acceptedAnswer": { "@type": "Answer", "text": "A child already has three teachers: the classroom teacher, the parent at home and the peer group. Dr. Pandey calls AI the fourth teacher, and because it is the classroom teacher's colleague he asks staff to treat it as a participant in the staff meeting rather than a threat to the profession." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A child already has three teachers: the classroom teacher, the parent at home and the peer group. Dr. Pandey calls AI the fourth teacher, and because it is the classroom teacher's colleague he asks staff to treat it as a participant in the staff meeting rather than a threat to the profession."
+          }
         },
         {
           "@type": "Question",
           "name": "What is ITEP and why does it matter for teacher development in India?",
-          "acceptedAnswer": { "@type": "Answer", "text": "ITEP is the Integrated Teacher Education Programme introduced after NEP 2020: a four-year course a student can choose straight after Class 12, in the way one chooses engineering, medicine or law. Dr. Pandey welcomes it but notes that unlike an engineer, who gets years of internship, a new teacher walks into a classroom on day one having not seen one since her own schooling - which is why onboarding and mentoring matter." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ITEP is the Integrated Teacher Education Programme introduced after NEP 2020: a four-year course a student can choose straight after Class 12, in the way one chooses engineering, medicine or law. Dr. Pandey welcomes it but notes that unlike an engineer, who gets years of internship, a new teacher walks into a classroom on day one having not seen one since her own schooling - which is why onboarding and mentoring matter."
+          }
         },
         {
           "@type": "Question",
           "name": "Where can Indian teachers find free mentoring and professional development?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Dr. Pandey points to the National Mission for Mentoring on the NCTE portal, where teachers can enrol as mentees and attend expert-led sessions several times a week, and to SWAYAM, DIKSHA, NISHTHA and open courses from IIT Bombay and IIT Madras, alongside Coursera, edX and Udemy." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. Pandey points to the National Mission for Mentoring on the NCTE portal, where teachers can enrol as mentees and attend expert-led sessions several times a week, and to SWAYAM, DIKSHA, NISHTHA and open courses from IIT Bombay and IIT Madras, alongside Coursera, edX and Udemy."
+          }
         }
       ]
     }
   ]
-}
-</script>
+}</script>
 </body>
 </html>
