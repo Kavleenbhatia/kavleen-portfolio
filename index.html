@@ -256,6 +256,18 @@
       font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--text); }
+    .nav-toggle {
+      display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+      width: 34px; height: 34px; padding: 0; border: 0; background: transparent; cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-toggle span {
+      display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px;
+      transition: transform 0.25s ease, opacity 0.2s ease;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
     .nav-cta {
       background: var(--accent); color: #fff !important;
       padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 700 !important;
@@ -562,7 +574,15 @@
     }
     @media (max-width: 760px) {
       nav { padding: 0.9rem 1.5rem; }
-      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .nav-links {
+        display: none; position: absolute; top: 100%; left: 0; right: 0;
+        flex-direction: column; align-items: stretch; gap: 0;
+        background: #f7f7f5; border-bottom: 1px solid var(--border-soft);
+        padding: 0.25rem 1.5rem 1rem; box-shadow: 0 12px 24px -12px rgba(0,0,0,0.16);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { display: block; padding: 0.85rem 0; border-bottom: 1px solid var(--border-soft); }
       section { padding: 3.5rem 1.5rem; }
       .hero { grid-template-columns: 1fr; padding: 6.5rem 1.5rem 2.5rem; gap: 2.25rem; }
       .hero-portrait { max-width: 300px; }
@@ -578,7 +598,10 @@
 
   <nav aria-label="Main navigation">
     <a class="nav-logo" href="#top">Kavleen Kaur Bhatia<span>.</span></a>
-    <ul class="nav-links">
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
       <li><a href="#method">The Method</a></li>
       <li><a href="#benefits">Benefits</a></li>
       <li><a href="#who">Who It's For</a></li>
@@ -1062,6 +1085,26 @@
     (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
     ml('account', '2482430');
   </script>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  if (!toggle || !links) return;
+  toggle.addEventListener('click', function(){
+    var isOpen = links.classList.toggle('open');
+    toggle.classList.toggle('open', isOpen);
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
