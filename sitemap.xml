@@ -48,4 +48,22 @@
           <changefreq>monthly</changefreq>
           <priority>0.8</priority>
     </url>
+  <url>
+    <loc>https://www.kavleenkaur.com/the-learning-circle-seetha-murty</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.kavleenkaur.com/the-learning-circle-anustup-nayak</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.kavleenkaur.com/the-learning-circle-surendra-kulkarni</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
