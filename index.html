@@ -266,6 +266,14 @@
     .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .nav-toggle.open span:nth-child(2) { opacity: 0; }
     .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .receives-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem; margin-top: 2.2rem; }
+    .receives-col h3 { font-size: 0.78rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem; }
+    .receives-col ul { list-style: none; padding: 0; margin: 0; }
+    .receives-col li { padding: 0 0 1rem; margin: 0 0 1rem; border-bottom: 1px solid var(--border-soft); font-size: 0.95rem; line-height: 1.6; color: var(--text-mid); }
+    .receives-col li:last-child { border-bottom: 0; margin-bottom: 0; }
+    .receives-col li b { display: block; color: var(--text); font-weight: 600; margin-bottom: 0.2rem; }
+    .receives-note { margin-top: 1.8rem; font-size: 0.9rem; color: var(--text-soft); font-style: italic; max-width: 62ch; }
+    @media (max-width: 860px) { .receives-grid { grid-template-columns: 1fr; gap: 1.7rem; } }
     .gains-band { border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); padding-top: 1.5rem; padding-bottom: 1.5rem; margin: 0 0 0.5rem; }
     .gains-band p { margin: 0; font-size: 1.05rem; font-weight: 600; color: var(--text); letter-spacing: -0.01em; display: flex; flex-wrap: wrap; gap: 0 1.6rem; }
     .gains-band span { white-space: nowrap; }
@@ -616,7 +624,7 @@
   <main id="top">
 
     <!-- HERO -->
-    <header class="hero">
+    <section class="hero">
       <div>
         <p class="hero-eyebrow">AI training for schools</p>
         <h1>AI that sharpens teacher judgment instead of <em>replacing</em> it.</h1>
@@ -639,7 +647,7 @@
           <p>Founder, Credo Learnings</p>
         </div>
       </aside>
-    </header>
+    </section>
 
     <!-- GAINS BAND -->
     <section class="gains-band" aria-label="What schools gain">
@@ -805,6 +813,38 @@
     </section>
 
     <!-- PROOF -->
+    <!-- WHAT YOUR SCHOOL RECEIVES -->
+    <section id="receives">
+      <p class="section-eyebrow">What your school receives</p>
+      <h2 class="section-title">Before, during and after.</h2>
+      <div class="receives-grid">
+        <div class="receives-col">
+          <h3>Before</h3>
+          <ul>
+            <li><b>A scoping conversation</b>With school leadership &mdash; which tools are already in use, which subjects and year groups are involved, and where the real pressure sits.</li>
+            <li><b>A written session outline</b>Shareable with your academic leadership before you commit to anything.</li>
+          </ul>
+        </div>
+        <div class="receives-col">
+          <h3>During</h3>
+          <ul>
+            <li><b>A workshop built on IMPACTS</b>Applied to your context rather than delivered off a shelf.</li>
+            <li><b>Subject-relevant examples</b>Built for your departments and year groups, not generic demonstrations.</li>
+            <li><b>An explicit conversation about guardrails</b>Where AI supports learning, and where it quietly replaces the thinking a student needs to do.</li>
+          </ul>
+        </div>
+        <div class="receives-col">
+          <h3>After</h3>
+          <ul>
+            <li><b>Something reusable to take away</b>So the method is still in use in week six, not just on the day.</li>
+            <li><b>An optional leadership follow-up</b>Reviewing what has held in practice and what needs adjusting. Quoted separately.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="receives-note">The final shape is agreed during scoping, based on your staff size, objectives, available time, and whether delivery is in person or online.</p>
+      <div style="margin-top:1.7rem"><a href="/schools" class="btn-primary">See what is involved</a></div>
+    </section>
+
     <!-- SCOPING -->
     <section id="scoped">
       <p class="section-eyebrow">How it is scoped</p>
