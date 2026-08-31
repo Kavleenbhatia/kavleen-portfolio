@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Workshops for Schools | Kavleen Kaur Bhatia</title>
+<meta name="description" content="Commissioned AI capability workshops for schools, built on the IMPACTS Framework. Scoped to your school: length, audience, starting point and delivery agreed before anything is designed.">
+<meta name="author" content="Kavleen Kaur Bhatia">
+<link rel="canonical" href="https://www.kavleenkaur.com/schools">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.kavleenkaur.com/schools">
+<meta property="og:title" content="AI Workshops for Schools | Kavleen Kaur Bhatia">
+<meta property="og:description" content="AI capability workshops built on the IMPACTS Framework, scoped to your school.">
+<meta property="og:image" content="https://www.kavleenkaur.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Service","name":"AI capability workshops for schools","serviceType":"Professional development workshop","description":"Commissioned AI capability workshops for schools, built on the IMPACTS Framework. Length, audience, starting point and delivery are agreed in a scoping conversation.","provider":{"@type":"Organization","name":"Credo Learnings","url":"https://credolearnings.com/","founder":{"@type":"Person","name":"Kavleen Kaur Bhatia","url":"https://www.kavleenkaur.com/"}},"areaServed":{"@type":"Country","name":"India"},"url":"https://www.kavleenkaur.com/schools"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long is a workshop?","acceptedAnswer":{"@type":"Answer","text":"It varies. From a focused session to a full day, depending on how much of your staff's time you can protect and how far you want to get. The length is agreed in the scoping conversation."}},{"@type":"Question","name":"How many people can attend?","acceptedAnswer":{"@type":"Answer","text":"Group size is not a constraint. A department, a year group, your academic leadership, or a larger cohort."}},{"@type":"Question","name":"Can it be delivered online?","acceptedAnswer":{"@type":"Answer","text":"Yes, and it covers the same method. In person allows more of the collaborative building, where staff produce classroom material during the session itself."}},{"@type":"Question","name":"Our teachers have not used AI before. Is this too advanced?","acceptedAnswer":{"@type":"Answer","text":"No. The starting point is a scoping decision. If your staff are new to AI, the session starts there. If they are already using it, it goes straight to method."}},{"@type":"Question","name":"We already run AI training. How is this different?","acceptedAnswer":{"@type":"Answer","text":"Most AI training covers tool features, which stops working when the tool changes. This covers method: establishing professional intent before generating anything, holding output to your own standard, and turning what worked into reusable systems."}},{"@type":"Question","name":"Does this cover the CBSE Computational Thinking and AI curriculum?","acceptedAnswer":{"@type":"Answer","text":"Yes. Teacher readiness for the CBSE mandate across Classes 3 to 8 can be part of the scope."}},{"@type":"Question","name":"We need to discuss this with management or the board. What can you send?","acceptedAnswer":{"@type":"Answer","text":"Send an enquiry and you will get a workshop brief setting out the suggested shape for your school, written so it can be forwarded to a leadership team or management committee."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.kavleenkaur.com/"},{"@type":"ListItem","position":2,"name":"For Schools"}]}]}</script>
+<style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #d63b17;
+      --accent-dark: #b32f10;
+      --text: #16161a;
+      --text-mid: #55555c;
+      --text-soft: #85858d;
+      --text-faint: #b0b0b6;
+      --border: #dcdcd7;
+      --border-soft: #e6e6e1;
+      --panel: #ffffff;
+      --panel-tint: #ececeb;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(170deg, #f7f7f5 0%, #eeeeeb 45%, #f4f4f1 100%);
+      background-attachment: fixed;
+      color: var(--text);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.1rem 4rem;
+      background: rgba(247,247,245,0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .nav-logo { font-weight: 800; font-size: 0.95rem; color: var(--text); text-decoration: none; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+    .nav-links a {
+      color: var(--text-soft); text-decoration: none; font-size: 0.79rem;
+      font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .nav-toggle {
+      display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+      width: 34px; height: 34px; padding: 0; border: 0; background: transparent; cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-toggle span {
+      display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px;
+      transition: transform 0.25s ease, opacity 0.2s ease;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav-cta {
+      background: var(--accent); color: #fff !important;
+      padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 700 !important;
+    }
+    .nav-cta:hover { background: var(--accent-dark); }
+
+    /* HERO */
+    .hero {
+      display: grid; grid-template-columns: 1.2fr 0.8fr;
+      align-items: center; padding: 9rem 4rem 4rem; gap: 4rem; position: relative;
+    }
+    .hero::before {
+      content: ''; position: absolute; top: 0; right: -8%;
+      width: 620px; height: 620px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(214,59,23,0.07) 0%, transparent 68%);
+      pointer-events: none; z-index: 0;
+    }
+    .hero > * { position: relative; z-index: 1; }
+
+    .hero-eyebrow {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 1.35rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.3rem, 3.9vw, 3.6rem);
+      font-weight: 900; line-height: 1.1; letter-spacing: -0.015em; margin-bottom: 1.5rem;
+    }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .hero-sub {
+      font-size: 1.1rem; color: var(--text-mid); max-width: 560px;
+      line-height: 1.8; margin-bottom: 2.25rem;
+    }
+    .hero-btns { display: flex; gap: 0.85rem; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-block; background: var(--accent); color: #fff;
+      padding: 0.95rem 2.1rem; font-size: 0.82rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+      border-radius: 2px; transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block; border: 1px solid #c4c4bd; color: var(--text);
+      padding: 0.95rem 2.1rem; font-size: 0.82rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+      border-radius: 2px; transition: border-color 0.2s, transform 0.15s;
+    }
+    .btn-secondary:hover { border-color: var(--text); transform: translateY(-1px); }
+
+    .hero-portrait { display: flex; flex-direction: column; gap: 1rem; }
+    .portrait-box {
+      width: 100%; aspect-ratio: 4/5;
+      border: 1px solid var(--border); overflow: hidden;
+      background: #e9e9e4;
+    }
+    .portrait-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .portrait-card { background: var(--panel); border: 1px solid var(--border); padding: 1.1rem 1.25rem; }
+    .portrait-card h2 { font-size: 0.98rem; font-weight: 700; margin-bottom: 0.15rem; }
+    .portrait-card p { font-size: 0.79rem; color: var(--text-soft); }
+
+    /* SECTIONS */
+    section { padding: 5.5rem 4rem; }
+    .section-eyebrow {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.7rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.9rem, 3.2vw, 2.85rem);
+      font-weight: 900; line-height: 1.12; letter-spacing: -0.01em;
+      margin-bottom: 1.25rem; max-width: 820px;
+    }
+    .section-intro { font-size: 1.04rem; color: var(--text-mid); max-width: 720px; line-height: 1.8; }
+    .divider { height: 1px; background: var(--border-soft); margin: 0 4rem; }
+    .panel-section {
+      background: var(--panel-tint);
+      border-top: 1px solid var(--border-soft);
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    /* SHIFTS */
+    .shifts {
+      display: grid; grid-template-columns: repeat(5, 1fr);
+      gap: 1px; background: var(--border);
+      border: 1px solid var(--border); margin-top: 2.75rem;
+    }
+    .shift { background: var(--panel); padding: 2rem 1.6rem; }
+    .shift-num {
+      font-family: 'Playfair Display', serif; font-size: 1.35rem;
+      font-weight: 900; color: var(--accent); line-height: 1; margin-bottom: 1rem;
+    }
+    .shift h3 { font-size: 1.02rem; font-weight: 800; line-height: 1.3; margin-bottom: 0.55rem; }
+    .shift p { font-size: 0.88rem; color: var(--text-mid); line-height: 1.7; }
+
+    .shift-note {
+      margin-top: 1.75rem; font-size: 0.92rem; color: var(--text-soft);
+      max-width: 640px; line-height: 1.7;
+    }
+
+    /* METHOD */
+    .method-grid {
+      display: grid; grid-template-columns: 0.85fr 1.15fr;
+      gap: 3.5rem; align-items: center; margin-top: 2.75rem;
+    }
+    .method-mark {
+      font-family: 'Playfair Display', serif; font-size: 3.4rem; font-weight: 900;
+      color: var(--accent); line-height: 1;
+    }
+    .method-mark small {
+      display: block; font-family: 'Inter', sans-serif; font-size: 0.64rem;
+      font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--text-faint); margin-top: 0.6rem;
+    }
+    .method-body p { font-size: 1.02rem; color: var(--text-mid); line-height: 1.85; margin-bottom: 1.2rem; }
+    .method-body p:last-child { margin-bottom: 0; }
+    .method-body p strong { color: var(--text); font-weight: 600; }
+
+    .method-gains {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--border);
+      border: 1px solid var(--border); margin-top: 2.5rem;
+    }
+    .gain { background: var(--panel); padding: 1.8rem 1.7rem; }
+    .gain h3 { font-size: 0.97rem; font-weight: 800; margin-bottom: 0.45rem; }
+    .gain p { font-size: 0.87rem; color: var(--text-mid); line-height: 1.7; }
+
+    /* AUDIENCE */
+    .aud-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 2.75rem; }
+    .aud-card { background: var(--panel); padding: 2.4rem 2.25rem; }
+    .aud-tag {
+      display: inline-block; font-size: 0.62rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem;
+    }
+    .aud-card h3 { font-size: 1.25rem; font-weight: 800; margin-bottom: 0.75rem; line-height: 1.3; }
+    .aud-card > p { font-size: 0.93rem; color: var(--text-mid); line-height: 1.78; margin-bottom: 1.3rem; }
+    .aud-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+    .aud-list li {
+      font-size: 0.88rem; color: var(--text-mid); padding-left: 1.3rem;
+      position: relative; line-height: 1.6;
+    }
+    .aud-list li::before {
+      content: ''; position: absolute; left: 0; top: 0.62em;
+      width: 5px; height: 5px; background: var(--accent); border-radius: 50%;
+    }
+
+    /* JOURNEY */
+    .journey-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 2.75rem;
+    }
+    .journey-step { background: var(--panel); padding: 2.4rem 2rem; }
+    .journey-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 38px; height: 38px; background: var(--accent); color: #fff;
+      font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 900; margin-bottom: 1.1rem;
+    }
+    .journey-step h3 { font-size: 1.08rem; font-weight: 800; margin-bottom: 0.6rem; }
+    .journey-step p { font-size: 0.9rem; color: var(--text-mid); line-height: 1.75; }
+
+    /* PROOF */
+    .proof-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 2.5rem;
+    }
+    .proof-item { background: var(--panel); padding: 2rem; }
+    .proof-num {
+      font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 900;
+      color: var(--accent); line-height: 1; margin-bottom: 0.5rem;
+    }
+    .proof-text { font-size: 0.88rem; color: var(--text-mid); line-height: 1.65; }
+    .proof-src { display: block; margin-top: 0.7rem; font-size: 0.73rem; color: var(--text-faint); }
+
+    /* ABOUT */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; margin-top: 2.5rem; }
+    .about-text p { font-size: 1.02rem; color: var(--text-mid); line-height: 1.85; margin-bottom: 1.3rem; }
+    .about-text p strong { color: var(--text); font-weight: 600; }
+    .creds-list { background: var(--panel); border: 1px solid var(--border); padding: 1.9rem; }
+    .creds-list h3 {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--text-faint); margin-bottom: 1.2rem;
+    }
+    .creds-list ul { list-style: none; display: flex; flex-direction: column; gap: 0.9rem; }
+    .creds-list li {
+      font-size: 0.89rem; color: var(--text-mid); padding-left: 1.15rem;
+      position: relative; line-height: 1.5;
+    }
+    .creds-list li::before {
+      content: ''; position: absolute; left: 0; top: 0.6em;
+      width: 5px; height: 5px; background: var(--accent); border-radius: 50%;
+    }
+
+    /* PODCAST */
+    .podcast-head { margin-bottom: 2.5rem; }
+    .podcast-meta { display: flex; gap: 2.5rem; padding-bottom: 0.4rem; }
+    .podcast-meta div span:first-child {
+      display: block; font-family: 'Playfair Display', serif;
+      font-size: 1.7rem; font-weight: 900; color: var(--accent); line-height: 1;
+    }
+    .podcast-meta div span:last-child {
+      font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-soft);
+    }
+    .guest-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .guest-card {
+      background: var(--panel); padding: 1.7rem;
+      text-decoration: none; display: block; transition: background 0.2s;
+    }
+    .guest-card:hover { background: #fcfcfa; }
+    .guest-card:hover h3 { color: var(--accent); }
+    .guest-card h3 { font-size: 0.98rem; font-weight: 700; margin-bottom: 0.28rem; line-height: 1.3; transition: color 0.2s; }
+    .guest-card p { font-size: 0.82rem; color: var(--text-soft); line-height: 1.6; }
+    .guest-status {
+      display: inline-block; font-size: 0.59rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 0.55rem;
+    }
+    .guest-status.aired { color: var(--accent); }
+
+    /* SPEAKING */
+    .speaking-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; margin-top: 2.25rem; }
+    .speak-tile {
+      position: relative; aspect-ratio: 4/3; background: #e4e4df;
+      border: 1px solid var(--border); overflow: hidden; display: flex; align-items: flex-end;
+    }
+    .speak-tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .speak-empty {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      color: var(--text-faint); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .speak-caption {
+      position: relative; z-index: 1; width: 100%;
+      background: linear-gradient(transparent, rgba(0,0,0,0.78)); padding: 1.5rem 1rem 0.85rem;
+    }
+    .speak-caption strong { display: block; font-size: 0.78rem; font-weight: 700; color: #fff; line-height: 1.3; }
+    .speak-caption span { font-size: 0.67rem; color: rgba(255,255,255,0.72); }
+
+    /* WRITING */
+    .writing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 2.5rem; }
+    .write-slot {
+      background: #fbfbf9; border: 1.5px dashed #d4d4cd; padding: 2.6rem 1.75rem;
+      text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.6rem;
+    }
+    .write-slot span { font-size: 1.3rem; color: var(--text-faint); }
+    .write-slot p { font-size: 0.8rem; color: var(--text-faint); line-height: 1.55; }
+
+    /* FAQ */
+    .faq-list { margin-top: 2.5rem; max-width: 840px; }
+    .faq-list details { border-top: 1px solid var(--border); padding: 1.4rem 0; }
+    .faq-list details:last-child { border-bottom: 1px solid var(--border); }
+    .faq-list summary {
+      font-size: 1rem; font-weight: 700; color: var(--text); cursor: pointer;
+      list-style: none; display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem;
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after { content: '+'; color: var(--accent); font-size: 1.3rem; line-height: 1; flex-shrink: 0; }
+    .faq-list details[open] summary::after { content: '\2212'; }
+    .faq-list details p { margin-top: 0.9rem; font-size: 0.93rem; color: var(--text-mid); line-height: 1.8; max-width: 750px; }
+
+    /* CONTACT */
+    .contact { background: var(--accent); padding: 5.5rem 4rem; text-align: center; }
+    .contact .section-eyebrow { color: rgba(255,255,255,0.8); font-size: 0.78rem; margin-bottom: 1.75rem; }
+    .contact .section-title { color: #fff; max-width: 780px; margin: 0 auto 1.25rem; }
+    .contact > p {
+      font-size: 1.04rem; color: rgba(255,255,255,0.85);
+      max-width: 580px; margin: 0 auto 2.25rem; line-height: 1.75;
+    }
+    .contact-links { display: flex; gap: 0.85rem; justify-content: center; flex-wrap: wrap; }
+    .btn-white {
+      display: inline-block; background: #fff; color: var(--accent);
+      padding: 0.95rem 2.1rem; font-size: 0.82rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+      border-radius: 2px; transition: opacity 0.2s;
+    }
+    .btn-white:hover { opacity: 0.92; }
+    .btn-ghost {
+      display: inline-block; border: 1.5px solid rgba(255,255,255,0.55); color: #fff;
+      padding: 0.95rem 2.1rem; font-size: 0.82rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+      border-radius: 2px; transition: border-color 0.2s;
+    }
+    .btn-ghost:hover { border-color: #fff; }
+    .contact-direct { margin-top: 2.25rem; font-size: 0.85rem; color: rgba(255,255,255,0.8); }
+    .contact-direct a { color: #fff; }
+
+    /* FOOTER */
+    footer {
+      padding: 2.5rem 4rem; border-top: 1px solid var(--border-soft);
+      display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap;
+    }
+    footer p { font-size: 0.78rem; color: var(--text-faint); }
+    .footer-links { display: flex; gap: 1.75rem; list-style: none; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.78rem; color: var(--text-faint); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--text-mid); }
+
+    /* RESPONSIVE */
+    @media (max-width: 1100px) {
+      .shifts { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 1000px) {
+      .journey-grid, .proof-grid, .method-gains { grid-template-columns: 1fr; }
+      .guest-grid, .speaking-grid, .writing-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-grid, .method-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .aud-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 760px) {
+      nav { padding: 0.9rem 1.5rem; }
+      .nav-toggle { display: flex; }
+      .nav-links {
+        display: none; position: absolute; top: 100%; left: 0; right: 0;
+        flex-direction: column; align-items: stretch; gap: 0;
+        background: #f7f7f5; border-bottom: 1px solid var(--border-soft);
+        padding: 0.25rem 1.5rem 1rem; box-shadow: 0 12px 24px -12px rgba(0,0,0,0.16);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { display: block; padding: 0.85rem 0; border-bottom: 1px solid var(--border-soft); }
+      section { padding: 3.5rem 1.5rem; }
+      .hero { grid-template-columns: 1fr; padding: 6.5rem 1.5rem 2.5rem; gap: 2.25rem; }
+      .hero-portrait { max-width: 300px; }
+      .shifts { grid-template-columns: 1fr; }
+      .guest-grid, .speaking-grid, .writing-grid { grid-template-columns: 1fr; }
+      .divider { margin: 0 1.5rem; }
+      .contact { padding: 3.5rem 1.5rem; }
+      footer { flex-direction: column; text-align: center; gap: 1.25rem; }
+    }
+  </style>
+<style>
+.sch-hero{padding-top:72px;padding-bottom:48px}
+.section-intro + .section-intro{margin-top:1.05rem}
+.sch-lede{font-size:1.12rem;color:var(--text-mid);max-width:60ch;line-height:1.65}
+.sch-lede + .sch-lede{margin-top:1.05rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:38px;margin-top:26px}
+.split h3{font-size:.82rem;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+.split ul{list-style:none;padding:0;margin:0}
+.split li{padding:0 0 14px;margin:0 0 14px;border-bottom:1px solid var(--border-soft);font-size:.97rem;line-height:1.6;color:var(--text-mid)}
+.split li:last-child{border-bottom:0}
+.split li b{color:var(--text);font-weight:600}
+.enq{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:34px;max-width:680px;margin-top:26px}
+.enq label{display:block;font-size:.86rem;font-weight:600;color:var(--text);margin:0 0 6px}
+.enq .hint{font-weight:400;color:var(--text-soft)}
+.enq input,.enq select,.enq textarea{width:100%;box-sizing:border-box;font:inherit;font-size:.95rem;color:var(--text);background:#fff;border:1px solid var(--border);border-radius:8px;padding:11px 12px;margin:0 0 18px}
+.enq textarea{min-height:96px;resize:vertical}
+.enq input:focus,.enq select:focus,.enq textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.enq .row{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.enq button{font:inherit;font-weight:600;font-size:.98rem;background:var(--accent);color:#fff;border:0;border-radius:8px;padding:13px 26px;cursor:pointer}
+.enq button:hover{background:var(--accent-dark)}
+.enq button[disabled]{opacity:.6;cursor:default}
+.ml-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.enq .err{color:var(--accent);font-size:.9rem;margin:12px 0 0;display:none}
+.enq .fineprint{font-size:.84rem;color:var(--text-soft);margin:14px 0 0;line-height:1.55}
+.fmt-list{list-style:none;padding:0;margin:22px 0 0}
+.fmt-list li{padding:16px 0;border-top:1px solid var(--border-soft);font-size:.97rem;line-height:1.6;color:var(--text-mid)}
+.fmt-list li b{display:block;color:var(--text);font-weight:600;margin-bottom:3px}
+@media (max-width:760px){.split{grid-template-columns:1fr;gap:26px}.enq .row{grid-template-columns:1fr}.enq{padding:24px}.sch-hero{padding-top:44px;padding-bottom:32px}}
+</style>
+</head>
+<body>
+<nav aria-label="Main navigation">
+    <a class="nav-logo" href="https://www.kavleenkaur.com/">Kavleen Kaur Bhatia<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="https://www.kavleenkaur.com/#method">The Method</a></li>
+      <li><a href="https://www.kavleenkaur.com/#benefits">Benefits</a></li>
+      <li><a href="https://www.kavleenkaur.com/#who">Who It's For</a></li>
+      <li><a href="https://www.kavleenkaur.com/#podcast">The Conversations</a></li>
+      <li><a href="/writing">Articles</a></li>
+      <li><a href="https://www.kavleenkaur.com/#faq">FAQ</a></li>
+    </ul>
+  </nav>
+<main id="top">
+<section class="sch-hero"><div class="wrap"><p class="section-eyebrow">For schools and leadership</p><h1 class="section-title" style="max-width:20ch">AI capability your staff keeps.</h1><p class="sch-lede">Commissioned workshops built on the IMPACTS Framework &mdash; a seven-step method for working with AI that starts with professional judgment, not prompts. Scoped to your school before anything is designed.</p><div class="hero-btns" style="margin-top:26px"><a class="btn-primary" href="#enquire">Request a workshop brief</a> <a class="btn-secondary" href="#shape">See how it is scoped</a></div></div></section>
+<hr class="divider">
+<section><div class="wrap"><p class="section-eyebrow">The problem</p><h2 class="section-title">The problem isn&rsquo;t the AI</h2><p class="section-intro">Your teachers are already using it. What varies is the quality of what comes out &mdash; some of it excellent, some of it unusable &mdash; because there&rsquo;s no shared method behind it. First outputs get accepted. Nobody has agreed what good looks like.</p><p class="section-intro">That is a management problem before it is a technology one, and it does not resolve on its own. It resolves when a school agrees how AI is used, where it is not, and what a good output looks like.</p></div></section>
+<hr class="divider">
+<section class="panel-section"><div class="wrap"><p class="section-eyebrow">What your school receives</p><h2 class="section-title">Before, during and after</h2><ul class="fmt-list"><li><b>A scoping conversation</b>Before anything is designed: which tools are already in use, which subjects and year groups are involved, and where the real pressure sits.</li><li><b>A tailored session plan</b>A written outline of what the session will cover, shareable with your academic leadership before you commit to anything.</li><li><b>The workshop itself</b>Built on the IMPACTS Framework and applied to your context rather than delivered off a shelf.</li><li><b>An agreed position on guardrails</b>Where AI supports learning, and where it quietly replaces the thinking a student needs to do. This is the conversation most schools have not had yet.</li><li><b>Something reusable to take away</b>So the method is still in use in week six, not just on the day.</li><li><b>An optional leadership follow-up</b>A later session with academic leadership on what has actually held in practice, and where it has not. Quoted separately.</li></ul></div></section>
+<hr class="divider">
+<section id="shape"><div class="wrap"><p class="section-eyebrow">How it is scoped</p><h2 class="section-title">Shaped around your school</h2><p class="section-intro">Every workshop is built on the IMPACTS Framework. What changes is the shape &mdash; the length, who is in the room, how it is delivered. That is settled in a scoping conversation before anything is designed.</p><div class="split"><div><h3>What we set together</h3><ul><li><b>Length.</b> From a focused session to a full day, depending on how much of your staff&rsquo;s time you can protect and how far you want to get.</li><li><b>Who attends.</b> A department, a year group, your academic leadership, or a larger cohort. Group size is not a constraint.</li><li><b>Starting point.</b> If your staff are new to AI, we start there. If they are already using it, we go straight to method.</li><li><b>How hands-on it is.</b> In person, the session is worked through &mdash; staff build classroom material during the session itself, so it is productive time rather than time away from the job. Online covers the same method with less of the collaborative building.</li><li><b>How it is delivered.</b> In person or online.</li></ul></div><div><h3>What stays the same</h3><ul><li>A scoping conversation first, so the session is built on what your school is actually dealing with.</li><li>An explicit conversation about guardrails &mdash; where AI supports learning, and where it quietly replaces the thinking a student needs to do.</li><li>The IMPACTS method as the spine, so what your staff take away transfers across tools and tasks rather than expiring with one of them.</li><li>Something reusable to take away, so the work holds after the session ends.</li></ul></div></div><p class="section-intro" style="margin-top:26px">Tell me what you&rsquo;re working with and I&rsquo;ll come back with a suggested shape.</p></div></section>
+<hr class="divider">
+<section class="panel-section"><div class="wrap"><p class="section-eyebrow">The method</p><h2 class="section-title">IMPACTS</h2><p class="section-intro">A seven-step method for professional AI use in education: Identify, Mine, Prompt, Assess, Calibrate, Tune, Systematise. Six of the seven happen outside the prompt. It is tool agnostic by design, so it holds whether your staff use ChatGPT, Gemini, NotebookLM, or whatever arrives next.</p><p class="section-intro"><a href="https://www.kavleenkaur.com/impacts-framework">Read the full guide to the IMPACTS Framework &rarr;</a></p></div></section>
+<hr class="divider">
+<section><div class="wrap"><p class="section-eyebrow">Results</p><h2 class="section-title">What participants report</h2><div class="proof-grid"><div class="proof-item"><div class="proof-num">89 to 91%</div><p class="proof-text">of participating teachers reported they intended to apply the method immediately.</p><p class="proof-src">DPS Vasant Vihar, New Delhi</p></div><div class="proof-item"><div class="proof-num">10/10</div><p class="proof-text">respondents rated the session valuable. 60% rated it extremely valuable and said they would use it right away.</p><p class="proof-src">Indraprastha International School, Dwarka</p></div><div class="proof-item"><div class="proof-num">100%</div><p class="proof-text">positive feedback across the full teacher cohort at the flagship NCR session.</p><p class="proof-src">DPS Vasant Vihar, New Delhi</p></div></div></div></section>
+<hr class="divider">
+<section id="faq"><div class="wrap"><p class="section-eyebrow">Before you enquire</p><h2 class="section-title">Questions schools ask</h2><div class="faq-list"><details><summary>How long is a workshop?</summary><p>It varies. From a focused session to a full day, depending on how much of your staff&rsquo;s time you can protect and how far you want to get. The length is agreed in the scoping conversation, before the session is designed.</p></details><details><summary>How many people can attend?</summary><p>Group size is not a constraint. A department, a year group, your academic leadership, or a larger cohort.</p></details><details><summary>Can it be delivered online?</summary><p>Yes, and it covers the same method. In person allows more of the collaborative building, where staff produce classroom material during the session itself.</p></details><details><summary>Our teachers haven&rsquo;t used AI before. Is this too advanced?</summary><p>No. The starting point is a scoping decision. If your staff are new to AI, the session starts there. If they are already using it, it goes straight to method.</p></details><details><summary>We already run AI training. How is this different?</summary><p>Most AI training covers tool features, which stops working when the tool changes. This covers method: establishing professional intent before generating anything, holding output to your own standard, and turning what worked into reusable systems. If your current training already does that, you are in good shape. If it does not, this complements it.</p></details><details><summary>Our teachers are stretched. Can we justify the time?</summary><p>In person, staff build classroom material during the session itself rather than only learning about it. That makes it productive time rather than time away from the job.</p></details><details><summary>Does this cover the CBSE Computational Thinking and AI curriculum?</summary><p>Yes. Teacher readiness for the CBSE mandate across Classes 3 to 8 can be part of the scope, covering structured thinking, algorithms, decomposition and pattern recognition as teachable classroom practice.</p></details><details><summary>We need to discuss this with management or the board. What can you send?</summary><p>Send an enquiry and you will get a workshop brief setting out the suggested shape for your school, written so it can be forwarded to a leadership team or management committee.</p></details></div></div></section>
+<hr class="divider">
+<section id="enquire"><div class="wrap"><p class="section-eyebrow">Request a workshop brief</p><h2 class="section-title">Tell me about your school</h2><p class="section-intro" style="max-width:60ch">A few details so I can come back with something useful rather than a generic reply. I read every enquiry myself. Most of the form is optional.</p><div class="enq"><form id="enqForm" novalidate><div class="row"><div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div><div><label for="f-school">School</label><input id="f-school" name="school" type="text" autocomplete="organization" required></div></div><label for="f-role">Your role</label><select id="f-role" name="role" required><option value="">Select&hellip;</option><option>Principal or Head of School</option><option>Academic Head or Coordinator</option><option>Trustee or Management</option><option>Teacher</option><option>Other</option></select><label for="f-email">Email <span class="hint">&mdash; school email preferred</span></label><input id="f-email" name="email" type="email" autocomplete="email" required><label for="f-context">What&rsquo;s prompting this?</label><select id="f-context" name="context" required><option value="">Select&hellip;</option><option>We&rsquo;re planning staff development this year</option><option>Teachers are already using AI and we want consistency</option><option>We need to prepare for the CBSE CT and AI curriculum</option><option>We want an agreed school position on AI</option><option>Still exploring</option></select><label for="f-phone">Phone <span class="hint">&mdash; optional, only if you&rsquo;d rather I call than email</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"><label for="f-notes">Anything you&rsquo;d like me to know <span class="hint">&mdash; optional</span></label><textarea id="f-notes" name="notes"></textarea><div class="ml-hp" aria-hidden="true"><label>Do not fill this in<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div><button type="submit" id="enqBtn">Request a workshop brief</button><p class="err" id="enqErr"></p><p class="fineprint">I&rsquo;ll come back to you with a brief covering what a workshop for your school could look like, and a suggested next step. Your details are not shared with anyone.</p></form></div></div></section>
+</main>
+<footer>
+    <p>&copy; 2026 Kavleen Kaur Bhatia &middot; Credo Learnings &middot; Delhi NCR, India</p>
+    <ul class="footer-links">
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+      <li><a href="/writing">Writing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://credolearnings.com/" target="_blank" rel="noopener">credolearnings.com</a></li>
+      <li><a href="https://www.linkedin.com/in/kavleen-kaur-bhatia/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </footer>
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  if (!toggle || !links) return;
+  toggle.addEventListener('click', function(){
+    var isOpen = links.classList.toggle('open');
+    toggle.classList.toggle('open', isOpen);
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+ var f=document.getElementById("enqForm"); if(!f) return;
+ var t0=Date.now();
+ var b=document.getElementById("enqBtn"), e=document.getElementById("enqErr");
+ function fail(msg){ b.disabled=false; b.textContent="Request a workshop brief"; e.innerHTML=msg; e.style.display="block"; }
+ f.addEventListener("submit", function(ev){
+  ev.preventDefault(); e.style.display="none";
+  if(f.website.value!==""){ window.location.href="/workshop-enquiry-received"; return; }
+  if(Date.now()-t0<3000){ fail("That was submitted very quickly. Please try again."); return; }
+  if(!f.name.value.trim()||!f.school.value.trim()||!f.role.value||!f.email.value.trim()||!f.context.value){ fail("Please complete the required fields."); return; }
+  b.disabled=true; b.textContent="Sending\u2026";
+  var fd=new FormData();
+  fd.append("fields[name]",f.name.value.trim());
+  fd.append("fields[email]",f.email.value.trim());
+  fd.append("fields[school]",f.school.value.trim());
+  fd.append("fields[role]",f.role.value);
+  fd.append("fields[enquiry_context]",f.context.value);
+  fd.append("fields[enquiry_notes]",f.notes.value.trim());
+  fd.append("fields[phone]",f.phone.value.trim());
+  fd.append("ml-submit","1");
+  fd.append("anticsrf","true");
+  fetch("https://assets.mailerlite.com/jsonp/2482430/forms/197292833336461306/subscribe",{method:"POST",body:fd})
+   .then(function(r){return r.json();})
+   .then(function(d){ if(d&&d.success){ window.location.href="/workshop-enquiry-received"; } else { throw new Error("x"); } })
+   .catch(function(){ fail("Something went wrong sending that. Please email <a href=\"mailto:kavleen2007@gmail.com\">kavleen2007@gmail.com</a> instead."); });
+ });
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6b2d1cc4017348f6bbc40cde86c7a890"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
