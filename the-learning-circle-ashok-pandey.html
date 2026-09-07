@@ -9,11 +9,9 @@
   All links, canonical tags and schema are set to real URLs. The page
   works as-is. Two optional upgrades remain:
 
-  1.  social-card.jpg  -> NOT YET CREATED. Referenced by the OG tags at
-      /images/ashok-pandey-social-card.jpg
-      Until you add it, LinkedIn/WhatsApp previews fall back to no image.
-      Make it 1200x630. Quickest version: the "Un-Automatable Legacy"
-      quote card already in images/, resized.
+  1.  social-card.jpg  -> DONE. /images/ashok-pandey-social-card.jpg
+      exists at 1200x630 and the OG tags point at it, so LinkedIn/WhatsApp
+      previews render correctly.
 
   2.  Guest photo currently uses the YouTube thumbnail as a stand-in.
       Swap the <img> in the guest section for a real headshot of
@@ -43,6 +41,9 @@
 <title>India's Schools Have a Mentoring Problem, Not a Training Problem — Dr. Ashok K. Pandey | The Learning Circle</title>
 <meta name="description" content="Dr. Ashok K. Pandey on why India's school system suffers from a &quot;Vitamin LD&quot; deficiency, the difference between training and mentoring a teacher, the accidental principal problem, and a five-step roadmap for teachers who want to lead. Full transcript, chapters and takeaways.">
 <link rel="canonical" href="https://www.kavleenkaur.com/the-learning-circle-ashok-pandey">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="Kavleen Kaur">
 
@@ -1297,7 +1298,7 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What does 'India has a mentoring problem, not a training problem' mean?",
+          "name": "What does \u201cIndia has a mentoring problem, not a training problem\u201d mean?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "India runs a great deal of teacher training - pre-service, in-service, and now the four-year ITEP degree. What it does not run at scale is mentoring: a senior practitioner who holds a new teacher's hand with compassion, empathy and non-judgmental intent through the first years, and who keeps doing it as that teacher moves toward leadership. Training transfers content; mentoring transfers judgment."
@@ -1305,7 +1306,7 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
         },
         {
           "@type": "Question",
-          "name": "What is Vitamin LD in education?",
+          "name": "What is \u201cVitamin LD\u201d?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Vitamin LD is Dr. Ashok K. Pandey's shorthand for leadership development, the nutrient he argues Indian schooling is deficient in. He first described a deficiency of Vitamin T for teachers, revised it to Vitamin TL for teacher leadership, and now calls it Vitamin LD - leadership development."
@@ -1313,7 +1314,7 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
         },
         {
           "@type": "Question",
-          "name": "What is the difference between professional development and mentoring a teacher?",
+          "name": "What is the practical difference between professional development and mentoring?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Teaching a staff how to integrate AI is professional development. Showing a teacher how to use AI to build critical thinking in children, demonstrating it, and then giving her a workshop to run, a paper to present, a chance to author something and sponsorship for greater responsibility is mentoring. Professional development is compliance-driven and information-driven; mentoring is human-driven and works by trusting a teacher with responsibility."
@@ -1321,7 +1322,7 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
         },
         {
           "@type": "Question",
-          "name": "What is the accidental principal problem?",
+          "name": "What is the \u201caccidental principal\u201d problem?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Where there is no structured leadership development, people become principals by virtue of years served rather than preparation. They become accidental principals: equipped for administration but never mentored to lead a culture, design learning, or build a school where human flourishing takes place."
@@ -1329,7 +1330,7 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
         },
         {
           "@type": "Question",
-          "name": "How should a school answer the objection 'we invest in teachers and then they leave'?",
+          "name": "How should a school answer \u201cwhat if we invest in teachers and they leave?\u201d",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Dr. Pandey suggests three responses. First, calculate the opposite sum: the cost of not investing and keeping an untrained teacher for ten years. Second, a well-formed teacher who leaves becomes an ambassador for your school wherever she goes, saving marketing spend. Third, the children she goes on to teach are still this country's children. He calls it a win-win rather than a loss."
@@ -1337,7 +1338,7 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
         },
         {
           "@type": "Question",
-          "name": "What should a teacher do to become a school leader?",
+          "name": "What five things should a teacher do to move into school leadership?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Five things: be an excellent teacher rather than an ordinary one, and be visibly exceptional at something; learn from and emulate the colleagues worth emulating; raise your hand for responsibilities others step back from; read widely and build networks with strong teachers in other schools, meeting monthly even online; and find a mentor both inside and outside your school."
@@ -1345,7 +1346,7 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
         },
         {
           "@type": "Question",
-          "name": "What does it mean to call AI the fourth teacher?",
+          "name": "What does \u201cAI as the fourth teacher\u201d mean?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "A child already has three teachers: the classroom teacher, the parent at home and the peer group. Dr. Pandey calls AI the fourth teacher, and because it is the classroom teacher's colleague he asks staff to treat it as a participant in the staff meeting rather than a threat to the profession."
@@ -1353,7 +1354,7 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
         },
         {
           "@type": "Question",
-          "name": "What is ITEP and why does it matter for teacher development in India?",
+          "name": "What is ITEP, and why does it matter here?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "ITEP is the Integrated Teacher Education Programme introduced after NEP 2020: a four-year course a student can choose straight after Class 12, in the way one chooses engineering, medicine or law. Dr. Pandey welcomes it but notes that unlike an engineer, who gets years of internship, a new teacher walks into a classroom on day one having not seen one since her own schooling - which is why onboarding and mentoring matter."
@@ -1361,7 +1362,7 @@ document.querySelectorAll('a[href="#transcript"]').forEach(function(a){
         },
         {
           "@type": "Question",
-          "name": "Where can Indian teachers find free mentoring and professional development?",
+          "name": "Where can an individual teacher find mentoring without waiting for their school?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Dr. Pandey points to the National Mission for Mentoring on the NCTE portal, where teachers can enrol as mentees and attend expert-led sessions several times a week, and to SWAYAM, DIKSHA, NISHTHA and open courses from IIT Bombay and IIT Madras, alongside Coursera, edX and Udemy."
