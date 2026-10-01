@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Assessment Designer | IMPACTS Toolkit for Teachers | Kavleen Kaur Bhatia</title>
+<meta name="description" content="A free tool for teachers. Answer a few questions about your class and get a ready-to-paste prompt that helps any AI tool write the test, worksheet or HOTS questions you actually had in mind.">
+<meta name="author" content="Kavleen Kaur Bhatia">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://www.kavleenkaur.com/assessment-designer">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.kavleenkaur.com/assessment-designer">
+<meta property="og:title" content="Assessment Designer | IMPACTS Toolkit for Teachers | Kavleen Kaur Bhatia">
+<meta property="og:description" content="Answer a few questions about your class and get a ready-to-paste prompt that helps any AI tool write the assessment you actually had in mind.">
+<meta property="og:image" content="https://www.kavleenkaur.com/assessment-designer-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="IMPACTS Toolkit: Assessment Designer, a free tool for teachers">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Assessment Designer | IMPACTS Toolkit for Teachers | Kavleen Kaur Bhatia">
+<meta name="twitter:description" content="Answer a few questions about your class and get a ready-to-paste prompt that helps any AI tool write the assessment you actually had in mind.">
+<meta name="twitter:image" content="https://www.kavleenkaur.com/assessment-designer-og.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": "https://www.kavleenkaur.com/assessment-designer#tool",
+  "name": "IMPACTS Toolkit: Assessment Designer",
+  "url": "https://www.kavleenkaur.com/assessment-designer",
+  "description": "A free tool that helps teachers write a clear assessment brief and turn it into a ready-to-paste prompt for any generative AI tool, to create tests, worksheets and HOTS questions.",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any (web browser)",
+  "isAccessibleForFree": true,
+  "inLanguage": "en",
+  "audience": {"@type": "EducationalAudience", "educationalRole": "teacher"},
+  "author": {"@type": "Person", "@id": "https://www.kavleenkaur.com/#person", "name": "Kavleen Kaur Bhatia"},
+  "publisher": {"@type": "Organization", "name": "Credo Learnings", "url": "https://credolearnings.com/"}
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --accent:#d63b17; --accent-dark:#b32f10; --accent-tint:#fbeee9;
+  --text:#16161a; --text-mid:#55555c; --text-soft:#85858d; --text-faint:#b0b0b6;
+  --border:#dcdcd7; --border-soft:#e6e6e1; --panel:#ffffff; --panel-tint:#f7f7f5;
+  --err:#b42318; --ok:#067647;
+  --warn-bg:#fff7e8; --warn-line:#f1d7a6; --warn-text:#7a4b06;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:linear-gradient(170deg,#f7f7f5 0%,#eeeeeb 45%,#f4f4f1 100%);background-attachment:fixed;color:var(--text);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+
+/* HEADER (mirrors the site nav) */
+header{background:rgba(247,247,245,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border-soft)}
+header .wrap{padding-top:16px;padding-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:.95rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--accent)}
+.tool-name{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+
+main{padding:28px 0 48px}
+h1,h2{font-family:'Playfair Display',Georgia,serif;font-weight:900;line-height:1.15;letter-spacing:-.01em;margin:0 0 12px}
+h1{font-size:2rem}
+h2{font-size:1.55rem}
+h3{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:28px 0 14px;padding-top:20px;border-top:1px solid var(--border-soft)}
+p{margin:0 0 12px}
+.muted{color:var(--text-mid)}
+.small{font-size:.875rem}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:2px;padding:22px}
+.hero{padding:30px 22px}
+.hero h1{margin-bottom:14px}
+.lead{font-size:1.08rem;color:var(--text-mid);line-height:1.75;margin-bottom:22px}
+@media(min-width:560px){.hero{padding:44px 40px}.hero h1{font-size:2.5rem}.card{padding:30px}}
+
+/* PROGRESS */
+.progress{margin-bottom:16px}
+.progress-top{display:flex;justify-content:space-between;font-size:.8rem;font-weight:600;letter-spacing:.04em;color:var(--text-soft);margin-bottom:6px}
+.bar{height:4px;background:var(--border);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .25s}
+
+/* FIELDS */
+fieldset{border:0;margin:0 0 20px;padding:0;min-width:0}
+legend,.q{font-weight:600;font-size:1rem;margin-bottom:8px;padding:0}
+.help{font-size:.875rem;color:var(--text-soft);margin:-4px 0 10px}
+.hint{display:block;font-size:.875rem;color:var(--text-soft);margin-top:6px;line-height:1.5}
+.req{color:var(--text-soft);font-weight:400;font-size:.82rem}
+
+/* Option cards (single choice). Selected state uses an .is-checked class set by script,
+   so it works on older phone browsers that lack CSS :has(). */
+.opts{display:grid;grid-template-columns:1fr;gap:8px}
+.opts.two{grid-template-columns:1fr 1fr}
+.opt{position:relative;display:block;border:1px solid var(--border);border-radius:2px;padding:11px 12px 11px 40px;background:#fff;cursor:pointer;transition:border-color .15s,background .15s}
+.opts.two .opt{padding:10px 10px 10px 36px;font-size:.94rem}
+.opt input{position:absolute;left:13px;top:14px;width:18px;height:18px;accent-color:var(--accent);margin:0}
+.opts.two .opt input{left:11px;top:13px}
+.opt b{display:block;font-weight:600;line-height:1.3}
+.opt small{display:block;color:var(--text-soft);font-size:.82rem;line-height:1.4;margin-top:2px}
+.opt:hover{border-color:#c4c4bd}
+.opt.is-checked{border-color:var(--accent);background:var(--accent-tint)}
+.opt:focus-within{outline:2px solid var(--text);outline-offset:1px}
+
+/* Pills (multi-select) */
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{position:relative;border:1px solid var(--border);border-radius:999px;padding:8px 14px;background:#fff;cursor:pointer;font-size:.94rem;line-height:1.3;transition:border-color .15s,background .15s}
+.pill input{position:absolute;opacity:0;width:1px;height:1px}
+.pill:hover{border-color:#c4c4bd}
+.pill.is-checked{border-color:var(--accent);background:var(--accent-tint);font-weight:600}
+.pill.is-checked::before{content:"\2713\00a0";color:var(--accent)}
+.pill:focus-within{outline:2px solid var(--text);outline-offset:1px}
+
+label.field{display:block;margin-bottom:16px}
+label.field .q{display:block;margin-bottom:0}
+input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea{width:100%;font:inherit;color:var(--text);background:#fff;border:1px solid var(--border);border-radius:2px;padding:10px 12px;margin-top:6px}
+textarea{min-height:80px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:0;border-color:var(--accent)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+@media(max-width:420px){.row{grid-template-columns:1fr}}
+.check{display:flex;gap:10px;align-items:flex-start;margin:10px 0 0;cursor:pointer}
+.check input{width:18px;height:18px;margin-top:3px;accent-color:var(--accent);flex:none}
+
+/* BUTTONS (match site) */
+.nav{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:12px}
+.nav button{white-space:nowrap}
+button{font:inherit;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:2px;padding:13px 22px;cursor:pointer;border:1px solid var(--accent);display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:background .2s,border-color .2s,transform .15s}
+.primary{background:var(--accent);color:#fff}
+.primary:hover{background:var(--accent-dark);border-color:var(--accent-dark);transform:translateY(-1px)}
+.ghost{background:transparent;color:var(--text);border-color:#c4c4bd;font-weight:600}
+.ghost:hover{border-color:var(--text)}
+.nav .primary{margin-left:auto}
+button.big{width:100%;font-size:.88rem;padding:16px 26px}
+@media(min-width:560px){button.big{width:auto}}
+
+/* MESSAGES */
+.errors{display:none;background:#fef3f2;border:1px solid #fecdca;color:var(--err);border-radius:2px;padding:10px 12px;font-size:.875rem;margin-bottom:16px}
+.errors.show{display:block}
+.warn{display:none;background:var(--warn-bg);border:1px solid var(--warn-line);color:var(--warn-text);border-radius:2px;padding:10px 12px;font-size:.875rem;line-height:1.55;margin:0 0 18px}
+.warn.show{display:block}
+.warn b{display:block;margin-bottom:2px}
+.warn p{margin:0 0 4px}
+.warn p:last-child{margin:0}
+
+/* CONSENT */
+.notice{background:var(--panel-tint);border:1px solid var(--border-soft);border-radius:2px;padding:14px 16px;font-size:.875rem;color:var(--text-mid);line-height:1.6;margin:6px 0 4px}
+.notice b{color:var(--text)}
+.notice a{color:var(--accent)}
+.phone-field{margin:14px 0 0 28px}
+
+/* RESULT */
+.brief{border:1px solid var(--border);border-radius:2px;overflow:hidden;margin-bottom:28px}
+.brief h3{margin:0;border:0;background:var(--text);color:#fff;font-size:.95rem;letter-spacing:.02em;text-transform:none;padding:12px 16px}
+.brief dl{margin:0;padding:6px 16px 14px}
+.brief dt{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-soft);margin-top:12px}
+.brief dd{margin:2px 0 0;font-size:.95rem;white-space:pre-line}
+.promptbox pre{white-space:pre-wrap;word-wrap:break-word;background:var(--panel-tint);border:1px solid var(--border);border-radius:2px;padding:14px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;line-height:1.55;max-height:340px;overflow:auto;margin:0 0 12px}
+.copyrow{margin-bottom:14px}
+.copied{display:none;color:var(--ok);font-size:.875rem;font-weight:600;margin-top:10px}
+.copied.show{display:block}
+.closing{border-top:1px solid var(--border-soft);padding-top:20px;margin-top:10px}
+.closing h3{border:0;padding:0;margin:0 0 8px;font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;font-weight:900;letter-spacing:0;text-transform:none;color:var(--text)}
+.closing a{color:var(--accent);font-weight:600}
+
+footer{text-align:center;font-size:.78rem;color:var(--text-faint);padding:0 16px 32px}
+[hidden]{display:none!important}
+.screen{display:none}
+.screen.active{display:block}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="https://www.kavleenkaur.com/">Kavleen Kaur Bhatia<span>.</span></a>
+    <span class="tool-name">IMPACTS Toolkit &middot; Assessment Designer</span>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <!-- FRONT PAGE -->
+  <section class="screen active" id="s0">
+    <div class="card hero">
+      <p class="eyebrow">Toolkit to create efficient prompts</p>
+      <h1>Get AI to write the assessment you actually had in mind.</h1>
+      <p class="lead">Answer a few quick questions. Get a ready-to-paste prompt to create your assessment in any generative AI tool.</p>
+      <button class="primary big" data-go="1">Start</button>
+      <p class="small muted" style="margin:16px 0 0">Please don&rsquo;t include student names or personal details.</p>
+    </div>
+  </section>
+
+  <div id="progress" class="progress" hidden>
+    <div class="progress-top"><span id="ptitle"></span><span id="pstep"></span></div>
+    <div class="bar"><i id="pbar"></i></div>
+  </div>
+
+  <!-- STEP 1: WHAT -->
+  <section class="screen" id="s1" data-title="What are you making?">
+    <div class="card">
+      <div class="errors" role="alert"></div>
+      <h2>What are you making?</h2>
+      <fieldset><legend>Type</legend><div class="opts" id="o-type"></div></fieldset>
+      <div class="row">
+        <label class="field"><span class="q">Class</span>
+          <select data-k="cls"><option value="">Choose&hellip;</option></select></label>
+        <label class="field"><span class="q">Subject</span>
+          <input type="text" data-k="subject" list="subjects" placeholder="e.g. Science"></label>
+      </div>
+      <p class="help" style="margin-top:-8px">Assessments are written in English.</p>
+      <datalist id="subjects"><option>English</option><option>Mathematics</option><option>Science</option><option>EVS</option><option>Social Science</option><option>Computer Science</option><option>General Knowledge</option></datalist>
+      <label class="field"><span class="q">Board</span>
+        <select data-k="board"><option value="">Choose&hellip;</option></select>
+        <span class="hint">The AI will follow a board&rsquo;s question pattern only if you share that pattern with it.</span></label>
+      <label class="field" data-show="board:State board,Other"><span class="q" id="boardNameQ">Which board?</span>
+        <input type="text" data-k="boardName" placeholder="e.g. Maharashtra State Board"></label>
+      <label class="field" data-show="board:CBSE,ICSE,IB,Cambridge,State board,Other"><span class="q">Your board&rsquo;s question pattern <span class="req">(optional)</span></span>
+        <textarea data-k="boardPattern" placeholder="e.g. Section A: 5 MCQs, 1 mark each. Section B: 4 short answers, 2 marks each. Section C: 2 case-based questions, 4 marks each."></textarea>
+        <span class="hint">Paste the pattern, blueprint or sample paper format here, or attach it with the prompt later. If you leave it blank, the AI will not claim board alignment.</span></label>
+      <fieldset><legend>Where should the content come from?</legend><div class="opts" id="o-source"></div></fieldset>
+      <label class="field" data-show="source:topic"><span class="q">Topic</span>
+        <input type="text" data-k="topic" placeholder="e.g. Adding fractions with unlike denominators"></label>
+      <label class="field" data-show="source:src,srcplus"><span class="q">What does the material cover?</span>
+        <input type="text" data-k="material" placeholder="e.g. Chapter 4, Fractions, pages 45&ndash;52"></label>
+      <label class="field" data-show="source:srcplus"><span class="q">Your instructions</span>
+        <textarea data-k="instr" placeholder="e.g. Also include one question on decimals, which we covered last week"></textarea></label>
+      <div class="nav"><button class="ghost" data-back>Back</button><button class="primary" data-next>Continue</button></div>
+    </div>
+  </section>
+
+  <!-- STEP 2: PURPOSE, STUDENTS, THINKING -->
+  <section class="screen" id="s2" data-title="Purpose and students">
+    <div class="card">
+      <div class="errors" role="alert"></div>
+      <h2>What is the main job of this assessment?</h2>
+      <div class="opts two" id="o-main" role="radiogroup" aria-label="Main job"></div>
+      <div style="height:14px"></div>
+      <label class="field" data-show="main:other"><span class="q">Describe the purpose</span>
+        <input type="text" data-k="mainOther" placeholder="e.g. Check readiness before the next unit"></label>
+
+      <h3>Your students</h3>
+      <label class="field"><span class="q" id="needQ"></span>
+        <textarea data-k="need" id="needBox"></textarea>
+        <span class="hint">Not sure? Leave it blank. The AI will suggest a few and ask you to confirm.</span></label>
+      <fieldset><legend>How would you describe the class?</legend><div class="opts two" id="o-profile"></div></fieldset>
+
+      <h3>Thinking</h3>
+      <fieldset><legend>What kind of thinking should students do?</legend>
+        <p class="help">Recall means remembering facts and procedures. Reasoning means explaining, applying and analysing.</p>
+        <div class="opts" id="o-thinking"></div></fieldset>
+      <div class="warn" role="status" aria-live="polite"></div>
+      <div class="nav"><button class="ghost" data-back>Back</button><button class="primary" data-next>Continue</button></div>
+    </div>
+  </section>
+
+  <!-- STEP 3: FORMAT AND AVOID -->
+  <section class="screen" id="s3" data-title="Format">
+    <div class="card">
+      <div class="errors" role="alert"></div>
+      <h2>Format</h2>
+      <div data-show="type:test">
+        <div class="row">
+          <label class="field"><span class="q">Duration (minutes)</span><input type="number" min="1" data-k="duration" placeholder="e.g. 30"></label>
+          <label class="field"><span class="q">Total marks</span><input type="number" min="1" data-k="marks" placeholder="e.g. 20"></label>
+        </div>
+        <fieldset><legend>Question types</legend><p class="help">Pick the types you want, or let the AI choose the best mix.</p><div class="pills" id="o-qtypes"></div></fieldset>
+      </div>
+      <div data-show="type:worksheet">
+        <fieldset><legend>Where will it be used?</legend><div class="opts two" id="o-wsUse"></div></fieldset>
+        <fieldset><legend>How much support?</legend><div class="opts" id="o-wsSupport"></div></fieldset>
+        <fieldset><legend>Versions</legend><div class="opts" id="o-wsVersions"></div></fieldset>
+        <label class="field"><span class="q">Number of questions <span class="req">(optional)</span></span><input type="number" min="1" data-k="wsCount" placeholder="Leave blank to let the AI suggest"></label>
+      </div>
+      <div data-show="type:hots">
+        <label class="field"><span class="q">How many questions?</span><input type="number" min="1" data-k="rCount" placeholder="e.g. 5"></label>
+        <fieldset><legend>Question style</legend><div class="pills" id="o-rStyles"></div></fieldset>
+      </div>
+
+      <label class="check" style="margin:4px 0 0"><input type="checkbox" id="answerKey"> <span><b id="akLabel">Include answer key / marking scheme</b><span class="hint" id="akHint" style="margin-top:2px"></span></span></label>
+
+      <h3>What should the AI avoid?</h3>
+      <p class="help">Tick any that matter to you.</p>
+      <div class="pills" id="o-avoid"></div>
+      <div style="height:18px"></div>
+      <div class="warn" role="status" aria-live="polite"></div>
+      <label class="field"><span class="q">Anything else? <span class="req">(optional)</span></span>
+        <textarea data-k="other" placeholder="e.g. Include one question based on a diagram"></textarea></label>
+      <div class="nav"><button class="ghost" data-back>Back</button><button class="primary" data-next>Continue</button></div>
+    </div>
+  </section>
+
+  <!-- STEP 4: DETAILS -->
+  <section class="screen" id="s4" data-title="Your details">
+    <div class="card">
+      <div class="errors" role="alert"></div>
+      <h2>Almost done</h2>
+      <p class="muted">Add your details to see your assessment brief and prompt.</p>
+      <label class="field"><span class="q">Your name</span><input type="text" data-k="name" autocomplete="name"></label>
+      <label class="field"><span class="q">School</span><input type="text" data-k="school" autocomplete="organization"></label>
+      <label class="field"><span class="q">Email</span><input type="email" data-k="email" autocomplete="email"></label>
+
+      <div class="notice">
+        <b>How your details are used.</b> Credo Learnings saves your name, school and email, and the basic details of this assessment (type, class, subject, board and purpose), to understand who uses this tool and to improve it. Your prompt, your topic and anything you write about your students are not saved. Your details are never shared or sold. To see, correct or delete your details, or to withdraw your consent at any time, email <a href="mailto:kavleen2007@gmail.com">kavleen2007@gmail.com</a>.
+      </div>
+      <label class="check"><input type="checkbox" data-k="consentSave"> <span class="small">I agree that Credo Learnings may save these details to improve this tool. <span class="req">(required)</span></span></label>
+      <label class="check"><input type="checkbox" data-k="consentContact"> <span class="small">I would also like Credo Learnings to contact me occasionally about this tool and related resources for teachers. <span class="req">(optional)</span></span></label>
+      <label class="field phone-field" data-show="consentContact:true"><span class="q">Phone (WhatsApp) <span class="req">(optional)</span></span><input type="tel" data-k="phone" autocomplete="tel" placeholder="e.g. 98765 43210"></label>
+
+      <div style="height:16px"></div>
+      <div class="nav"><button class="ghost" data-back>Back</button><button class="primary" data-next>Show my brief</button></div>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section class="screen" id="s5">
+    <div class="card">
+      <h2>Your assessment brief</h2>
+      <p class="muted">This is the thinking most people skip. It is what makes the AI&rsquo;s work useful.</p>
+      <div class="brief"><h3 id="briefTitle">Assessment brief</h3><dl id="briefList"></dl></div>
+
+      <h2>Your prompt</h2>
+      <p class="muted">Copy it and paste it into the AI tool you use.<span id="attachHint"></span></p>
+      <div class="copyrow">
+        <button class="primary big" id="copyBtn">Copy prompt</button>
+        <div class="copied" id="copied" role="status">Copied. Now paste it into the AI tool you use.</div>
+      </div>
+      <div class="promptbox"><pre id="promptText"></pre></div>
+
+      <div class="closing">
+        <h3>You just used elements of IDENTIFY and MINE, the first two steps of IMPACTS.</h3>
+        <p>Instead of asking AI to start writing straight away, you first defined what the assessment needed to do, which is Identify. Then you thought about where your students are likely to go wrong, which is Mine. IMPACTS applies this same discipline across all seven steps of working with AI in teaching.</p>
+        <p><a href="https://www.kavleenkaur.com/impacts-framework" target="_blank" rel="noopener">Explore the IMPACTS Framework &rarr;</a></p>
+      </div>
+      <div class="nav"><button class="ghost" id="editBtn">Edit answers</button><button class="primary" id="newBtn">Design another assessment</button></div>
+    </div>
+  </section>
+
+</div>
+</main>
+<footer>&copy; 2026 Kavleen Kaur Bhatia &middot; Credo Learnings</footer>
+
+<script>
+/* ---------- Settings ---------- */
+// Paste the Google Apps Script web app URL here (it ends in /exec) to save responses to a Google Sheet.
+// See assessment-designer-sheet-script.gs for the script and setup steps.
+// While this is empty, nothing is saved.
+var ENDPOINT = "https://script.google.com/macros/s/AKfycbxA1hu1Z6CSCTibaNlhjO2LCkw_yVCXNnYU9tb5Ieo7xICmH7o_MmwXRY-LG2gVetouTg/exec";
+// Change this date whenever the consent wording above changes, so each saved row records which wording the teacher agreed to.
+var CONSENT_VERSION = "2026-10-01";
+
+/* ---------- Options ---------- */
+var O = {
+  type: [
+    {v:"test", l:"Test", h:"Unit test, class test, periodic assessment"},
+    {v:"worksheet", l:"Worksheet", h:"Practice for classwork or homework"},
+    {v:"hots", l:"HOTS questions", h:"Higher-order thinking: apply, analyse, explain"}
+  ],
+  board: [["CBSE","CBSE"],["ICSE","ICSE"],["IB","IB"],["Cambridge","Cambridge"],["State board","State board"],["Other","Other"],["none","Not relevant"]],
+  source: [
+    {v:"topic", l:"A topic", h:"You name the topic, the AI works from it"},
+    {v:"src", l:"Material I’ll attach, and only that", h:"Chapter pages, a PDF or your notes"},
+    {v:"srcplus", l:"Material I’ll attach, plus my instructions", h:"The material is the main source, and you can add to it"}
+  ],
+  main: [
+    {v:"understanding", l:"Check understanding", p:"check understanding of what was taught"},
+    {v:"misconceptions", l:"Diagnose misconceptions", p:"diagnose misconceptions"},
+    {v:"practice", l:"Practice and fluency", p:"practice and build fluency"},
+    {v:"grading", l:"Formal grading", p:"formal grading", testOnly:true},
+    {v:"revision", l:"Revision", p:"revision"},
+    {v:"other", l:"Other", p:""}
+  ],
+  need: {
+    understanding: {likely:"likely mistakes", q:"Any common mistakes you want the questions to reveal?", label:"Mistakes to reveal", ph:"e.g. They confuse area and perimeter"},
+    misconceptions: {likely:"likely misconceptions", q:"What mistakes or misunderstandings should this uncover?", label:"Misconceptions to uncover", ph:"e.g. They add numerators and denominators when adding fractions"},
+    practice: {likely:"likely practice needs", q:"What do students most need practice with?", label:"Needs most practice with", ph:"e.g. Word problems that need two steps"},
+    grading: {likely:"likely mistakes", q:"Any common mistakes you want the questions to reveal?", label:"Mistakes to reveal", ph:"e.g. They memorise definitions but can’t apply them"},
+    revision: {likely:"likely areas needing reinforcement", q:"Which areas most need checking or reinforcement?", label:"Areas to check or reinforce", ph:"e.g. Map skills and the causes of the revolt"},
+    other: {likely:"likely support needs", q:"Where do these students most need support on this topic?", label:"Where students need support", ph:"e.g. Explaining their reasoning in full sentences"}
+  },
+  profile: [
+    {v:"ontrack", l:"Mostly on track", p:"mostly on track"},
+    {v:"mixed", l:"Mixed abilities", p:"mixed abilities"},
+    {v:"struggling", l:"Many are struggling", p:"many students are struggling"},
+    {v:"advanced", l:"Mostly advanced", p:"mostly advanced"}
+  ],
+  thinking: [
+    {v:"recall", l:"Mostly recall", p:"mostly recall"},
+    {v:"recallmore", l:"More recall than reasoning", p:"more recall than reasoning"},
+    {v:"balanced", l:"Balanced", p:"a balance of recall and reasoning"},
+    {v:"reasonmore", l:"More reasoning than recall", p:"more reasoning than recall"},
+    {v:"reasoning", l:"Mostly reasoning and application", p:"mostly reasoning and application"}
+  ],
+  qtypes: [
+    {v:"ai", l:"Let the AI choose the best mix"},
+    {v:"mcq", l:"MCQ"},
+    {v:"vshort", l:"Very short answer"},
+    {v:"short", l:"Short answer"},
+    {v:"extended", l:"Extended response", notEarly:true},
+    {v:"scenario", l:"Scenario or case-based", notEarly:true},
+    {v:"fill", l:"Fill in the blanks"},
+    {v:"match", l:"Matching"}
+  ],
+  wsUse: [{v:"classwork", l:"Classwork", p:"classwork"},{v:"homework", l:"Homework", p:"homework"}],
+  wsSupport: [
+    {v:"worked", l:"Start with a worked example", p:"start with a worked example"},
+    {v:"hints", l:"Include hints", p:"include hints"},
+    {v:"independent", l:"Fully independent", p:"fully independent, no hints"}
+  ],
+  wsVersions: [
+    {v:"one", l:"One version for everyone", p:"one version for everyone"},
+    {v:"three", l:"Three levels: support, core, stretch", p:"three levels (support, core and stretch)"}
+  ],
+  rStyles: [
+    {v:"ai", l:"Let the AI choose", p:""},
+    {v:"explain", l:"Explain your answer", p:"explain your answer"},
+    {v:"who", l:"Who is right?", p:"who is right? (compare two views)"},
+    {v:"scenario", l:"Real-life scenario", p:"real-life scenario"}
+  ],
+  avoid: [
+    {v:"recall", l:"Too much routine recall or calculation"},
+    {v:"easy", l:"Questions that are too easy"},
+    {v:"tricky", l:"Tricky wording instead of real thinking"},
+    {v:"repeat", l:"Repeating the same skill"},
+    {v:"beyond", l:"Content beyond what was taught"},
+    {v:"language", l:"Language too hard for the class"},
+    {v:"context", l:"Unfamiliar or culturally specific contexts"}
+  ]
+};
+
+/* ---------- State ---------- */
+// answerKey: null means "follow the default" (on for tests, off otherwise); true/false once the teacher ticks or unticks it.
+function freshState(keep){
+  var s = {type:"",cls:"",subject:"",board:"",boardName:"",boardPattern:"",source:"",topic:"",material:"",instr:"",
+    main:"",mainOther:"",need:"",profile:"",
+    thinking:"",duration:"",marks:"",qtypes:["ai"],
+    wsUse:"",wsSupport:"",wsVersions:"",wsCount:"",rCount:"5",rStyles:["ai"],
+    answerKey:null,
+    avoid:[],other:"",name:"",school:"",email:"",phone:"",consentSave:false,consentContact:false};
+  if(keep){s.name=keep.name;s.school=keep.school;s.email=keep.email;s.phone=keep.phone;s.consentSave=keep.consentSave;s.consentContact=keep.consentContact;}
+  return s;
+}
+var S = freshState();
+var cur = 0, LAST = 4, RESULT = 5;
+
+/* ---------- Helpers ---------- */
+function $(q,el){return (el||document).querySelector(q)}
+function $$(q,el){return Array.prototype.slice.call((el||document).querySelectorAll(q))}
+function esc(t){return String(t).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function find(list,v){for(var i=0;i<list.length;i++){if(list[i].v===v)return list[i]}return null}
+function early(){var c=parseInt(S.cls,10);return c>=1&&c<=3}
+function clean(t){return String(t||"").trim()}
+function nodot(t){return String(t).replace(/[\s.]+$/,"")}
+function cap(t){t=String(t);return t.charAt(0).toUpperCase()+t.slice(1)}
+function hasBoard(){return !!S.board && S.board!=="none"}
+function wantKey(){return S.answerKey===null ? S.type==="test" : S.answerKey}
+function keyName(){return S.type==="test" ? "marking scheme" : "answer key"}
+
+function buildOpts(id,key,list,multi,pill){
+  var box=document.getElementById("o-"+id); if(!box)return;
+  box.innerHTML=list.map(function(o){
+    var input='<input type="'+(multi?"checkbox":"radio")+'" name="'+key+'" value="'+o.v+'" data-'+(multi?"group":"k")+'="'+key+'">';
+    if(pill) return '<label class="pill" data-opt="'+key+':'+o.v+'">'+input+esc(o.l)+'</label>';
+    return '<label class="opt" data-opt="'+key+':'+o.v+'">'+input+'<b>'+esc(o.l)+'</b>'+(o.h?'<small>'+esc(o.h)+'</small>':'')+'</label>';
+  }).join("");
+}
+
+function init(){
+  buildOpts("type","type",O.type);
+  buildOpts("source","source",O.source);
+  buildOpts("main","main",O.main);
+  buildOpts("profile","profile",O.profile);
+  buildOpts("thinking","thinking",O.thinking);
+  buildOpts("qtypes","qtypes",O.qtypes,true,true);
+  buildOpts("wsUse","wsUse",O.wsUse);
+  buildOpts("wsSupport","wsSupport",O.wsSupport);
+  buildOpts("wsVersions","wsVersions",O.wsVersions);
+  buildOpts("rStyles","rStyles",O.rStyles,true,true);
+  buildOpts("avoid","avoid",O.avoid,true,true);
+  var cs=$('select[data-k="cls"]'); for(var i=1;i<=10;i++){cs.insertAdjacentHTML("beforeend",'<option value="'+i+'">Class '+i+'</option>')}
+  var bs=$('select[data-k="board"]'); O.board.forEach(function(b){bs.insertAdjacentHTML("beforeend",'<option value="'+b[0]+'">'+b[1]+'</option>')});
+
+  document.addEventListener("input",onChange);
+  document.addEventListener("change",onChange);
+  $$("[data-go]").forEach(function(b){b.addEventListener("click",function(){go(parseInt(b.getAttribute("data-go"),10))})});
+  $$("[data-next]").forEach(function(b){b.addEventListener("click",next)});
+  $$("[data-back]").forEach(function(b){b.addEventListener("click",function(){go(cur-1)})});
+  $("#copyBtn").addEventListener("click",copyPrompt);
+  $("#editBtn").addEventListener("click",function(){go(1)});
+  $("#newBtn").addEventListener("click",function(){S=freshState(S);syncInputs();go(1)});
+  syncInputs();
+}
+
+function onChange(e){
+  var t=e.target;
+  if(t.id==="answerKey"){ S.answerKey=t.checked; syncInputs(); return; }
+  var k=t.getAttribute("data-k"), g=t.getAttribute("data-group");
+  if(k){
+    if(t.type==="checkbox") S[k]=t.checked;
+    else if(t.type==="radio"){ if(t.checked) S[k]=t.value; }
+    else S[k]=t.value;
+  } else if(g){
+    var arr=S[g].slice(), v=t.value;
+    if(t.checked){
+      if(v==="ai") arr=["ai"];
+      else { arr=arr.filter(function(x){return x!=="ai"}); if(arr.indexOf(v)<0) arr.push(v); }
+    } else arr=arr.filter(function(x){return x!==v});
+    if((g==="qtypes"||g==="rStyles") && arr.length===0) arr=["ai"];
+    S[g]=arr;
+  } else return;
+  if(k==="type" && S.main==="grading" && S.type!=="test") S.main="";
+  if(early()) S.qtypes=S.qtypes.filter(function(x){return x!=="extended"&&x!=="scenario"});
+  if(S.qtypes.length===0) S.qtypes=["ai"];
+  var eb=$(".screen.active .errors"); if(eb) eb.classList.remove("show");
+  syncInputs();
+}
+
+function syncInputs(){
+  $$("[data-k]").forEach(function(el){
+    var k=el.getAttribute("data-k");
+    if(el.type==="radio") el.checked=(S[k]===el.value);
+    else if(el.type==="checkbox") el.checked=!!S[k];
+    else if(document.activeElement!==el && el.value!==S[k]) el.value=S[k];
+  });
+  $$("[data-group]").forEach(function(el){el.checked=S[el.getAttribute("data-group")].indexOf(el.value)>=0});
+  // Selected-state highlight via class, so it works without CSS :has()
+  $$("label.opt, label.pill").forEach(function(l){var i=l.querySelector("input"); l.classList.toggle("is-checked",!!(i&&i.checked))});
+  $$("[data-show]").forEach(function(el){
+    var p=el.getAttribute("data-show").split(":");
+    el.hidden=p[1].split(",").indexOf(String(S[p[0]]))<0;
+  });
+  var g=$('[data-opt="main:grading"]'); if(g) g.hidden=(S.type!=="test");
+  $$('[data-opt="qtypes:extended"],[data-opt="qtypes:scenario"]').forEach(function(el){el.hidden=early()});
+  $("#boardNameQ").textContent = S.board==="State board" ? "Which state board?" : "Name of the board";
+  var n=O.need[S.main]||O.need.understanding;
+  $("#needQ").textContent=n.q; $("#needBox").placeholder=n.ph;
+  $("#answerKey").checked=wantKey();
+  $("#akLabel").textContent = S.type==="test" ? "Include a marking scheme" : "Include an answer key";
+  $("#akHint").textContent = S.type==="test" ? "Answers with marks per question. On by default for tests." : "Answers, with brief working or model responses where useful.";
+  renderWarnings();
+}
+
+/* ---------- Gentle warnings for choices that pull in opposite directions (never blocking) ---------- */
+function conflicts(){
+  var w=[], recallish=(S.thinking==="recall"||S.thinking==="recallmore");
+  if(S.type==="hots" && recallish)
+    w.push({s:2, m:"HOTS questions are meant to make students reason, but you have chosen mostly recall. Consider a more reasoning-heavy option."});
+  if(recallish && S.avoid.indexOf("recall")>=0)
+    w.push({s:3, m:"In the previous step you chose mostly recall, but here you have asked the AI to avoid routine recall. Consider changing one of them."});
+  if(S.profile==="struggling" && S.avoid.indexOf("easy")>=0)
+    w.push({s:3, m:"You said many students are struggling, but you have also asked the AI to avoid easy questions. That could make it too hard for them. Consider changing one of them."});
+  return w;
+}
+function renderWarnings(){
+  var all=conflicts();
+  [2,3].forEach(function(n){
+    var box=$("#s"+n+" .warn"); if(!box) return;
+    var msgs=all.filter(function(x){return x.s===n});
+    box.innerHTML = msgs.length ? "<b>Worth a second look</b>"+msgs.map(function(x){return "<p>"+esc(x.m)+"</p>"}).join("") : "";
+    box.classList.toggle("show", msgs.length>0);
+  });
+}
+
+/* ---------- Navigation and validation ---------- */
+function validate(n){
+  var e=[];
+  if(n===1){
+    if(!S.type) e.push("what you are making");
+    if(!S.cls) e.push("the class");
+    if(!clean(S.subject)) e.push("the subject");
+    if(!S.board) e.push("the board");
+    if((S.board==="State board"||S.board==="Other") && !clean(S.boardName)) e.push("the name of the board");
+    if(!S.source) e.push("where the content should come from");
+    if(S.source==="topic" && !clean(S.topic)) e.push("the topic");
+    if((S.source==="src"||S.source==="srcplus") && !clean(S.material)) e.push("what the material covers");
+    if(S.source==="srcplus" && !clean(S.instr)) e.push("your instructions");
+  }
+  if(n===2){
+    if(!S.main) e.push("the main job of the assessment");
+    if(S.main==="other" && !clean(S.mainOther)) e.push("a short description of the purpose");
+    if(!S.profile) e.push("how you would describe the class");
+    if(!S.thinking) e.push("the kind of thinking");
+  }
+  if(n===3){
+    if(S.type==="test" && !clean(S.duration) && !clean(S.marks)) e.push("the duration or total marks (at least one)");
+    if(S.type==="worksheet"){ if(!S.wsUse) e.push("where it will be used"); if(!S.wsSupport) e.push("how much support"); if(!S.wsVersions) e.push("the number of versions"); }
+    if(S.type==="hots" && !clean(S.rCount)) e.push("how many questions");
+  }
+  if(n===4){
+    if(!clean(S.name)) e.push("your name");
+    if(!clean(S.school)) e.push("your school");
+    if(!clean(S.email)) e.push("your email");
+    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(clean(S.email))) e.push("a valid email address");
+    if(!S.consentSave) e.push("your agreement to save your details (the first tick box)");
+    if(S.consentContact && clean(S.phone) && !/^\+?[0-9][0-9\s-]{8,15}$/.test(clean(S.phone))) e.push("a valid phone number, or leave it blank");
+  }
+  return e;
+}
+
+function next(){
+  var errs=validate(cur), box=$("#s"+cur+" .errors");
+  if(errs.length){
+    box.innerHTML="Still needed: "+errs.map(esc).join(", ")+".";
+    box.classList.add("show"); box.scrollIntoView({behavior:"smooth",block:"center"}); return;
+  }
+  box.classList.remove("show");
+  if(cur===LAST){ showResult(); return; }
+  go(cur+1);
+}
+
+function go(n){
+  if(n<0) n=0;
+  $$(".screen").forEach(function(s){s.classList.remove("active")});
+  $("#s"+n).classList.add("active");
+  cur=n;
+  var p=$("#progress");
+  if(n>=1 && n<=LAST){
+    p.hidden=false;
+    $("#ptitle").textContent=$("#s"+n).getAttribute("data-title");
+    $("#pstep").textContent="Step "+n+" of "+LAST;
+    $("#pbar").style.width=(n/LAST*100)+"%";
+  } else p.hidden=true;
+  window.scrollTo(0,0);
+}
+
+/* ---------- Brief and prompt ---------- */
+function labels(list,arr){return arr.map(function(v){var o=find(list,v);return o?(o.p||o.l):v})}
+function typeName(){return {test:"test",worksheet:"worksheet",hots:"set of HOTS (higher-order thinking) questions"}[S.type]}
+function typeTitle(){return {test:"Test",worksheet:"Worksheet",hots:"HOTS questions"}[S.type]}
+function boardText(){ if(!S.board||S.board==="none") return ""; if(S.board==="State board") return "State board: "+clean(S.boardName); if(S.board==="Other") return clean(S.boardName); return S.board; }
+function mainText(v){ if(v==="other") return clean(S.mainOther); var o=find(O.main,v); return o?o.p:""; }
+function needInfo(){return O.need[S.main]||O.need.understanding}
+function needText(){
+  var t=clean(S.need);
+  if(t) return t;
+  return "Not specified. Suggest 3 "+needInfo().likely+" for this topic and class, and ask me to confirm before writing.";
+}
+function formatText(){
+  if(S.type==="test"){
+    var parts=[];
+    if(clean(S.duration)) parts.push(clean(S.duration)+" minutes");
+    if(clean(S.marks)) parts.push(clean(S.marks)+" marks");
+    var qt=S.qtypes.indexOf("ai")>=0?"choose the best mix for the purpose":labels(O.qtypes,S.qtypes).join(", ");
+    return parts.join(", ")+(parts.length?". ":"")+"Question types: "+qt;
+  }
+  if(S.type==="worksheet"){
+    var w=[find(O.wsUse,S.wsUse).p, find(O.wsSupport,S.wsSupport).p, find(O.wsVersions,S.wsVersions).p];
+    w.push(clean(S.wsCount)? clean(S.wsCount)+" questions" : "suggest a suitable number of questions");
+    return w.join("; ");
+  }
+  var st=S.rStyles.indexOf("ai")>=0?"choose the best style for the purpose":labels(O.rStyles,S.rStyles).join(", ");
+  return clean(S.rCount)+" questions. Style: "+st;
+}
+function contentText(){
+  if(S.source==="topic") return "Topic: "+clean(S.topic);
+  if(S.source==="src") return "Only the material I attach: "+clean(S.material);
+  return "The material I attach ("+clean(S.material)+"), plus my instructions: "+clean(S.instr);
+}
+function avoidList(lower){return O.avoid.filter(function(o){return S.avoid.indexOf(o.v)>=0}).map(function(o){return lower?o.l.toLowerCase():o.l})}
+function patternGiven(){return hasBoard() && !!clean(S.boardPattern)}
+function shorten(t,n){t=clean(t).replace(/\s+/g," ");return t.length>n?t.slice(0,n-1)+"…":t}
+
+function briefRows(){
+  var rows=[];
+  rows.push(["Making", typeTitle()+" · Class "+S.cls+" · "+clean(S.subject)+(boardText()?" · "+boardText():"")]);
+  if(patternGiven()) rows.push(["Board pattern", shorten(S.boardPattern,160)]);
+  rows.push(["Content", contentText()]);
+  rows.push(["Purpose", cap(mainText(S.main))]);
+  rows.push([needInfo().label, clean(S.need) || "Left blank: the AI will suggest some for you to confirm"]);
+  rows.push(["Class profile", find(O.profile,S.profile).l]);
+  rows.push(["Thinking", find(O.thinking,S.thinking).l]);
+  rows.push(["Format", cap(formatText())]);
+  rows.push([cap(keyName()), wantKey() ? "Included, after the student version" : "Not included"]);
+  if(S.avoid.length) rows.push(["Avoid", avoidList().join("; ")]);
+  if(clean(S.other)) rows.push(["Also", clean(S.other)]);
+  return rows;
+}
+
+function buildPrompt(){
+  var L=[], cls=S.cls, tn=typeName();
+  L.push("You are an experienced assessment designer helping a teacher.");
+  L.push("");
+  L.push("ASSESSMENT BRIEF");
+  L.push("- Making: a "+tn+" for Class "+cls+" "+clean(S.subject)+(boardText()?" ("+boardText()+")":""));
+  L.push("- Language: English");
+  L.push("- Main purpose: "+mainText(S.main));
+  L.push("- "+needInfo().label+": "+needText());
+  L.push("- Class profile: "+find(O.profile,S.profile).p);
+  L.push("- Thinking: "+find(O.thinking,S.thinking).p+". Difficulty: build from accessible to challenging");
+  L.push("- Format: "+formatText());
+  if(S.avoid.length) L.push("- Avoid: "+avoidList(true).join("; "));
+  if(clean(S.other)) L.push("- Also: "+clean(S.other));
+  L.push("");
+  L.push("CONTENT SCOPE");
+  if(S.source==="topic"){
+    L.push("Use the topic \""+clean(S.topic)+"\" and the rest of this brief as the scope. If the boundaries are unclear, ask before including content that may not have been taught.");
+  } else if(S.source==="src"){
+    L.push("Use only information in the material I have attached ("+clean(S.material)+"). If I have not attached or pasted it, ask me for it before you begin.");
+  } else {
+    L.push("Use the material I have attached ("+clean(S.material)+") as the main source. Include other content only where my instructions allow: "+nodot(clean(S.instr))+". If I have not attached or pasted the material, ask me for it before you begin.");
+  }
+  L.push("In every case, you may use assessment-design expertise to shape questions, but never to add content outside this scope.");
+  L.push("");
+  if(patternGiven()){
+    L.push("BOARD PATTERN");
+    L.push("Follow this question pattern"+(boardText()?" ("+boardText()+")":"")+":");
+    L.push(clean(S.boardPattern));
+    L.push("");
+  }
+  L.push("RULES");
+  if(patternGiven()) L.push("- Follow the board pattern above. If it conflicts with anything else in this brief, point out the conflict and ask me which to follow before writing. Do not claim alignment beyond what the pattern covers.");
+  else L.push("- Follow a board's question pattern only if I have shared it, in this prompt or as an attachment. Otherwise do not claim alignment with any board.");
+  L.push("- Never ask for or use student names or personal details.");
+  L.push("- Use language suited to Class "+cls+".");
+  if(early()) L.push("- Keep reading load, instructions and response length appropriate for Class "+cls+". Do not confuse reading difficulty with the difficulty of the concept being assessed.");
+  L.push("- Prefer simple, familiar everyday contexts. Avoid needing background knowledge unrelated to the skill being assessed.");
+  L.push("");
+  L.push("WHAT TO DO");
+  L.push("1. Restate this brief in 3-4 lines without changing its intent. Ask questions (no more than 2) only if something essential is genuinely unclear, or if this brief asks you to confirm something before writing. Otherwise continue straight away.");
+  L.push("2. Under the heading \"What this brief changes\", show ONE pair: first, a reasonable question that could come from the topic alone (do not make it deliberately weak); then one designed for this brief, with one line explaining the difference.");
+  L.push("3. Before writing, silently check that: the questions serve the stated purpose; the thinking level and difficulty match the brief; there is no unnecessary repetition; the wording suits the class; nothing goes outside the content scope; and marks, question counts and sections add up correctly. Do not print this check.");
+  L.push("4. First give a short Teacher Note on what each section assesses. Then give the full "+tn+" as a clean, student-facing version with no design commentary, formatted to copy cleanly into Word or Google Docs.");
+  if(wantKey()){
+    if(S.type==="test") L.push("5. After the student version, give a separate marking scheme: the correct answer for each question, the marks for it, and the key points needed for full marks. Keep it concise and make sure the marks add up to the total.");
+    else if(S.type==="worksheet") L.push("5. After the student version, give a separate answer key, with brief working or explanation where it helps"+(S.wsVersions==="three"?", for each of the three levels":"")+". Keep it concise.");
+    else L.push("5. After the student version, give a separate answer key: a model answer for each question and what a strong response would include. Keep it concise.");
+  } else {
+    L.push("5. Do not include an answer key unless I ask. If I ask, give it separately and keep it concise.");
+  }
+  L.push("6. End with: \"Review every question before you use it. You are the final judge.\"");
+  return L.join("\n");
+}
+
+function showResult(){
+  $("#briefTitle").textContent="Assessment brief: "+typeTitle()+", Class "+S.cls+" "+clean(S.subject);
+  $("#briefList").innerHTML=briefRows().map(function(r){return "<dt>"+esc(r[0])+"</dt><dd>"+esc(r[1])+"</dd>"}).join("");
+  $("#promptText").textContent=buildPrompt();
+  var hint="";
+  if(S.source!=="topic") hint=" Attach or paste your material in the same message.";
+  else if(hasBoard() && !patternGiven()) hint=" If you have your board’s question pattern, attach it in the same message.";
+  $("#attachHint").textContent=hint;
+  $("#copied").classList.remove("show");
+  go(RESULT);
+  sendData();
+}
+
+function copyPrompt(){
+  var text=$("#promptText").textContent, done=function(){$("#copied").classList.add("show")};
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(text).then(done,function(){fallbackCopy(text,done)});
+  } else fallbackCopy(text,done);
+}
+function fallbackCopy(text,done){
+  var ta=document.createElement("textarea"); ta.value=text; ta.setAttribute("readonly","");
+  ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select();
+  try{document.execCommand("copy"); done();}catch(e){alert("Please select the prompt text and copy it manually.")}
+  document.body.removeChild(ta);
+}
+
+/* ---------- Save responses (only if ENDPOINT is set, and only with consent) ---------- */
+// Sends only what the notice on Step 4 lists. The prompt, topic, material and notes about students are never sent.
+function sendData(){
+  if(!ENDPOINT || !S.consentSave) return;
+  var payload={
+    timestamp:new Date().toISOString(),
+    consentVersion:CONSENT_VERSION,
+    consentSave:S.consentSave,
+    consentContact:S.consentContact,
+    name:clean(S.name), school:clean(S.school), email:clean(S.email),
+    phone:S.consentContact?clean(S.phone):"",
+    type:S.type, cls:S.cls, subject:clean(S.subject), board:boardText()||"Not relevant",
+    mainPurpose:S.main==="other" ? "other: "+clean(S.mainOther) : S.main
+  };
+  try{ fetch(ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)}); }catch(e){}
+}
+
+init();
+</script>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6b2d1cc4017348f6bbc40cde86c7a890"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
